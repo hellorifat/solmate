@@ -1,0 +1,6 @@
+source: https://science.nasa.gov/solar-system/analog-explorer/#lava-caves-california-moon
+title: NASA Planetary Analog Explorer - Lava Caves: California and the Moon
+retrieved: 2026-10-12
+type: verbatim passage (Image Details)
+---
+Near Medicine Lake Volcano in California, scientists explore lava caves from both inside and out, working towards a future in which astronauts will be able to detect hidden caves from above ground. These images are not to scale; the opening in the Moon’s surface measures 65 meters (213 feet) across.

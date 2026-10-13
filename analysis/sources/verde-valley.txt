@@ -1,0 +1,6 @@
+source: https://science.nasa.gov/solar-system/analog-explorer/#life-arizona-mars
+title: NASA Planetary Analog Explorer - Looking for Life: Arizona and Mars
+retrieved: 2026-10-12
+type: verbatim passage (Image Details)
+---
+In Arizona’s Verde Valley, scientists use field and lab research to learn how signs of life, or biosignatures, are preserved. This kind of work helps robotic explorers like NASA’s Curiosity rover, shown here at the base of Mount Sharp, know what to look for on Mars – and helps the researchers back home to understand what they find. Note on scale: the Curiosity rover is about the same size as a large SUV.

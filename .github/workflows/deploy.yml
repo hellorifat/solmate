@@ -15,6 +15,20 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  analysis-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install test dependencies
+        run: pip install numpy scipy pytest
+      - name: Terrain indicator tests
+        run: python -m pytest -q analysis/tests
+
   build:
     runs-on: ubuntu-latest
     defaults:
@@ -26,22 +40,28 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
       - name: Install dependencies
-        run: npm install
-      - name: Build with Next.js
-        run: npx next build
+        run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Unit tests
+        run: npm test -- --passWithNoTests
+      - name: Type-check and build (Vite)
+        run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./frontend/out
+          path: ./frontend/dist
 
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
+    needs: [analysis-tests, build]
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

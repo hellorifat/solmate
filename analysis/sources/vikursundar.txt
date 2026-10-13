@@ -1,0 +1,6 @@
+source: https://science.nasa.gov/solar-system/analog-explorer/#land-ripples-iceland-mars
+title: NASA Planetary Analog Explorer - Land Ripples: Iceland and Mars
+retrieved: 2026-10-12
+type: verbatim passage (Image Details)
+---
+Researchers in Iceland’s Vikursundar region, at the foot of Askja volcano, survey and monitor large ripples in the landscape’s gravelly surface (left). These ripples are sluggish, moving only under the most extreme weather conditions. Year after year, the team uses science instruments mounted on small drones to capture digital terrain models of the landscape, revealing changes over time. Mars, too, has slow-moving land ripples (right). Note on scale: The Martian ridges shown in this Mars Reconnaissance Orbiter image are ten times the size of the ones in Iceland. The field of view on the left is 300 meters or 1000 feet wide, compared to three kilometers (almost two miles) on the right.

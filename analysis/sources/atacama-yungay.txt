@@ -1,0 +1,6 @@
+source: https://science.nasa.gov/solar-system/analog-explorer/#life-atacama-desert-mars
+title: NASA Planetary Analog Explorer - Looking for Life: the Atacama Desert and Mars
+retrieved: 2026-10-12
+type: verbatim passage (Image Details)
+---
+Chile’s Atacama Desert, one of the driest places on Earth, helps us to understand how the building blocks of life might respond to Martian conditions over time. The science instruments in this truck can detect very small amounts of target molecules in the sun-baked soil. Robotic explorers like NASA’s Perseverance Rover, shown here with rotorcraft Ingenuity in the background, use their own portable lab instruments to search for biosignatures on Mars. Note on scale: Perseverance is slightly taller than the human researchers, and Ingenuity is just nineteen inches tall.

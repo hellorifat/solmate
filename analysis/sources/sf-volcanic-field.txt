@@ -1,0 +1,10 @@
+source: https://science.nasa.gov/missions/artemis/behind-the-scenes-of-a-nasa-moonwalk-in-the-arizona-desert/
+title: Behind the Scenes of a NASA 'Moonwalk' in the Arizona Desert (NASA Science)
+retrieved: 2026-10-12
+type: verbatim paragraphs
+---
+Between May 13 and May 22, 2024, Rubins and Douglas trudged through northern Arizona’s San Francisco Volcanic Field, a geologically Moon-like destination shaped by millions of years of volcanic eruptions. There, they made observations of the soil and rocks around them and collected samples. After the moonwalks, the astronauts tested technology that could be used on Artemis missions, including a heads-up display that uses augmented reality to help with navigation, and lighting beacons that could help guide a crew back to a lunar lander.
+
+There are, of course, no cows on the Moon. But there is a region, called Marius Hills, that geologically resembles this Arizona volcanic field. Like the Arizona site, Marius Hills was shaped by ancient volcanic eruptions, so the composition of rocks at the two locations is similar.
+
+“So this ‘landing site’ was a good analog for the types of small changes in regolith astronauts will look for at the lunar South Pole,” said Lauren Edgar, a geologist at the U.S. Geological Survey in Flagstaff, Ariz., who co-led the science team for the simulation.

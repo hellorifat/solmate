@@ -1,0 +1,1178 @@
+{
+ "version": 1,
+ "generated_at": "2026-10-11T19:31:01+00:00",
+ "profile": {
+  "id": "terrain-morphometry",
+  "label": "Terrain morphometry (rover traverse scale)",
+  "window_m": 20000,
+  "cell_m": 100,
+  "indicators": [
+   {
+    "id": "slope_median",
+    "label": "Median slope",
+    "unit": "°",
+    "description": "Typical steepness of the ground, from Horn's 3×3 gradient on the 100 m grid."
+   },
+   {
+    "id": "slope_p90",
+    "label": "Steep slopes (90th-percentile slope)",
+    "unit": "°",
+    "description": "Slope exceeded by the steepest 10% of the window: scarps, crater walls, channel banks."
+   },
+   {
+    "id": "local_relief",
+    "label": "Local relief",
+    "unit": "m",
+    "description": "Median elevation range inside a moving 1 km square: how much the ground rises and falls over rover-traverse distances."
+   },
+   {
+    "id": "ruggedness",
+    "label": "Terrain ruggedness (TRI)",
+    "unit": "m",
+    "description": "Riley's Terrain Ruggedness Index: elevation change between each 100 m cell and its eight neighbours."
+   },
+   {
+    "id": "hypsometric_integral",
+    "label": "Hypsometric integral",
+    "unit": "",
+    "description": "Where the average elevation sits between the window's low and high points (0 = mostly lowland, 1 = mostly upland)."
+   }
+  ],
+  "scored": [
+   "slope_median",
+   "slope_p90",
+   "local_relief",
+   "ruggedness",
+   "hypsometric_integral"
+  ],
+  "note": "Absolute elevation is never compared; only derived terrain metrics on the same physical grid."
+ },
+ "reference": {
+  "id": "mons-mouton-plateau",
+  "name": "Mons Mouton Plateau, lunar south pole",
+  "short": "Mons Mouton Plateau",
+  "body": "moon",
+  "pair": "Moon",
+  "lat": -84.5338,
+  "lon": 30.6556,
+  "note": "One of NASA's nine Artemis III candidate landing regions (2024 update) and the region with the largest landing-suitable area in Wueller et al. (2026); window centred on the centroid of its 11 candidate landing sites.",
+  "source": "https://doi.org/10.1029/2025JE009434",
+  "indicators": {
+   "slope_median": 6.253645896911621,
+   "slope_p90": 12.766617774963379,
+   "local_relief": 128.77783203125,
+   "ruggedness": 27.949283599853516,
+   "hypsometric_integral": 0.533699304610633
+  },
+  "valid_fraction": 1.0,
+  "elev_range": 862.0907910156257,
+  "dem": {
+   "crs": "Moon (2015) - Sphere / Ocentric / South Polar",
+   "source_res_m": 20.0,
+   "scale_factor_k": 1.0022788982634683,
+   "file": "LDEM_80S_20MPP_ADJ.TIF"
+  },
+  "quicklooks": {
+   "hillshade": "data/quicklooks/mons-mouton-plateau-hillshade.webp",
+   "slope": "data/quicklooks/mons-mouton-plateau-slope.webp",
+   "imagery": "data/quicklooks/mons-mouton-plateau-imagery.webp"
+  },
+  "elev_min": 4531.5263671875,
+  "elev_max": 5870.0693359375
+ },
+ "sites": [
+  {
+   "id": "lake-salda",
+   "name": "Lake Salda",
+   "country": "Türkiye",
+   "lat": 37.555,
+   "lon": 29.68,
+   "role": "documented",
+   "pair": "Mars",
+   "context": "Light-coloured lake-edge sediments; NASA notes Jezero shares geological and mineral characteristics with Lake Salda.",
+   "source": "https://science.nasa.gov/solar-system/analog-explorer/#life-turkey-mars",
+   "indicators": {
+    "slope_median": 6.553799629211426,
+    "slope_p90": 16.477352142333984,
+    "local_relief": 142.5186767578125,
+    "ruggedness": 35.05924606323242,
+    "hypsometric_integral": 0.3304543236497314
+   },
+   "valid_fraction": 1.0,
+   "elev_range": 753.5144091796883,
+   "excluded": false,
+   "dem": {
+    "tiles": [
+     "Copernicus_DSM_COG_10_N37_00_E029_00_DEM"
+    ]
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/lake-salda-hillshade.webp",
+    "slope": "data/quicklooks/lake-salda-slope.webp",
+    "imagery": "data/quicklooks/lake-salda-imagery.webp"
+   },
+   "elev_min": 1015.8118286132812,
+   "elev_max": 2062.89208984375
+  },
+  {
+   "id": "death-valley",
+   "name": "Death Valley",
+   "country": "USA (California)",
+   "lat": 36.46,
+   "lon": -116.87,
+   "role": "documented",
+   "pair": "Mars",
+   "context": "Landscape NASA likens to Viking 2's view of Utopia Planitia; the Mars 2020 team practised hazard avoidance here.",
+   "source": "https://science.nasa.gov/solar-system/analog-explorer/#rocky-reconnaissance-california-mars",
+   "indicators": {
+    "slope_median": 3.2749550342559814,
+    "slope_p90": 14.439044952392578,
+    "local_relief": 73.78955078125,
+    "ruggedness": 15.23959732055664,
+    "hypsometric_integral": 0.1913941205014982
+   },
+   "valid_fraction": 1.0,
+   "elev_range": 1140.5106552886964,
+   "excluded": false,
+   "dem": {
+    "tiles": [
+     "Copernicus_DSM_COG_10_N36_00_W117_00_DEM",
+     "Copernicus_DSM_COG_10_N36_00_W118_00_DEM"
+    ]
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/death-valley-hillshade.webp",
+    "slope": "data/quicklooks/death-valley-slope.webp",
+    "imagery": "data/quicklooks/death-valley-imagery.webp"
+   },
+   "elev_min": -84.80648040771484,
+   "elev_max": 1418.7789306640625
+  },
+  {
+   "id": "atacama-yungay",
+   "name": "Atacama Desert (Yungay)",
+   "country": "Chile",
+   "lat": -24.083,
+   "lon": -70.017,
+   "role": "documented",
+   "pair": "Mars",
+   "context": "One of the driest places on Earth, used to study how the building blocks of life respond to Martian conditions.",
+   "source": "https://science.nasa.gov/solar-system/analog-explorer/#life-atacama-desert-mars",
+   "indicators": {
+    "slope_median": 4.252979755401611,
+    "slope_p90": 12.334819793701172,
+    "local_relief": 101.38116455078125,
+    "ruggedness": 20.144607543945312,
+    "hypsometric_integral": 0.42677202382187357
+   },
+   "valid_fraction": 1.0,
+   "elev_range": 561.823319091797,
+   "excluded": false,
+   "dem": {
+    "tiles": [
+     "Copernicus_DSM_COG_10_S24_00_W070_00_DEM",
+     "Copernicus_DSM_COG_10_S24_00_W071_00_DEM",
+     "Copernicus_DSM_COG_10_S25_00_W070_00_DEM",
+     "Copernicus_DSM_COG_10_S25_00_W071_00_DEM"
+    ]
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/atacama-yungay-hillshade.webp",
+    "slope": "data/quicklooks/atacama-yungay-slope.webp",
+    "imagery": "data/quicklooks/atacama-yungay-imagery.webp"
+   },
+   "elev_min": 957.6926879882812,
+   "elev_max": 1675.5167236328125
+  },
+  {
+   "id": "pilot-valley",
+   "name": "Pilot Valley",
+   "country": "USA (Utah)",
+   "lat": 40.98,
+   "lon": -114.03,
+   "role": "documented",
+   "pair": "Mars",
+   "context": "Salt deposits that help explain how perchlorate, also observed on Mars, can serve as an energy source for microbes.",
+   "source": "https://science.nasa.gov/solar-system/analog-explorer/#life-utah-mars",
+   "indicators": {
+    "slope_median": 3.5792200565338135,
+    "slope_p90": 22.124210357666016,
+    "local_relief": 86.5450439453125,
+    "ruggedness": 15.681854248046875,
+    "hypsometric_integral": 0.16429447911277612
+   },
+   "valid_fraction": 1.0,
+   "elev_range": 1591.6200695800783,
+   "excluded": false,
+   "dem": {
+    "tiles": [
+     "Copernicus_DSM_COG_10_N40_00_W114_00_DEM",
+     "Copernicus_DSM_COG_10_N40_00_W115_00_DEM",
+     "Copernicus_DSM_COG_10_N41_00_W114_00_DEM",
+     "Copernicus_DSM_COG_10_N41_00_W115_00_DEM"
+    ]
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/pilot-valley-hillshade.webp",
+    "slope": "data/quicklooks/pilot-valley-slope.webp",
+    "imagery": "data/quicklooks/pilot-valley-imagery.webp"
+   },
+   "elev_min": 1286.9410400390625,
+   "elev_max": 3242.83447265625
+  },
+  {
+   "id": "verde-valley",
+   "name": "Verde Valley",
+   "country": "USA (Arizona)",
+   "lat": 34.56,
+   "lon": -111.86,
+   "role": "documented",
+   "pair": "Mars",
+   "context": "Field and laboratory research on how biosignatures are preserved, to guide what Mars rovers look for.",
+   "source": "https://science.nasa.gov/solar-system/analog-explorer/#life-arizona-mars",
+   "indicators": {
+    "slope_median": 3.882017135620117,
+    "slope_p90": 13.655762672424316,
+    "local_relief": 78.739501953125,
+    "ruggedness": 21.918649673461914,
+    "hypsometric_integral": 0.25399453782510767
+   },
+   "valid_fraction": 1.0,
+   "elev_range": 839.3608422851581,
+   "excluded": false,
+   "dem": {
+    "tiles": [
+     "Copernicus_DSM_COG_10_N34_00_W112_00_DEM"
+    ]
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/verde-valley-hillshade.webp",
+    "slope": "data/quicklooks/verde-valley-slope.webp",
+    "imagery": "data/quicklooks/verde-valley-imagery.webp"
+   },
+   "elev_min": 900.3154296875,
+   "elev_max": 1943.57958984375
+  },
+  {
+   "id": "vikursundar",
+   "name": "Vikursundar, Askja",
+   "country": "Iceland",
+   "lat": 65.11,
+   "lon": -16.47,
+   "role": "documented",
+   "pair": "Mars",
+   "context": "Gravel ripples monitored with drone-derived terrain models as analogs of Martian ridges.",
+   "source": "https://science.nasa.gov/solar-system/analog-explorer/#land-ripples-iceland-mars",
+   "indicators": {
+    "slope_median": 1.505379557609558,
+    "slope_p90": 15.466092109680176,
+    "local_relief": 34.3592529296875,
+    "ruggedness": 7.621608734130859,
+    "hypsometric_integral": 0.2574843347126014
+   },
+   "valid_fraction": 1.0,
+   "elev_range": 794.398797607422,
+   "excluded": false,
+   "dem": {
+    "tiles": [
+     "Copernicus_DSM_COG_10_N65_00_W017_00_DEM"
+    ]
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/vikursundar-hillshade.webp",
+    "slope": "data/quicklooks/vikursundar-slope.webp",
+    "imagery": "data/quicklooks/vikursundar-imagery.webp"
+   },
+   "elev_min": 491.00640869140625,
+   "elev_max": 1552.346435546875
+  },
+  {
+   "id": "askja",
+   "name": "Askja volcano",
+   "country": "Iceland",
+   "lat": 65.045,
+   "lon": -16.76,
+   "role": "documented",
+   "pair": "Moon",
+   "context": "Ground-penetrating radar finds buried ice here; the same technology is planned for ice near the lunar south pole.",
+   "source": "https://science.nasa.gov/solar-system/analog-explorer/#subsurface-ice-iceland-moon",
+   "indicators": {
+    "slope_median": 3.66805100440979,
+    "slope_p90": 16.123119354248047,
+    "local_relief": 113.55886840820312,
+    "ruggedness": 18.46706771850586,
+    "hypsometric_integral": 0.4407006277242896
+   },
+   "valid_fraction": 1.0,
+   "elev_range": 692.8016564941408,
+   "excluded": false,
+   "dem": {
+    "tiles": [
+     "Copernicus_DSM_COG_10_N64_00_W017_00_DEM",
+     "Copernicus_DSM_COG_10_N64_00_W018_00_DEM",
+     "Copernicus_DSM_COG_10_N65_00_W017_00_DEM",
+     "Copernicus_DSM_COG_10_N65_00_W018_00_DEM"
+    ]
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/askja-hillshade.webp",
+    "slope": "data/quicklooks/askja-slope.webp",
+    "imagery": "data/quicklooks/askja-imagery.webp"
+   },
+   "elev_min": 622.0917358398438,
+   "elev_max": 1489.927001953125
+  },
+  {
+   "id": "kilauea",
+   "name": "Kīlauea volcano",
+   "country": "USA (Hawaiʻi)",
+   "lat": 19.406,
+   "lon": -155.283,
+   "role": "documented",
+   "pair": "Moon",
+   "context": "Researchers measure how long volcanic field-geology tasks take, to plan similar work on the lunar surface.",
+   "source": "https://science.nasa.gov/solar-system/analog-explorer/#basalt-landscapes-kilauea-moon",
+   "indicators": {
+    "slope_median": 2.7548184394836426,
+    "slope_p90": 5.3840484619140625,
+    "local_relief": 59.7738037109375,
+    "ruggedness": 12.801993370056152,
+    "hypsometric_integral": 0.3690747938162622
+   },
+   "valid_fraction": 1.0,
+   "elev_range": 1060.889262084961,
+   "excluded": false,
+   "dem": {
+    "tiles": [
+     "Copernicus_DSM_COG_10_N19_00_W156_00_DEM"
+    ]
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/kilauea-hillshade.webp",
+    "slope": "data/quicklooks/kilauea-slope.webp",
+    "imagery": "data/quicklooks/kilauea-imagery.webp"
+   },
+   "elev_min": 482.1495361328125,
+   "elev_max": 1998.78125
+  },
+  {
+   "id": "lava-beds",
+   "name": "Lava Beds, Medicine Lake Volcano",
+   "country": "USA (California)",
+   "lat": 41.715,
+   "lon": -121.509,
+   "role": "documented",
+   "pair": "Moon",
+   "context": "Lava caves explored from inside and out, working towards detecting hidden caves from above ground.",
+   "source": "https://science.nasa.gov/solar-system/analog-explorer/#lava-caves-california-moon",
+   "indicators": {
+    "slope_median": 2.330451488494873,
+    "slope_p90": 7.444386959075928,
+    "local_relief": 59.36529541015625,
+    "ruggedness": 11.762140274047852,
+    "hypsometric_integral": 0.26993875579308135
+   },
+   "valid_fraction": 1.0,
+   "elev_range": 858.3271057128907,
+   "excluded": false,
+   "dem": {
+    "tiles": [
+     "Copernicus_DSM_COG_10_N41_00_W122_00_DEM"
+    ]
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/lava-beds-hillshade.webp",
+    "slope": "data/quicklooks/lava-beds-slope.webp",
+    "imagery": "data/quicklooks/lava-beds-imagery.webp"
+   },
+   "elev_min": 1228.3916015625,
+   "elev_max": 2282.32861328125
+  },
+  {
+   "id": "sf-volcanic-field",
+   "name": "San Francisco Volcanic Field",
+   "country": "USA (Arizona)",
+   "lat": 35.58,
+   "lon": -111.48,
+   "role": "documented",
+   "pair": "Moon",
+   "context": "Moon-like volcanic field where NASA astronauts rehearsed Artemis moonwalks and tested surface technology.",
+   "source": "https://science.nasa.gov/missions/artemis/behind-the-scenes-of-a-nasa-moonwalk-in-the-arizona-desert/",
+   "indicators": {
+    "slope_median": 1.1306023597717285,
+    "slope_p90": 4.199517250061035,
+    "local_relief": 29.8511962890625,
+    "ruggedness": 5.571569442749023,
+    "hypsometric_integral": 0.42239534627962627
+   },
+   "valid_fraction": 1.0,
+   "elev_range": 456.4203613281252,
+   "excluded": false,
+   "dem": {
+    "tiles": [
+     "Copernicus_DSM_COG_10_N35_00_W112_00_DEM"
+    ]
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/sf-volcanic-field-hillshade.webp",
+    "slope": "data/quicklooks/sf-volcanic-field-slope.webp",
+    "imagery": "data/quicklooks/sf-volcanic-field-imagery.webp"
+   },
+   "elev_min": 1430.656494140625,
+   "elev_max": 1984.2796630859375
+  },
+  {
+   "id": "haughton",
+   "name": "Haughton impact structure",
+   "country": "Canada (Nunavut)",
+   "lat": 75.383,
+   "lon": -89.683,
+   "role": "candidate",
+   "pair": "Mars",
+   "context": "High-Arctic impact structure with intra-crater sedimentary deposits, including later paleolacustrine (lake) sediments.",
+   "source": "https://doi.org/10.1111/j.1945-5100.2005.tb00152.x",
+   "indicators": {
+    "slope_median": 3.8055620193481445,
+    "slope_p90": 10.669792175292969,
+    "local_relief": 72.10122680664062,
+    "ruggedness": 20.095256805419922,
+    "hypsometric_integral": 0.5463404341422868
+   },
+   "valid_fraction": 1.0,
+   "elev_range": 237.01305038452148,
+   "excluded": false,
+   "dem": {
+    "tiles": [
+     "Copernicus_DSM_COG_10_N75_00_W090_00_DEM",
+     "Copernicus_DSM_COG_10_N75_00_W091_00_DEM"
+    ]
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/haughton-hillshade.webp",
+    "slope": "data/quicklooks/haughton-slope.webp",
+    "imagery": "data/quicklooks/haughton-imagery.webp"
+   },
+   "elev_min": 41.287742614746094,
+   "elev_max": 361.5506591796875
+  },
+  {
+   "id": "meteor-crater",
+   "name": "Meteor Crater",
+   "country": "USA (Arizona)",
+   "lat": 35.027,
+   "lon": -111.022,
+   "role": "candidate",
+   "pair": "Moon",
+   "context": "Impact crater whose shocked Coconino Sandstone contains high-pressure silica phases such as coesite and stishovite.",
+   "source": "https://doi.org/10.1029/jb076i023p05449",
+   "indicators": {
+    "slope_median": 0.9403917789459229,
+    "slope_p90": 1.7426815032958984,
+    "local_relief": 18.9835205078125,
+    "ruggedness": 4.626839637756348,
+    "hypsometric_integral": 0.5625875171326064
+   },
+   "valid_fraction": 1.0,
+   "elev_range": 254.9744897460937,
+   "excluded": false,
+   "dem": {
+    "tiles": [
+     "Copernicus_DSM_COG_10_N34_00_W111_00_DEM",
+     "Copernicus_DSM_COG_10_N34_00_W112_00_DEM",
+     "Copernicus_DSM_COG_10_N35_00_W111_00_DEM",
+     "Copernicus_DSM_COG_10_N35_00_W112_00_DEM"
+    ]
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/meteor-crater-hillshade.webp",
+    "slope": "data/quicklooks/meteor-crater-slope.webp",
+    "imagery": "data/quicklooks/meteor-crater-imagery.webp"
+   },
+   "elev_min": 1501.8592529296875,
+   "elev_max": 1818.57763671875
+  },
+  {
+   "id": "lonar",
+   "name": "Lonar crater",
+   "country": "India",
+   "lat": 19.976,
+   "lon": 76.508,
+   "role": "candidate",
+   "pair": "Mars",
+   "context": "Impact crater in basalt whose shocked rocks are studied for comparison with Mars.",
+   "source": "https://doi.org/10.1029/2010je003785",
+   "indicators": {
+    "slope_median": 1.0912213325500488,
+    "slope_p90": 2.7975592613220215,
+    "local_relief": 23.151611328125,
+    "ruggedness": 5.365674018859863,
+    "hypsometric_integral": 0.5324020155009713
+   },
+   "valid_fraction": 1.0,
+   "elev_range": 107.39470489501957,
+   "excluded": false,
+   "dem": {
+    "tiles": [
+     "Copernicus_DSM_COG_10_N19_00_E076_00_DEM",
+     "Copernicus_DSM_COG_10_N20_00_E076_00_DEM"
+    ]
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/lonar-hillshade.webp",
+    "slope": "data/quicklooks/lonar-slope.webp",
+    "imagery": "data/quicklooks/lonar-imagery.webp"
+   },
+   "elev_min": 479.5,
+   "elev_max": 614.87841796875
+  },
+  {
+   "id": "flevoland",
+   "name": "Flevoland polder",
+   "country": "Netherlands",
+   "lat": 52.53,
+   "lon": 5.6,
+   "role": "control",
+   "pair": null,
+   "context": "Reclaimed, intensively farmed polder; no planetary-analog use.",
+   "source": null,
+   "indicators": {
+    "slope_median": 0.053124915808439255,
+    "slope_p90": 0.9718137979507446,
+    "local_relief": 3.1665079593658447,
+    "ruggedness": 0.4308681786060333,
+    "hypsometric_integral": 0.16255411099250117
+   },
+   "valid_fraction": 1.0,
+   "elev_range": 13.255973200798046,
+   "excluded": false,
+   "dem": {
+    "tiles": [
+     "Copernicus_DSM_COG_10_N52_00_E005_00_DEM"
+    ]
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/flevoland-hillshade.webp",
+    "slope": "data/quicklooks/flevoland-slope.webp",
+    "imagery": "data/quicklooks/flevoland-imagery.webp"
+   },
+   "elev_min": -6.825313568115234,
+   "elev_max": 19.187273025512695
+  },
+  {
+   "id": "iowa",
+   "name": "Central Iowa cropland",
+   "country": "USA (Iowa)",
+   "lat": 42.2,
+   "lon": -93.9,
+   "role": "control",
+   "pair": null,
+   "context": "Glaciated cropland plain; no planetary-analog use.",
+   "source": null,
+   "indicators": {
+    "slope_median": 0.7544493675231934,
+    "slope_p90": 3.531531810760498,
+    "local_relief": 15.13507080078125,
+    "ruggedness": 4.641139984130859,
+    "hypsometric_integral": 0.6662170840444627
+   },
+   "valid_fraction": 1.0,
+   "elev_range": 86.15767791748044,
+   "excluded": false,
+   "dem": {
+    "tiles": [
+     "Copernicus_DSM_COG_10_N42_00_W094_00_DEM",
+     "Copernicus_DSM_COG_10_N42_00_W095_00_DEM"
+    ]
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/iowa-hillshade.webp",
+    "slope": "data/quicklooks/iowa-slope.webp",
+    "imagery": "data/quicklooks/iowa-imagery.webp"
+   },
+   "elev_min": 268.0135192871094,
+   "elev_max": 375.84661865234375
+  },
+  {
+   "id": "ganges-plain",
+   "name": "Ganges plain",
+   "country": "India",
+   "lat": 26.4,
+   "lon": 81.8,
+   "role": "control",
+   "pair": null,
+   "context": "Alluvial farmland plain; no planetary-analog use.",
+   "source": null,
+   "indicators": {
+    "slope_median": 0.5206595063209534,
+    "slope_p90": 1.361945629119873,
+    "local_relief": 9.35479736328125,
+    "ruggedness": 4.1527814865112305,
+    "hypsometric_integral": 0.6398906881669851
+   },
+   "valid_fraction": 1.0,
+   "elev_range": 22.70919845581055,
+   "excluded": false,
+   "dem": {
+    "tiles": [
+     "Copernicus_DSM_COG_10_N26_00_E081_00_DEM"
+    ]
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/ganges-plain-hillshade.webp",
+    "slope": "data/quicklooks/ganges-plain-slope.webp",
+    "imagery": "data/quicklooks/ganges-plain-imagery.webp"
+   },
+   "elev_min": 83.57177734375,
+   "elev_max": 118.6372299194336
+  },
+  {
+   "id": "amazon-forest",
+   "name": "Central Amazon rainforest",
+   "country": "Brazil",
+   "lat": -2.6,
+   "lon": -60.2,
+   "role": "control",
+   "pair": null,
+   "context": "Closed-canopy lowland forest; the surface model records canopy, not ground.",
+   "source": null,
+   "indicators": {
+    "slope_median": 3.5269384384155273,
+    "slope_p90": 7.850000381469727,
+    "local_relief": 51.314109802246094,
+    "ruggedness": 21.418657302856445,
+    "hypsometric_integral": 0.5480399575121603
+   },
+   "valid_fraction": 1.0,
+   "elev_range": 90.84036243438723,
+   "excluded": false,
+   "dem": {
+    "tiles": [
+     "Copernicus_DSM_COG_10_S03_00_W061_00_DEM"
+    ]
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/amazon-forest-hillshade.webp",
+    "slope": "data/quicklooks/amazon-forest-slope.webp",
+    "imagery": "data/quicklooks/amazon-forest-imagery.webp"
+   },
+   "elev_min": 21.767789840698242,
+   "elev_max": 132.98838806152344
+  },
+  {
+   "id": "black-forest",
+   "name": "Black Forest",
+   "country": "Germany",
+   "lat": 48.0,
+   "lon": 8.15,
+   "role": "control",
+   "pair": null,
+   "context": "Forested low mountains; no planetary-analog use.",
+   "source": null,
+   "indicators": {
+    "slope_median": 11.348331451416016,
+    "slope_p90": 23.412425994873047,
+    "local_relief": 178.27880859375,
+    "ruggedness": 59.42937088012695,
+    "hypsometric_integral": 0.6650320471035583
+   },
+   "valid_fraction": 1.0,
+   "elev_range": 643.4421575927739,
+   "excluded": false,
+   "dem": {
+    "tiles": [
+     "Copernicus_DSM_COG_10_N47_00_E007_00_DEM",
+     "Copernicus_DSM_COG_10_N47_00_E008_00_DEM",
+     "Copernicus_DSM_COG_10_N48_00_E007_00_DEM",
+     "Copernicus_DSM_COG_10_N48_00_E008_00_DEM"
+    ]
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/black-forest-hillshade.webp",
+    "slope": "data/quicklooks/black-forest-slope.webp",
+    "imagery": "data/quicklooks/black-forest-imagery.webp"
+   },
+   "elev_min": 386.4881591796875,
+   "elev_max": 1226.105224609375
+  },
+  {
+   "id": "aletsch",
+   "name": "Aletsch glacier region",
+   "country": "Switzerland",
+   "lat": 46.45,
+   "lon": 8.05,
+   "role": "control",
+   "pair": null,
+   "context": "Glaciated high alpine relief, a different formation process.",
+   "source": null,
+   "indicators": {
+    "slope_median": 25.727275848388672,
+    "slope_p90": 41.52021789550781,
+    "local_relief": 562.225830078125,
+    "ruggedness": 127.33636474609375,
+    "hypsometric_integral": 0.5632128177060673
+   },
+   "valid_fraction": 1.0,
+   "elev_range": 2781.832584838869,
+   "excluded": false,
+   "dem": {
+    "tiles": [
+     "Copernicus_DSM_COG_10_N46_00_E007_00_DEM",
+     "Copernicus_DSM_COG_10_N46_00_E008_00_DEM"
+    ]
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/aletsch-hillshade.webp",
+    "slope": "data/quicklooks/aletsch-slope.webp",
+    "imagery": "data/quicklooks/aletsch-imagery.webp"
+   },
+   "elev_min": 766.9197387695312,
+   "elev_max": 4118.68505859375
+  }
+ ],
+ "configs": [
+  {
+   "id": "primary",
+   "label": "20 km window at 100 m",
+   "window_m": 20000,
+   "cell_m": 100,
+   "reference": {
+    "slope_median": 6.253645896911621,
+    "slope_p90": 12.766617774963379,
+    "local_relief": 128.77783203125,
+    "ruggedness": 27.949283599853516,
+    "hypsometric_integral": 0.533699304610633
+   },
+   "sites": {
+    "lake-salda": {
+     "slope_median": 6.553799629211426,
+     "slope_p90": 16.477352142333984,
+     "local_relief": 142.5186767578125,
+     "ruggedness": 35.05924606323242,
+     "hypsometric_integral": 0.3304543236497314
+    },
+    "death-valley": {
+     "slope_median": 3.2749550342559814,
+     "slope_p90": 14.439044952392578,
+     "local_relief": 73.78955078125,
+     "ruggedness": 15.23959732055664,
+     "hypsometric_integral": 0.1913941205014982
+    },
+    "atacama-yungay": {
+     "slope_median": 4.252979755401611,
+     "slope_p90": 12.334819793701172,
+     "local_relief": 101.38116455078125,
+     "ruggedness": 20.144607543945312,
+     "hypsometric_integral": 0.42677202382187357
+    },
+    "pilot-valley": {
+     "slope_median": 3.5792200565338135,
+     "slope_p90": 22.124210357666016,
+     "local_relief": 86.5450439453125,
+     "ruggedness": 15.681854248046875,
+     "hypsometric_integral": 0.16429447911277612
+    },
+    "verde-valley": {
+     "slope_median": 3.882017135620117,
+     "slope_p90": 13.655762672424316,
+     "local_relief": 78.739501953125,
+     "ruggedness": 21.918649673461914,
+     "hypsometric_integral": 0.25399453782510767
+    },
+    "vikursundar": {
+     "slope_median": 1.505379557609558,
+     "slope_p90": 15.466092109680176,
+     "local_relief": 34.3592529296875,
+     "ruggedness": 7.621608734130859,
+     "hypsometric_integral": 0.2574843347126014
+    },
+    "askja": {
+     "slope_median": 3.66805100440979,
+     "slope_p90": 16.123119354248047,
+     "local_relief": 113.55886840820312,
+     "ruggedness": 18.46706771850586,
+     "hypsometric_integral": 0.4407006277242896
+    },
+    "kilauea": {
+     "slope_median": 2.7548184394836426,
+     "slope_p90": 5.3840484619140625,
+     "local_relief": 59.7738037109375,
+     "ruggedness": 12.801993370056152,
+     "hypsometric_integral": 0.3690747938162622
+    },
+    "lava-beds": {
+     "slope_median": 2.330451488494873,
+     "slope_p90": 7.444386959075928,
+     "local_relief": 59.36529541015625,
+     "ruggedness": 11.762140274047852,
+     "hypsometric_integral": 0.26993875579308135
+    },
+    "sf-volcanic-field": {
+     "slope_median": 1.1306023597717285,
+     "slope_p90": 4.199517250061035,
+     "local_relief": 29.8511962890625,
+     "ruggedness": 5.571569442749023,
+     "hypsometric_integral": 0.42239534627962627
+    },
+    "haughton": {
+     "slope_median": 3.8055620193481445,
+     "slope_p90": 10.669792175292969,
+     "local_relief": 72.10122680664062,
+     "ruggedness": 20.095256805419922,
+     "hypsometric_integral": 0.5463404341422868
+    },
+    "meteor-crater": {
+     "slope_median": 0.9403917789459229,
+     "slope_p90": 1.7426815032958984,
+     "local_relief": 18.9835205078125,
+     "ruggedness": 4.626839637756348,
+     "hypsometric_integral": 0.5625875171326064
+    },
+    "lonar": {
+     "slope_median": 1.0912213325500488,
+     "slope_p90": 2.7975592613220215,
+     "local_relief": 23.151611328125,
+     "ruggedness": 5.365674018859863,
+     "hypsometric_integral": 0.5324020155009713
+    },
+    "flevoland": {
+     "slope_median": 0.053124915808439255,
+     "slope_p90": 0.9718137979507446,
+     "local_relief": 3.1665079593658447,
+     "ruggedness": 0.4308681786060333,
+     "hypsometric_integral": 0.16255411099250117
+    },
+    "iowa": {
+     "slope_median": 0.7544493675231934,
+     "slope_p90": 3.531531810760498,
+     "local_relief": 15.13507080078125,
+     "ruggedness": 4.641139984130859,
+     "hypsometric_integral": 0.6662170840444627
+    },
+    "ganges-plain": {
+     "slope_median": 0.5206595063209534,
+     "slope_p90": 1.361945629119873,
+     "local_relief": 9.35479736328125,
+     "ruggedness": 4.1527814865112305,
+     "hypsometric_integral": 0.6398906881669851
+    },
+    "amazon-forest": {
+     "slope_median": 3.5269384384155273,
+     "slope_p90": 7.850000381469727,
+     "local_relief": 51.314109802246094,
+     "ruggedness": 21.418657302856445,
+     "hypsometric_integral": 0.5480399575121603
+    },
+    "black-forest": {
+     "slope_median": 11.348331451416016,
+     "slope_p90": 23.412425994873047,
+     "local_relief": 178.27880859375,
+     "ruggedness": 59.42937088012695,
+     "hypsometric_integral": 0.6650320471035583
+    },
+    "aletsch": {
+     "slope_median": 25.727275848388672,
+     "slope_p90": 41.52021789550781,
+     "local_relief": 562.225830078125,
+     "ruggedness": 127.33636474609375,
+     "hypsometric_integral": 0.5632128177060673
+    }
+   }
+  },
+  {
+   "id": "coarser-cells",
+   "label": "20 km window at 200 m",
+   "window_m": 20000,
+   "cell_m": 200,
+   "reference": {
+    "slope_median": 5.847866058349609,
+    "slope_p90": 11.959685325622559,
+    "local_relief": 103.098876953125,
+    "ruggedness": 53.989933013916016,
+    "hypsometric_integral": 0.5339795146935264
+   },
+   "sites": {
+    "lake-salda": {
+     "slope_median": 5.4496870040893555,
+     "slope_p90": 13.107464790344238,
+     "local_relief": 110.4576416015625,
+     "ruggedness": 63.45606994628906,
+     "hypsometric_integral": 0.33026075817289047
+    },
+    "death-valley": {
+     "slope_median": 3.1385269165039062,
+     "slope_p90": 11.595293998718262,
+     "local_relief": 56.739891052246094,
+     "ruggedness": 28.96895980834961,
+     "hypsometric_integral": 0.19159475339584375
+    },
+    "atacama-yungay": {
+     "slope_median": 3.929478645324707,
+     "slope_p90": 9.856538772583008,
+     "local_relief": 77.62942504882812,
+     "ruggedness": 38.77095031738281,
+     "hypsometric_integral": 0.42660161831077215
+    },
+    "pilot-valley": {
+     "slope_median": 3.6180591583251953,
+     "slope_p90": 19.627704620361328,
+     "local_relief": 67.83795166015625,
+     "ruggedness": 31.768505096435547,
+     "hypsometric_integral": 0.16443408135785567
+    },
+    "verde-valley": {
+     "slope_median": 3.0816311836242676,
+     "slope_p90": 10.776603698730469,
+     "local_relief": 60.86541748046875,
+     "ruggedness": 35.426612854003906,
+     "hypsometric_integral": 0.2543336198960584
+    },
+    "vikursundar": {
+     "slope_median": 1.3045506477355957,
+     "slope_p90": 13.15906810760498,
+     "local_relief": 25.0316162109375,
+     "ruggedness": 13.228191375732422,
+     "hypsometric_integral": 0.258332059022063
+    },
+    "askja": {
+     "slope_median": 3.7471675872802734,
+     "slope_p90": 13.46469783782959,
+     "local_relief": 84.6317138671875,
+     "ruggedness": 39.2780647277832,
+     "hypsometric_integral": 0.44164498787668915
+    },
+    "kilauea": {
+     "slope_median": 2.6364846229553223,
+     "slope_p90": 5.098701477050781,
+     "local_relief": 46.88824462890625,
+     "ruggedness": 23.898237228393555,
+     "hypsometric_integral": 0.3695970585558803
+    },
+    "lava-beds": {
+     "slope_median": 2.192150115966797,
+     "slope_p90": 6.564871311187744,
+     "local_relief": 44.57244873046875,
+     "ruggedness": 22.210277557373047,
+     "hypsometric_integral": 0.2707613348541437
+    },
+    "sf-volcanic-field": {
+     "slope_median": 1.0766671895980835,
+     "slope_p90": 3.395777940750122,
+     "local_relief": 22.6572265625,
+     "ruggedness": 11.18979263305664,
+     "hypsometric_integral": 0.4205934134116207
+    },
+    "haughton": {
+     "slope_median": 2.9240167140960693,
+     "slope_p90": 7.395424842834473,
+     "local_relief": 55.06817626953125,
+     "ruggedness": 34.186439514160156,
+     "hypsometric_integral": 0.5457873295099678
+    },
+    "meteor-crater": {
+     "slope_median": 0.8062425851821899,
+     "slope_p90": 1.392997145652771,
+     "local_relief": 14.65484619140625,
+     "ruggedness": 8.083532333374023,
+     "hypsometric_integral": 0.5633946166779584
+    },
+    "lonar": {
+     "slope_median": 0.9658772945404053,
+     "slope_p90": 2.2094762325286865,
+     "local_relief": 18.29046630859375,
+     "ruggedness": 10.21444320678711,
+     "hypsometric_integral": 0.5315732166201925
+    },
+    "flevoland": {
+     "slope_median": 0.0473160594701767,
+     "slope_p90": 0.5663521885871887,
+     "local_relief": 1.3875761032104492,
+     "ruggedness": 0.8417835831642151,
+     "hypsometric_integral": 0.18334290323528518
+    },
+    "iowa": {
+     "slope_median": 0.5154568552970886,
+     "slope_p90": 2.4381635189056396,
+     "local_relief": 10.710113525390625,
+     "ruggedness": 6.622858047485352,
+     "hypsometric_integral": 0.6633722178141147
+    },
+    "ganges-plain": {
+     "slope_median": 0.24956297874450684,
+     "slope_p90": 0.7131894826889038,
+     "local_relief": 5.4136199951171875,
+     "ruggedness": 4.2093048095703125,
+     "hypsometric_integral": 0.673014016792996
+    },
+    "amazon-forest": {
+     "slope_median": 2.3522021770477295,
+     "slope_p90": 4.6749348640441895,
+     "local_relief": 42.329795837402344,
+     "ruggedness": 32.1735725402832,
+     "hypsometric_integral": 0.5477242576041218
+    },
+    "black-forest": {
+     "slope_median": 8.511860847473145,
+     "slope_p90": 18.212356567382812,
+     "local_relief": 145.837158203125,
+     "ruggedness": 98.61676788330078,
+     "hypsometric_integral": 0.6660744786659082
+    },
+    "aletsch": {
+     "slope_median": 24.052021026611328,
+     "slope_p90": 37.206336975097656,
+     "local_relief": 451.9329833984375,
+     "ruggedness": 244.15841674804688,
+     "hypsometric_integral": 0.5637231293953165
+    }
+   }
+  },
+  {
+   "id": "smaller-window",
+   "label": "12 km window at 100 m",
+   "window_m": 12000,
+   "cell_m": 100,
+   "reference": {
+    "slope_median": 6.472938537597656,
+    "slope_p90": 11.272185325622559,
+    "local_relief": 134.1708984375,
+    "ruggedness": 28.900962829589844,
+    "hypsometric_integral": 0.5266651535239925
+   },
+   "sites": {
+    "lake-salda": {
+     "slope_median": 4.685113430023193,
+     "slope_p90": 16.219491958618164,
+     "local_relief": 121.3863525390625,
+     "ruggedness": 25.92919158935547,
+     "hypsometric_integral": 0.2756688898312726
+    },
+    "death-valley": {
+     "slope_median": 1.7568602561950684,
+     "slope_p90": 8.061494827270508,
+     "local_relief": 33.18244934082031,
+     "ruggedness": 8.020029067993164,
+     "hypsometric_integral": 0.18908249100577934
+    },
+    "atacama-yungay": {
+     "slope_median": 3.744621515274048,
+     "slope_p90": 11.694860458374023,
+     "local_relief": 87.4906005859375,
+     "ruggedness": 17.40162467956543,
+     "hypsometric_integral": 0.4138310451400842
+    },
+    "pilot-valley": {
+     "slope_median": 4.740504741668701,
+     "slope_p90": 23.96160125732422,
+     "local_relief": 111.72955322265625,
+     "ruggedness": 20.66366958618164,
+     "hypsometric_integral": 0.18273343831113353
+    },
+    "verde-valley": {
+     "slope_median": 3.210341453552246,
+     "slope_p90": 11.839902877807617,
+     "local_relief": 67.71139526367188,
+     "ruggedness": 18.282527923583984,
+     "hypsometric_integral": 0.1849256941221587
+    },
+    "vikursundar": {
+     "slope_median": 1.4907054901123047,
+     "slope_p90": 13.088204383850098,
+     "local_relief": 32.08367919921875,
+     "ruggedness": 7.695652484893799,
+     "hypsometric_integral": 0.25735019592814895
+    },
+    "askja": {
+     "slope_median": 4.129247188568115,
+     "slope_p90": 18.11410903930664,
+     "local_relief": 117.158203125,
+     "ruggedness": 23.41064453125,
+     "hypsometric_integral": 0.506305924842632
+    },
+    "kilauea": {
+     "slope_median": 2.2117481231689453,
+     "slope_p90": 5.031419277191162,
+     "local_relief": 48.61932373046875,
+     "ruggedness": 10.633964538574219,
+     "hypsometric_integral": 0.37577306171141955
+    },
+    "lava-beds": {
+     "slope_median": 2.548992156982422,
+     "slope_p90": 7.298717975616455,
+     "local_relief": 63.133056640625,
+     "ruggedness": 12.536117553710938,
+     "hypsometric_integral": 0.3438324768126691
+    },
+    "sf-volcanic-field": {
+     "slope_median": 0.8037486672401428,
+     "slope_p90": 2.838578701019287,
+     "local_relief": 21.8404541015625,
+     "ruggedness": 3.7462220191955566,
+     "hypsometric_integral": 0.44312681906752815
+    },
+    "haughton": {
+     "slope_median": 3.527846336364746,
+     "slope_p90": 10.145241737365723,
+     "local_relief": 63.80705261230469,
+     "ruggedness": 19.15460968017578,
+     "hypsometric_integral": 0.47163062131217204
+    },
+    "meteor-crater": {
+     "slope_median": 0.8916477560997009,
+     "slope_p90": 1.850682258605957,
+     "local_relief": 18.54522705078125,
+     "ruggedness": 4.375732421875,
+     "hypsometric_integral": 0.6321440764097511
+    },
+    "lonar": {
+     "slope_median": 1.0391584634780884,
+     "slope_p90": 2.424084186553955,
+     "local_relief": 21.21710205078125,
+     "ruggedness": 5.1531901359558105,
+     "hypsometric_integral": 0.6541460912298248
+    },
+    "flevoland": {
+     "slope_median": 0.06403693556785583,
+     "slope_p90": 1.0351676940917969,
+     "local_relief": 2.988751173019409,
+     "ruggedness": 0.5398893356323242,
+     "hypsometric_integral": 0.09581400101668053
+    },
+    "iowa": {
+     "slope_median": 0.6959211230278015,
+     "slope_p90": 2.2120370864868164,
+     "local_relief": 13.700103759765625,
+     "ruggedness": 4.2410478591918945,
+     "hypsometric_integral": 0.6964267544854593
+    },
+    "ganges-plain": {
+     "slope_median": 0.5710097551345825,
+     "slope_p90": 1.478770136833191,
+     "local_relief": 10.898517608642578,
+     "ruggedness": 4.4619140625,
+     "hypsometric_integral": 0.6193634702404482
+    },
+    "amazon-forest": {
+     "slope_median": 3.8926801681518555,
+     "slope_p90": 8.22338581085205,
+     "local_relief": 52.60451889038086,
+     "ruggedness": 23.84752655029297,
+     "hypsometric_integral": 0.5029020056793786
+    },
+    "black-forest": {
+     "slope_median": 10.615616798400879,
+     "slope_p90": 21.657224655151367,
+     "local_relief": 167.86444091796875,
+     "ruggedness": 56.64602279663086,
+     "hypsometric_integral": 0.6535799717765295
+    },
+    "aletsch": {
+     "slope_median": 25.87696647644043,
+     "slope_p90": 41.72404861450195,
+     "local_relief": 586.5230712890625,
+     "ruggedness": 127.07705688476562,
+     "hypsometric_integral": 0.530893266244101
+    }
+   }
+  }
+ ]
+}

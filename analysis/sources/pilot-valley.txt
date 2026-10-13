@@ -1,0 +1,6 @@
+source: https://science.nasa.gov/solar-system/analog-explorer/#life-utah-mars
+title: NASA Planetary Analog Explorer - Looking for Life: Utah and Mars
+retrieved: 2026-10-12
+type: verbatim passage (Image Details)
+---
+The salts found in Utah's Pilot Valley are exceptional and ordinary at the same time. Perchlorate, a salt that stores energy so well it’s used as an ingredient in solid rocket fuel, has been observed in many places on Mars. (Shown here: the Martian northern plains.) On Earth, tiny life forms use this same kind of salt as an energy source. Recent data suggests that perchlorate is common throughout our solar system, including on ocean worlds like Jupiter's moon Europa. If microbial life exists beyond our planet, or if it ever did in the past, knowledge of these salts may someday help scientists to recognize it. Note on scale: The solar panel array in the Mars image is part of NASA's Phoenix lander and is about the size of a large dinner table.

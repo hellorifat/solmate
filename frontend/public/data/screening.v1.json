@@ -1,0 +1,4518 @@
+{
+ "version": 1,
+ "generated_at": "2026-10-11T19:45:41+00:00",
+ "window_m": 20000,
+ "cell_m": 100,
+ "method": "Regular grid (0.3° latitude spacing) inside each region, random subset per region (fixed seed); windows with <90% valid cells or >5% open water are dropped.",
+ "status": "Unreviewed candidates: terrain similarity only. Expert and field review are required before any site is called an analog.",
+ "regions": [
+  {
+   "id": "hoggar",
+   "name": "Hoggar volcanic massif",
+   "country": "Algeria",
+   "type": "volcanic, arid",
+   "box": [
+    22.5,
+    24.5,
+    4.5,
+    6.5
+   ]
+  },
+  {
+   "id": "tibesti",
+   "name": "Tibesti Mountains",
+   "country": "Chad",
+   "type": "volcanic, arid",
+   "box": [
+    19.5,
+    21.5,
+    17.0,
+    19.0
+   ]
+  },
+  {
+   "id": "harrat-khaybar",
+   "name": "Harrat Khaybar lava field",
+   "country": "Saudi Arabia",
+   "type": "lava field",
+   "box": [
+    24.5,
+    26.0,
+    39.5,
+    40.8
+   ]
+  },
+  {
+   "id": "afar",
+   "name": "Afar and Danakil",
+   "country": "Ethiopia / Eritrea",
+   "type": "volcanic, salt",
+   "box": [
+    12.5,
+    14.5,
+    40.0,
+    41.5
+   ]
+  },
+  {
+   "id": "lut",
+   "name": "Lut Desert",
+   "country": "Iran",
+   "type": "hyper-arid",
+   "box": [
+    29.5,
+    31.5,
+    58.5,
+    60.0
+   ]
+  },
+  {
+   "id": "qaidam",
+   "name": "Qaidam Basin",
+   "country": "China",
+   "type": "arid basin",
+   "box": [
+    37.0,
+    38.5,
+    91.0,
+    94.0
+   ]
+  },
+  {
+   "id": "gobi",
+   "name": "Gobi Desert",
+   "country": "Mongolia",
+   "type": "arid",
+   "box": [
+    43.0,
+    45.0,
+    101.0,
+    105.0
+   ]
+  },
+  {
+   "id": "namib",
+   "name": "Namib Desert",
+   "country": "Namibia",
+   "type": "hyper-arid",
+   "box": [
+    -25.0,
+    -23.0,
+    15.0,
+    16.5
+   ]
+  },
+  {
+   "id": "puna",
+   "name": "Puna and Altiplano",
+   "country": "Argentina / Chile",
+   "type": "high desert, volcanic",
+   "box": [
+    -26.0,
+    -22.0,
+    -68.5,
+    -66.5
+   ]
+  },
+  {
+   "id": "pilbara",
+   "name": "Pilbara",
+   "country": "Australia",
+   "type": "ancient arid terrain",
+   "box": [
+    -23.0,
+    -21.0,
+    118.0,
+    120.0
+   ]
+  },
+  {
+   "id": "great-basin",
+   "name": "Great Basin and Mojave",
+   "country": "USA",
+   "type": "arid, volcanic",
+   "box": [
+    35.0,
+    39.0,
+    -118.0,
+    -114.0
+   ]
+  },
+  {
+   "id": "iceland",
+   "name": "Icelandic interior",
+   "country": "Iceland",
+   "type": "volcanic, cold",
+   "box": [
+    64.2,
+    65.2,
+    -18.0,
+    -15.5
+   ]
+  },
+  {
+   "id": "canadian-arctic",
+   "name": "Devon and Ellesmere islands",
+   "country": "Canada",
+   "type": "polar desert",
+   "box": [
+    75.0,
+    77.0,
+    -92.0,
+    -86.0
+   ]
+  },
+  {
+   "id": "dry-valleys",
+   "name": "McMurdo Dry Valleys",
+   "country": "Antarctica",
+   "type": "polar desert",
+   "box": [
+    -78.0,
+    -77.0,
+    160.0,
+    163.0
+   ]
+  }
+ ],
+ "windows": [
+  {
+   "id": "hoggarmp22_65p4_66",
+   "region": "hoggar",
+   "lat": 22.65,
+   "lon": 4.663,
+   "indicators": {
+    "slope_median": 0.8264672756195068,
+    "slope_p90": 5.381283760070801,
+    "local_relief": 23.901611328125,
+    "ruggedness": 4.368061065673828,
+    "hypsometric_integral": 0.268756812755554
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 733.7256469726562,
+   "elev_max": 1210.717041015625,
+   "nearest_known": null
+  },
+  {
+   "id": "hoggarmp22_65p5_96",
+   "region": "hoggar",
+   "lat": 22.65,
+   "lon": 5.963,
+   "indicators": {
+    "slope_median": 3.7200417518615723,
+    "slope_p90": 11.145219802856445,
+    "local_relief": 66.35235595703125,
+    "ruggedness": 23.441116333007812,
+    "hypsometric_integral": 0.44968746252560093
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1048.85791015625,
+   "elev_max": 1533.497314453125,
+   "nearest_known": null
+  },
+  {
+   "id": "hoggarmp22_95p4_66",
+   "region": "hoggar",
+   "lat": 22.95,
+   "lon": 4.663,
+   "indicators": {
+    "slope_median": 1.411107063293457,
+    "slope_p90": 5.1941070556640625,
+    "local_relief": 28.79486083984375,
+    "ruggedness": 8.337934494018555,
+    "hypsometric_integral": 0.41154622543299113
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 733.6337280273438,
+   "elev_max": 1088.521728515625,
+   "nearest_known": null
+  },
+  {
+   "id": "hoggarmp22_95p4_99",
+   "region": "hoggar",
+   "lat": 22.95,
+   "lon": 4.989,
+   "indicators": {
+    "slope_median": 1.0824437141418457,
+    "slope_p90": 2.535756826400757,
+    "local_relief": 21.43951416015625,
+    "ruggedness": 5.8609442710876465,
+    "hypsometric_integral": 0.45151601378663875
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 898.1942749023438,
+   "elev_max": 1130.3480224609375,
+   "nearest_known": null
+  },
+  {
+   "id": "hoggarmp22_95p5_64",
+   "region": "hoggar",
+   "lat": 22.95,
+   "lon": 5.64,
+   "indicators": {
+    "slope_median": 3.7559151649475098,
+    "slope_p90": 14.07607364654541,
+    "local_relief": 84.2939453125,
+    "ruggedness": 22.53076171875,
+    "hypsometric_integral": 0.5009242269125528
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1437.2821044921875,
+   "elev_max": 2026.8226318359375,
+   "nearest_known": null
+  },
+  {
+   "id": "hoggarmp22_95p5_97",
+   "region": "hoggar",
+   "lat": 22.95,
+   "lon": 5.966,
+   "indicators": {
+    "slope_median": 3.3117828369140625,
+    "slope_p90": 10.854238510131836,
+    "local_relief": 65.6822509765625,
+    "ruggedness": 20.51406478881836,
+    "hypsometric_integral": 0.2489413374286088
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1270.507568359375,
+   "elev_max": 1957.3858642578125,
+   "nearest_known": null
+  },
+  {
+   "id": "hoggarmp23_25p4_66",
+   "region": "hoggar",
+   "lat": 23.25,
+   "lon": 4.663,
+   "indicators": {
+    "slope_median": 1.7118600606918335,
+    "slope_p90": 6.2061848640441895,
+    "local_relief": 33.3992919921875,
+    "ruggedness": 10.960381507873535,
+    "hypsometric_integral": 0.24405769478830966
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 750.23779296875,
+   "elev_max": 1228.1875,
+   "nearest_known": null,
+   "quicklooks": {
+    "hillshade": "data/quicklooks/screen-hoggarmp23_25p4_66-hillshade.webp",
+    "slope": "data/quicklooks/screen-hoggarmp23_25p4_66-slope.webp",
+    "imagery": "data/quicklooks/screen-hoggarmp23_25p4_66-imagery.webp"
+   }
+  },
+  {
+   "id": "hoggarmp23_25p4_99",
+   "region": "hoggar",
+   "lat": 23.25,
+   "lon": 4.99,
+   "indicators": {
+    "slope_median": 1.7435131072998047,
+    "slope_p90": 4.288978099822998,
+    "local_relief": 32.4615478515625,
+    "ruggedness": 11.240640640258789,
+    "hypsometric_integral": 0.49494462115819216
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 881.8816528320312,
+   "elev_max": 1087.7342529296875,
+   "nearest_known": null
+  },
+  {
+   "id": "hoggarmp23_25p5_64",
+   "region": "hoggar",
+   "lat": 23.25,
+   "lon": 5.643,
+   "indicators": {
+    "slope_median": 8.864967346191406,
+    "slope_p90": 18.02193260192871,
+    "local_relief": 163.845458984375,
+    "ruggedness": 46.447837829589844,
+    "hypsometric_integral": 0.40424289104090505
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2001.149169921875,
+   "elev_max": 2705.06640625,
+   "nearest_known": null
+  },
+  {
+   "id": "hoggarmp23_25p5_97",
+   "region": "hoggar",
+   "lat": 23.25,
+   "lon": 5.969,
+   "indicators": {
+    "slope_median": 6.280200004577637,
+    "slope_p90": 16.77813148498535,
+    "local_relief": 134.38134765625,
+    "ruggedness": 35.453948974609375,
+    "hypsometric_integral": 0.4318823849976082
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1601.322509765625,
+   "elev_max": 2506.469482421875,
+   "nearest_known": null
+  },
+  {
+   "id": "hoggarmp23_25p6_30",
+   "region": "hoggar",
+   "lat": 23.25,
+   "lon": 6.296,
+   "indicators": {
+    "slope_median": 8.434165954589844,
+    "slope_p90": 18.167442321777344,
+    "local_relief": 152.9561767578125,
+    "ruggedness": 49.97856521606445,
+    "hypsometric_integral": 0.521526665790926
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1308.6214599609375,
+   "elev_max": 2082.31640625,
+   "nearest_known": null
+  },
+  {
+   "id": "hoggarmp23_55p5_64",
+   "region": "hoggar",
+   "lat": 23.55,
+   "lon": 5.645,
+   "indicators": {
+    "slope_median": 3.439511299133301,
+    "slope_p90": 10.283802032470703,
+    "local_relief": 72.9935302734375,
+    "ruggedness": 20.896390914916992,
+    "hypsometric_integral": 0.40472694350905764
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1281.2113037109375,
+   "elev_max": 1880.515625,
+   "nearest_known": null
+  },
+  {
+   "id": "hoggarmp23_55p5_97",
+   "region": "hoggar",
+   "lat": 23.55,
+   "lon": 5.973,
+   "indicators": {
+    "slope_median": 2.721877098083496,
+    "slope_p90": 10.570844650268555,
+    "local_relief": 64.1387939453125,
+    "ruggedness": 15.808663368225098,
+    "hypsometric_integral": 0.6280312953917098
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1603.477294921875,
+   "elev_max": 2193.6904296875,
+   "nearest_known": null
+  },
+  {
+   "id": "hoggarmp23_85p5_98",
+   "region": "hoggar",
+   "lat": 23.85,
+   "lon": 5.976,
+   "indicators": {
+    "slope_median": 2.0872840881347656,
+    "slope_p90": 9.327936172485352,
+    "local_relief": 52.9769287109375,
+    "ruggedness": 11.500344276428223,
+    "hypsometric_integral": 0.4326249752795209
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1199.8782958984375,
+   "elev_max": 1702.03515625,
+   "nearest_known": null
+  },
+  {
+   "id": "hoggarmp23_85p6_30",
+   "region": "hoggar",
+   "lat": 23.85,
+   "lon": 6.304,
+   "indicators": {
+    "slope_median": 6.883090019226074,
+    "slope_p90": 16.87725067138672,
+    "local_relief": 126.3770751953125,
+    "ruggedness": 41.54640197753906,
+    "hypsometric_integral": 0.5617645775746823
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1275.023193359375,
+   "elev_max": 1979.897705078125,
+   "nearest_known": null
+  },
+  {
+   "id": "hoggarmp24_15p4_66",
+   "region": "hoggar",
+   "lat": 24.15,
+   "lon": 4.664,
+   "indicators": {
+    "slope_median": 2.2072865962982178,
+    "slope_p90": 4.855293273925781,
+    "local_relief": 36.21209716796875,
+    "ruggedness": 14.695953369140625,
+    "hypsometric_integral": 0.458971834924325
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 769.2154541015625,
+   "elev_max": 1078.251953125,
+   "nearest_known": null
+  },
+  {
+   "id": "hoggarmp24_15p5_65",
+   "region": "hoggar",
+   "lat": 24.15,
+   "lon": 5.651,
+   "indicators": {
+    "slope_median": 3.568753719329834,
+    "slope_p90": 14.61130428314209,
+    "local_relief": 96.11572265625,
+    "ruggedness": 22.347942352294922,
+    "hypsometric_integral": 0.41779812042265485
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1063.5621337890625,
+   "elev_max": 1747.6666259765625,
+   "nearest_known": null
+  },
+  {
+   "id": "hoggarmp24_45p4_67",
+   "region": "hoggar",
+   "lat": 24.45,
+   "lon": 4.665,
+   "indicators": {
+    "slope_median": 2.2318105697631836,
+    "slope_p90": 7.780653953552246,
+    "local_relief": 42.108489990234375,
+    "ruggedness": 14.940668106079102,
+    "hypsometric_integral": 0.3690988820275898
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 769.8305053710938,
+   "elev_max": 1268.197021484375,
+   "nearest_known": null
+  },
+  {
+   "id": "hoggarmp24_45p5_65",
+   "region": "hoggar",
+   "lat": 24.45,
+   "lon": 5.653,
+   "indicators": {
+    "slope_median": 5.117992877960205,
+    "slope_p90": 23.951171875,
+    "local_relief": 132.98681640625,
+    "ruggedness": 31.157264709472656,
+    "hypsometric_integral": 0.30766321251798473
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 948.7308959960938,
+   "elev_max": 2302.0185546875,
+   "nearest_known": null
+  },
+  {
+   "id": "hoggarmp24_45p6_31",
+   "region": "hoggar",
+   "lat": 24.45,
+   "lon": 6.313,
+   "indicators": {
+    "slope_median": 0.42482489347457886,
+    "slope_p90": 1.7359461784362793,
+    "local_relief": 8.6312255859375,
+    "ruggedness": 2.1157684326171875,
+    "hypsometric_integral": 0.26299223061307536
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1078.9046630859375,
+   "elev_max": 1387.3372802734375,
+   "nearest_known": null
+  },
+  {
+   "id": "tibestimp19_65p17_16",
+   "region": "tibesti",
+   "lat": 19.65,
+   "lon": 17.159,
+   "indicators": {
+    "slope_median": 0.5683659315109253,
+    "slope_p90": 0.8478648066520691,
+    "local_relief": 11.002716064453125,
+    "ruggedness": 2.7163443565368652,
+    "hypsometric_integral": 0.44594315036096077
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 591.1309814453125,
+   "elev_max": 712.4729614257812,
+   "nearest_known": null
+  },
+  {
+   "id": "tibestimp19_65p17_80",
+   "region": "tibesti",
+   "lat": 19.65,
+   "lon": 17.796,
+   "indicators": {
+    "slope_median": 3.3464884757995605,
+    "slope_p90": 23.023500442504883,
+    "local_relief": 103.159423828125,
+    "ruggedness": 19.913236618041992,
+    "hypsometric_integral": 0.41227973200486323
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 649.7286987304688,
+   "elev_max": 1168.7728271484375,
+   "nearest_known": null
+  },
+  {
+   "id": "tibestimp19_65p18_11",
+   "region": "tibesti",
+   "lat": 19.65,
+   "lon": 18.115,
+   "indicators": {
+    "slope_median": 1.099113941192627,
+    "slope_p90": 7.968163013458252,
+    "local_relief": 33.061279296875,
+    "ruggedness": 5.854976654052734,
+    "hypsometric_integral": 0.3025842307455122
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 673.0973510742188,
+   "elev_max": 998.3712768554688,
+   "nearest_known": null
+  },
+  {
+   "id": "tibestimp19_65p18_43",
+   "region": "tibesti",
+   "lat": 19.65,
+   "lon": 18.433,
+   "indicators": {
+    "slope_median": 5.624399185180664,
+    "slope_p90": 16.51266098022461,
+    "local_relief": 128.962646484375,
+    "ruggedness": 33.261680603027344,
+    "hypsometric_integral": 0.3554585591676999
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 733.3623657226562,
+   "elev_max": 2302.34228515625,
+   "nearest_known": null
+  },
+  {
+   "id": "tibestimp19_65p18_75",
+   "region": "tibesti",
+   "lat": 19.65,
+   "lon": 18.752,
+   "indicators": {
+    "slope_median": 4.016509056091309,
+    "slope_p90": 11.294440269470215,
+    "local_relief": 81.03567504882812,
+    "ruggedness": 26.631431579589844,
+    "hypsometric_integral": 0.30901792058554667
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 696.2291259765625,
+   "elev_max": 1608.41015625,
+   "nearest_known": null
+  },
+  {
+   "id": "tibestimp19_95p17_16",
+   "region": "tibesti",
+   "lat": 19.95,
+   "lon": 17.16,
+   "indicators": {
+    "slope_median": 2.022592067718506,
+    "slope_p90": 6.739201068878174,
+    "local_relief": 40.81243896484375,
+    "ruggedness": 13.003332138061523,
+    "hypsometric_integral": 0.400473598474702
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 628.9601440429688,
+   "elev_max": 984.4586791992188,
+   "nearest_known": null
+  },
+  {
+   "id": "tibestimp19_95p17_48",
+   "region": "tibesti",
+   "lat": 19.95,
+   "lon": 17.479,
+   "indicators": {
+    "slope_median": 4.333946704864502,
+    "slope_p90": 29.159910202026367,
+    "local_relief": 97.10177612304688,
+    "ruggedness": 25.749706268310547,
+    "hypsometric_integral": 0.50492710043731
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 665.4518432617188,
+   "elev_max": 1417.4671630859375,
+   "nearest_known": null
+  },
+  {
+   "id": "tibestimp20_25p17_48",
+   "region": "tibesti",
+   "lat": 20.25,
+   "lon": 17.48,
+   "indicators": {
+    "slope_median": 6.912222385406494,
+    "slope_p90": 26.531949996948242,
+    "local_relief": 141.97015380859375,
+    "ruggedness": 40.06534957885742,
+    "hypsometric_integral": 0.4476743335262614
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 843.8139038085938,
+   "elev_max": 2158.05859375,
+   "nearest_known": null
+  },
+  {
+   "id": "tibestimp20_25p17_80",
+   "region": "tibesti",
+   "lat": 20.25,
+   "lon": 17.799,
+   "indicators": {
+    "slope_median": 4.664454460144043,
+    "slope_p90": 10.760357856750488,
+    "local_relief": 74.57183837890625,
+    "ruggedness": 30.341861724853516,
+    "hypsometric_integral": 0.5212087410715849
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 796.7965087890625,
+   "elev_max": 1249.9908447265625,
+   "nearest_known": null
+  },
+  {
+   "id": "tibestimp20_25p18_44",
+   "region": "tibesti",
+   "lat": 20.25,
+   "lon": 18.439,
+   "indicators": {
+    "slope_median": 9.443706512451172,
+    "slope_p90": 23.96238136291504,
+    "local_relief": 189.986083984375,
+    "ruggedness": 53.275238037109375,
+    "hypsometric_integral": 0.5550551857677113
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1615.7247314453125,
+   "elev_max": 3166.4541015625,
+   "nearest_known": null
+  },
+  {
+   "id": "tibestimp20_55p17_80",
+   "region": "tibesti",
+   "lat": 20.55,
+   "lon": 17.801,
+   "indicators": {
+    "slope_median": 2.8371639251708984,
+    "slope_p90": 8.103034019470215,
+    "local_relief": 54.9315185546875,
+    "ruggedness": 17.604476928710938,
+    "hypsometric_integral": 0.3988105745486646
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 947.0170288085938,
+   "elev_max": 1522.2957763671875,
+   "nearest_known": null
+  },
+  {
+   "id": "tibestimp20_55p18_44",
+   "region": "tibesti",
+   "lat": 20.55,
+   "lon": 18.442,
+   "indicators": {
+    "slope_median": 5.134493350982666,
+    "slope_p90": 18.089635848999023,
+    "local_relief": 128.05078125,
+    "ruggedness": 29.16370391845703,
+    "hypsometric_integral": 0.5077575903342042
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1231.948974609375,
+   "elev_max": 2353.98779296875,
+   "nearest_known": null,
+   "quicklooks": {
+    "hillshade": "data/quicklooks/screen-tibestimp20_55p18_44-hillshade.webp",
+    "slope": "data/quicklooks/screen-tibestimp20_55p18_44-slope.webp",
+    "imagery": "data/quicklooks/screen-tibestimp20_55p18_44-imagery.webp"
+   }
+  },
+  {
+   "id": "tibestimp20_85p17_16",
+   "region": "tibesti",
+   "lat": 20.85,
+   "lon": 17.161,
+   "indicators": {
+    "slope_median": 4.681916236877441,
+    "slope_p90": 17.59225082397461,
+    "local_relief": 99.649169921875,
+    "ruggedness": 29.117183685302734,
+    "hypsometric_integral": 0.48114182907978226
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1415.4598388671875,
+   "elev_max": 2845.781494140625,
+   "nearest_known": null
+  },
+  {
+   "id": "tibestimp20_85p17_48",
+   "region": "tibesti",
+   "lat": 20.85,
+   "lon": 17.482,
+   "indicators": {
+    "slope_median": 6.067948341369629,
+    "slope_p90": 20.947599411010742,
+    "local_relief": 115.69677734375,
+    "ruggedness": 37.59426498413086,
+    "hypsometric_integral": 0.5168599769017744
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1717.33056640625,
+   "elev_max": 2864.3427734375,
+   "nearest_known": null
+  },
+  {
+   "id": "tibestimp20_85p17_80",
+   "region": "tibesti",
+   "lat": 20.85,
+   "lon": 17.803,
+   "indicators": {
+    "slope_median": 5.447473526000977,
+    "slope_p90": 19.251449584960938,
+    "local_relief": 113.493896484375,
+    "ruggedness": 32.72126007080078,
+    "hypsometric_integral": 0.3074476405301686
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1384.094970703125,
+   "elev_max": 2880.316650390625,
+   "nearest_known": null
+  },
+  {
+   "id": "tibestimp21_15p17_16",
+   "region": "tibesti",
+   "lat": 21.15,
+   "lon": 17.161,
+   "indicators": {
+    "slope_median": 3.7110471725463867,
+    "slope_p90": 11.127537727355957,
+    "local_relief": 78.99072265625,
+    "ruggedness": 22.145362854003906,
+    "hypsometric_integral": 0.3130637106941599
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1184.6563720703125,
+   "elev_max": 2829.07861328125,
+   "nearest_known": null
+  },
+  {
+   "id": "tibestimp21_15p17_80",
+   "region": "tibesti",
+   "lat": 21.15,
+   "lon": 17.804,
+   "indicators": {
+    "slope_median": 3.6368255615234375,
+    "slope_p90": 20.62294578552246,
+    "local_relief": 108.960693359375,
+    "ruggedness": 21.457111358642578,
+    "hypsometric_integral": 0.27308209735150063
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1098.484619140625,
+   "elev_max": 2396.346923828125,
+   "nearest_known": null
+  },
+  {
+   "id": "tibestimp21_15p18_77",
+   "region": "tibesti",
+   "lat": 21.15,
+   "lon": 18.769,
+   "indicators": {
+    "slope_median": 9.190725326538086,
+    "slope_p90": 23.333776473999023,
+    "local_relief": 179.558349609375,
+    "ruggedness": 54.83563995361328,
+    "hypsometric_integral": 0.3096146393306267
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1045.60009765625,
+   "elev_max": 2373.53759765625,
+   "nearest_known": null
+  },
+  {
+   "id": "tibestimp21_45p17_48",
+   "region": "tibesti",
+   "lat": 21.45,
+   "lon": 17.483,
+   "indicators": {
+    "slope_median": 10.75169563293457,
+    "slope_p90": 21.082294464111328,
+    "local_relief": 185.04730224609375,
+    "ruggedness": 58.91423034667969,
+    "hypsometric_integral": 0.4423101659758402
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1128.943603515625,
+   "elev_max": 2157.259033203125,
+   "nearest_known": null
+  },
+  {
+   "id": "tibestimp21_45p18_13",
+   "region": "tibesti",
+   "lat": 21.45,
+   "lon": 18.128,
+   "indicators": {
+    "slope_median": 3.659635066986084,
+    "slope_p90": 17.250919342041016,
+    "local_relief": 98.2882080078125,
+    "ruggedness": 23.78795623779297,
+    "hypsometric_integral": 0.32459634472358556
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1026.911865234375,
+   "elev_max": 1690.4549560546875,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp24_65p39_66",
+   "region": "harrat-khaybar",
+   "lat": 24.65,
+   "lon": 39.665,
+   "indicators": {
+    "slope_median": 3.161503314971924,
+    "slope_p90": 16.77348518371582,
+    "local_relief": 79.56649780273438,
+    "ruggedness": 21.35613250732422,
+    "hypsometric_integral": 0.3257352320112547
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 573.4151611328125,
+   "elev_max": 1260.1043701171875,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp24_65p39_99",
+   "region": "harrat-khaybar",
+   "lat": 24.65,
+   "lon": 39.995,
+   "indicators": {
+    "slope_median": 2.9098260402679443,
+    "slope_p90": 11.07518196105957,
+    "local_relief": 71.13214111328125,
+    "ruggedness": 18.735212326049805,
+    "hypsometric_integral": 0.43685358423344267
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 796.3463745117188,
+   "elev_max": 1241.552490234375,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp24_65p40_33",
+   "region": "harrat-khaybar",
+   "lat": 24.65,
+   "lon": 40.325,
+   "indicators": {
+    "slope_median": 0.3267476558685303,
+    "slope_p90": 1.5177828073501587,
+    "local_relief": 8.326812744140625,
+    "ruggedness": 1.81561279296875,
+    "hypsometric_integral": 0.5394727289410841
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 754.78759765625,
+   "elev_max": 1047.981201171875,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp24_65p40_66",
+   "region": "harrat-khaybar",
+   "lat": 24.65,
+   "lon": 40.655,
+   "indicators": {
+    "slope_median": 0.32223445177078247,
+    "slope_p90": 1.5095003843307495,
+    "local_relief": 7.029266357421875,
+    "ruggedness": 1.56392502784729,
+    "hypsometric_integral": 0.250790715799923
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 801.0652465820312,
+   "elev_max": 1041.176025390625,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp24_95p39_66",
+   "region": "harrat-khaybar",
+   "lat": 24.95,
+   "lon": 39.665,
+   "indicators": {
+    "slope_median": 5.293869495391846,
+    "slope_p90": 17.26279640197754,
+    "local_relief": 102.57620239257812,
+    "ruggedness": 34.633888244628906,
+    "hypsometric_integral": 0.35579621949129847
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 906.328369140625,
+   "elev_max": 1544.3642578125,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp24_95p40_00",
+   "region": "harrat-khaybar",
+   "lat": 24.95,
+   "lon": 39.996,
+   "indicators": {
+    "slope_median": 0.8880449533462524,
+    "slope_p90": 5.007050037384033,
+    "local_relief": 24.344635009765625,
+    "ruggedness": 4.799606800079346,
+    "hypsometric_integral": 0.35150993661469565
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 913.853271484375,
+   "elev_max": 1319.60498046875,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp24_95p40_33",
+   "region": "harrat-khaybar",
+   "lat": 24.95,
+   "lon": 40.327,
+   "indicators": {
+    "slope_median": 0.7139115333557129,
+    "slope_p90": 3.877027750015259,
+    "local_relief": 13.5936279296875,
+    "ruggedness": 4.01600456237793,
+    "hypsometric_integral": 0.290801914942898
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 873.3314208984375,
+   "elev_max": 1178.901123046875,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp24_95p40_66",
+   "region": "harrat-khaybar",
+   "lat": 24.95,
+   "lon": 40.658,
+   "indicators": {
+    "slope_median": 0.6689630746841431,
+    "slope_p90": 5.1175713539123535,
+    "local_relief": 16.89556884765625,
+    "ruggedness": 3.3234944343566895,
+    "hypsometric_integral": 0.25943464776700453
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 861.1517333984375,
+   "elev_max": 1122.334716796875,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp25_25p39_67",
+   "region": "harrat-khaybar",
+   "lat": 25.25,
+   "lon": 39.666,
+   "indicators": {
+    "slope_median": 0.841027021408081,
+    "slope_p90": 1.6402661800384521,
+    "local_relief": 16.6134033203125,
+    "ruggedness": 4.559355735778809,
+    "hypsometric_integral": 0.3994216083096459
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 932.4859008789062,
+   "elev_max": 1215.51123046875,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp25_25p40_00",
+   "region": "harrat-khaybar",
+   "lat": 25.25,
+   "lon": 39.998,
+   "indicators": {
+    "slope_median": 1.0952024459838867,
+    "slope_p90": 2.4683918952941895,
+    "local_relief": 22.361328125,
+    "ruggedness": 5.839534759521484,
+    "hypsometric_integral": 0.4403335852732548
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1112.2557373046875,
+   "elev_max": 1482.091064453125,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp25_25p40_33",
+   "region": "harrat-khaybar",
+   "lat": 25.25,
+   "lon": 40.329,
+   "indicators": {
+    "slope_median": 0.7789443731307983,
+    "slope_p90": 1.9027308225631714,
+    "local_relief": 16.114593505859375,
+    "ruggedness": 4.3862409591674805,
+    "hypsometric_integral": 0.44422762642753283
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 971.812255859375,
+   "elev_max": 1169.3863525390625,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp25_25p40_66",
+   "region": "harrat-khaybar",
+   "lat": 25.25,
+   "lon": 40.661,
+   "indicators": {
+    "slope_median": 2.1680893898010254,
+    "slope_p90": 7.668038368225098,
+    "local_relief": 51.469970703125,
+    "ruggedness": 14.982924461364746,
+    "hypsometric_integral": 0.4977615240595445
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 977.778564453125,
+   "elev_max": 1224.7816162109375,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp25_55p39_67",
+   "region": "harrat-khaybar",
+   "lat": 25.55,
+   "lon": 39.666,
+   "indicators": {
+    "slope_median": 1.045377254486084,
+    "slope_p90": 1.8558411598205566,
+    "local_relief": 21.96673583984375,
+    "ruggedness": 5.216156005859375,
+    "hypsometric_integral": 0.5009415823659539
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 893.041015625,
+   "elev_max": 1232.558349609375,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp25_55p40_00",
+   "region": "harrat-khaybar",
+   "lat": 25.55,
+   "lon": 39.999,
+   "indicators": {
+    "slope_median": 1.9231966733932495,
+    "slope_p90": 7.715250492095947,
+    "local_relief": 52.1409912109375,
+    "ruggedness": 9.477558135986328,
+    "hypsometric_integral": 0.4393166335971579
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1384.8558349609375,
+   "elev_max": 1941.4864501953125,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp25_55p40_33",
+   "region": "harrat-khaybar",
+   "lat": 25.55,
+   "lon": 40.331,
+   "indicators": {
+    "slope_median": 0.996482253074646,
+    "slope_p90": 3.346421003341675,
+    "local_relief": 20.784423828125,
+    "ruggedness": 5.6974382400512695,
+    "hypsometric_integral": 0.46862501919524097
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1075.6883544921875,
+   "elev_max": 1286.3984375,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp25_55p40_66",
+   "region": "harrat-khaybar",
+   "lat": 25.55,
+   "lon": 40.664,
+   "indicators": {
+    "slope_median": 0.7542948722839355,
+    "slope_p90": 3.7652482986450195,
+    "local_relief": 18.0992431640625,
+    "ruggedness": 4.132383346557617,
+    "hypsometric_integral": 0.3593039793424513
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1069.54150390625,
+   "elev_max": 1289.220703125,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp25_85p39_67",
+   "region": "harrat-khaybar",
+   "lat": 25.85,
+   "lon": 39.667,
+   "indicators": {
+    "slope_median": 1.183222770690918,
+    "slope_p90": 2.3389883041381836,
+    "local_relief": 25.4432373046875,
+    "ruggedness": 6.185320854187012,
+    "hypsometric_integral": 0.4578015044006294
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 948.2940063476562,
+   "elev_max": 1309.9090576171875,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp25_85p40_00",
+   "region": "harrat-khaybar",
+   "lat": 25.85,
+   "lon": 40.0,
+   "indicators": {
+    "slope_median": 1.8556489944458008,
+    "slope_p90": 4.234384059906006,
+    "local_relief": 42.08746337890625,
+    "ruggedness": 9.064472198486328,
+    "hypsometric_integral": 0.45434673624273125
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1348.521484375,
+   "elev_max": 1892.5540771484375,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp25_85p40_33",
+   "region": "harrat-khaybar",
+   "lat": 25.85,
+   "lon": 40.333,
+   "indicators": {
+    "slope_median": 0.6885571479797363,
+    "slope_p90": 2.6818206310272217,
+    "local_relief": 15.90264892578125,
+    "ruggedness": 3.899714946746826,
+    "hypsometric_integral": 0.5030580566260894
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1055.4349365234375,
+   "elev_max": 1337.7113037109375,
+   "nearest_known": null
+  },
+  {
+   "id": "harratmkhaybarmp25_85p40_67",
+   "region": "harrat-khaybar",
+   "lat": 25.85,
+   "lon": 40.667,
+   "indicators": {
+    "slope_median": 0.5188971161842346,
+    "slope_p90": 1.8183872699737549,
+    "local_relief": 11.4547119140625,
+    "ruggedness": 3.011108875274658,
+    "hypsometric_integral": 0.46336197726378897
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 978.4014282226562,
+   "elev_max": 1109.1591796875,
+   "nearest_known": null
+  },
+  {
+   "id": "afarmp12_65p41_08",
+   "region": "afar",
+   "lat": 12.65,
+   "lon": 41.076,
+   "indicators": {
+    "slope_median": 3.1028101444244385,
+    "slope_p90": 10.14903736114502,
+    "local_relief": 69.42131805419922,
+    "ruggedness": 18.137409210205078,
+    "hypsometric_integral": 0.4837704236001235
+   },
+   "valid_fraction": 1.0,
+   "elev_min": -13.286141395568848,
+   "elev_max": 564.701904296875,
+   "nearest_known": null
+  },
+  {
+   "id": "afarmp12_65p41_38",
+   "region": "afar",
+   "lat": 12.65,
+   "lon": 41.384,
+   "indicators": {
+    "slope_median": 1.8039788007736206,
+    "slope_p90": 9.967625617980957,
+    "local_relief": 43.631370544433594,
+    "ruggedness": 9.019989013671875,
+    "hypsometric_integral": 0.3530048180021998
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 100.52151489257812,
+   "elev_max": 1038.7237548828125,
+   "nearest_known": null,
+   "quicklooks": {
+    "hillshade": "data/quicklooks/screen-afarmp12_65p41_38-hillshade.webp",
+    "slope": "data/quicklooks/screen-afarmp12_65p41_38-slope.webp",
+    "imagery": "data/quicklooks/screen-afarmp12_65p41_38-imagery.webp"
+   }
+  },
+  {
+   "id": "afarmp12_95p40_15",
+   "region": "afar",
+   "lat": 12.95,
+   "lon": 40.154,
+   "indicators": {
+    "slope_median": 3.728651762008667,
+    "slope_p90": 19.618759155273438,
+    "local_relief": 116.00447082519531,
+    "ruggedness": 19.778404235839844,
+    "hypsometric_integral": 0.3751018339285228
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 348.3701477050781,
+   "elev_max": 1747.459228515625,
+   "nearest_known": null
+  },
+  {
+   "id": "afarmp12_95p41_08",
+   "region": "afar",
+   "lat": 12.95,
+   "lon": 41.077,
+   "indicators": {
+    "slope_median": 0.6718118190765381,
+    "slope_p90": 2.5461974143981934,
+    "local_relief": 15.661877632141113,
+    "ruggedness": 3.7729411125183105,
+    "hypsometric_integral": 0.4903207672621313
+   },
+   "valid_fraction": 1.0,
+   "elev_min": -92.7597885131836,
+   "elev_max": 88.8410873413086,
+   "nearest_known": null
+  },
+  {
+   "id": "afarmp12_95p41_38",
+   "region": "afar",
+   "lat": 12.95,
+   "lon": 41.385,
+   "indicators": {
+    "slope_median": 0.31074997782707214,
+    "slope_p90": 1.229581594467163,
+    "local_relief": 7.586087226867676,
+    "ruggedness": 1.5754095315933228,
+    "hypsometric_integral": 0.22757482995984674
+   },
+   "valid_fraction": 1.0,
+   "elev_min": -15.096024513244629,
+   "elev_max": 177.76861572265625,
+   "nearest_known": null
+  },
+  {
+   "id": "afarmp13_25p40_15",
+   "region": "afar",
+   "lat": 13.25,
+   "lon": 40.154,
+   "indicators": {
+    "slope_median": 4.04952335357666,
+    "slope_p90": 18.652694702148438,
+    "local_relief": 106.9525146484375,
+    "ruggedness": 25.757095336914062,
+    "hypsometric_integral": 0.47818493990329614
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 283.9310607910156,
+   "elev_max": 1158.332275390625,
+   "nearest_known": null
+  },
+  {
+   "id": "afarmp13_25p40_77",
+   "region": "afar",
+   "lat": 13.25,
+   "lon": 40.771,
+   "indicators": {
+    "slope_median": 0.6431647539138794,
+    "slope_p90": 2.157541513442993,
+    "local_relief": 13.021766662597656,
+    "ruggedness": 3.6727890968322754,
+    "hypsometric_integral": 0.2116258800909804
+   },
+   "valid_fraction": 1.0,
+   "elev_min": -115.0,
+   "elev_max": 222.1422576904297,
+   "nearest_known": null
+  },
+  {
+   "id": "afarmp13_55p40_15",
+   "region": "afar",
+   "lat": 13.55,
+   "lon": 40.154,
+   "indicators": {
+    "slope_median": 9.107244491577148,
+    "slope_p90": 22.28346061706543,
+    "local_relief": 176.3584442138672,
+    "ruggedness": 56.777557373046875,
+    "hypsometric_integral": 0.49244657326824975
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 102.76681518554688,
+   "elev_max": 942.6426391601562,
+   "nearest_known": null
+  },
+  {
+   "id": "afarmp13_55p41_08",
+   "region": "afar",
+   "lat": 13.55,
+   "lon": 41.08,
+   "indicators": {
+    "slope_median": 0.5859832763671875,
+    "slope_p90": 3.737593412399292,
+    "local_relief": 14.105024337768555,
+    "ruggedness": 2.722057342529297,
+    "hypsometric_integral": 0.3580923557937226
+   },
+   "valid_fraction": 1.0,
+   "elev_min": -74.27786254882812,
+   "elev_max": 216.9805908203125,
+   "nearest_known": null
+  },
+  {
+   "id": "afarmp13_55p41_39",
+   "region": "afar",
+   "lat": 13.55,
+   "lon": 41.389,
+   "indicators": {
+    "slope_median": 4.887758255004883,
+    "slope_p90": 20.475688934326172,
+    "local_relief": 123.47357177734375,
+    "ruggedness": 32.89227294921875,
+    "hypsometric_integral": 0.38948131411098164
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 111.58063507080078,
+   "elev_max": 1054.478271484375,
+   "nearest_known": null
+  },
+  {
+   "id": "afarmp13_85p40_15",
+   "region": "afar",
+   "lat": 13.85,
+   "lon": 40.154,
+   "indicators": {
+    "slope_median": 6.109340667724609,
+    "slope_p90": 21.374608993530273,
+    "local_relief": 108.31548309326172,
+    "ruggedness": 42.16455841064453,
+    "hypsometric_integral": 0.3042795308406184
+   },
+   "valid_fraction": 1.0,
+   "elev_min": -12.326774597167969,
+   "elev_max": 1320.0782470703125,
+   "nearest_known": null
+  },
+  {
+   "id": "afarmp13_85p41_08",
+   "region": "afar",
+   "lat": 13.85,
+   "lon": 41.081,
+   "indicators": {
+    "slope_median": 12.474740028381348,
+    "slope_p90": 23.201509475708008,
+    "local_relief": 213.56301879882812,
+    "ruggedness": 71.96640014648438,
+    "hypsometric_integral": 0.5119656857037879
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 90.03087615966797,
+   "elev_max": 1306.9901123046875,
+   "nearest_known": null
+  },
+  {
+   "id": "afarmp13_85p41_39",
+   "region": "afar",
+   "lat": 13.85,
+   "lon": 41.39,
+   "indicators": {
+    "slope_median": 1.1303455829620361,
+    "slope_p90": 12.779821395874023,
+    "local_relief": 32.57142639160156,
+    "ruggedness": 5.3765974044799805,
+    "hypsometric_integral": 0.3969290043621658
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 149.79920959472656,
+   "elev_max": 770.1393432617188,
+   "nearest_known": null
+  },
+  {
+   "id": "afarmp14_15p40_46",
+   "region": "afar",
+   "lat": 14.15,
+   "lon": 40.464,
+   "indicators": {
+    "slope_median": 0.06532881408929825,
+    "slope_p90": 0.2194589376449585,
+    "local_relief": 1.2906723022460938,
+    "ruggedness": 0.4454796016216278,
+    "hypsometric_integral": 0.20075191043693022
+   },
+   "valid_fraction": 1.0,
+   "elev_min": -125.07510375976562,
+   "elev_max": -67.27351379394531,
+   "nearest_known": null
+  },
+  {
+   "id": "afarmp14_15p40_77",
+   "region": "afar",
+   "lat": 14.15,
+   "lon": 40.773,
+   "indicators": {
+    "slope_median": 2.674349784851074,
+    "slope_p90": 14.206526756286621,
+    "local_relief": 58.9734992980957,
+    "ruggedness": 17.64818000793457,
+    "hypsometric_integral": 0.3107587700125655
+   },
+   "valid_fraction": 1.0,
+   "elev_min": -49.57271957397461,
+   "elev_max": 820.8348999023438,
+   "nearest_known": null
+  },
+  {
+   "id": "afarmp14_15p41_39",
+   "region": "afar",
+   "lat": 14.15,
+   "lon": 41.392,
+   "indicators": {
+    "slope_median": 0.7603445649147034,
+    "slope_p90": 6.8597235679626465,
+    "local_relief": 17.399639129638672,
+    "ruggedness": 3.435795307159424,
+    "hypsometric_integral": 0.33657341846097205
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 5.061528205871582,
+   "elev_max": 570.9694213867188,
+   "nearest_known": null
+  },
+  {
+   "id": "afarmp14_45p40_16",
+   "region": "afar",
+   "lat": 14.45,
+   "lon": 40.155,
+   "indicators": {
+    "slope_median": 0.16935217380523682,
+    "slope_p90": 22.167551040649414,
+    "local_relief": 3.7164306640625,
+    "ruggedness": 1.0391826629638672,
+    "hypsometric_integral": 0.17824724318686486
+   },
+   "valid_fraction": 1.0,
+   "elev_min": -127.07023620605469,
+   "elev_max": 1195.146484375,
+   "nearest_known": null
+  },
+  {
+   "id": "afarmp14_45p40_47",
+   "region": "afar",
+   "lat": 14.45,
+   "lon": 40.465,
+   "indicators": {
+    "slope_median": 0.917966365814209,
+    "slope_p90": 5.1767706871032715,
+    "local_relief": 20.41832160949707,
+    "ruggedness": 5.43054723739624,
+    "hypsometric_integral": 0.2597269304455356
+   },
+   "valid_fraction": 1.0,
+   "elev_min": -106.69596862792969,
+   "elev_max": 282.2394104003906,
+   "nearest_known": null
+  },
+  {
+   "id": "afarmp14_45p40_77",
+   "region": "afar",
+   "lat": 14.45,
+   "lon": 40.775,
+   "indicators": {
+    "slope_median": 5.601161956787109,
+    "slope_p90": 15.428892135620117,
+    "local_relief": 110.98097229003906,
+    "ruggedness": 38.005592346191406,
+    "hypsometric_integral": 0.4598869567336009
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 110.0733642578125,
+   "elev_max": 644.4921875,
+   "nearest_known": null
+  },
+  {
+   "id": "lutmp29_65p58_67",
+   "region": "lut",
+   "lat": 29.65,
+   "lon": 58.673,
+   "indicators": {
+    "slope_median": 0.48574984073638916,
+    "slope_p90": 1.979810118675232,
+    "local_relief": 10.119873046875,
+    "ruggedness": 2.4720375537872314,
+    "hypsometric_integral": 0.5032607514366684
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 290.40447998046875,
+   "elev_max": 439.63848876953125,
+   "nearest_known": null
+  },
+  {
+   "id": "lutmp29_65p59_02",
+   "region": "lut",
+   "lat": 29.65,
+   "lon": 59.018,
+   "indicators": {
+    "slope_median": 0.6356395483016968,
+    "slope_p90": 2.1535122394561768,
+    "local_relief": 13.881179809570312,
+    "ruggedness": 3.966859817504883,
+    "hypsometric_integral": 0.2967428363515472
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 291.1762390136719,
+   "elev_max": 433.5365295410156,
+   "nearest_known": null
+  },
+  {
+   "id": "lutmp29_65p59_36",
+   "region": "lut",
+   "lat": 29.65,
+   "lon": 59.363,
+   "indicators": {
+    "slope_median": 2.22625732421875,
+    "slope_p90": 7.995955944061279,
+    "local_relief": 56.34722900390625,
+    "ruggedness": 13.511663436889648,
+    "hypsometric_integral": 0.47365003350332274
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 362.6974182128906,
+   "elev_max": 666.7939453125,
+   "nearest_known": null
+  },
+  {
+   "id": "lutmp29_95p59_02",
+   "region": "lut",
+   "lat": 29.95,
+   "lon": 59.019,
+   "indicators": {
+    "slope_median": 0.1717248558998108,
+    "slope_p90": 10.690752983093262,
+    "local_relief": 5.382720947265625,
+    "ruggedness": 1.1479889154434204,
+    "hypsometric_integral": 0.13966917825742217
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 263.47711181640625,
+   "elev_max": 589.2813110351562,
+   "nearest_known": null
+  },
+  {
+   "id": "lutmp29_95p59_37",
+   "region": "lut",
+   "lat": 29.95,
+   "lon": 59.366,
+   "indicators": {
+    "slope_median": 8.037874221801758,
+    "slope_p90": 17.34870719909668,
+    "local_relief": 160.9622802734375,
+    "ruggedness": 41.259925842285156,
+    "hypsometric_integral": 0.5096384866870921
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 421.8955993652344,
+   "elev_max": 926.10400390625,
+   "nearest_known": null
+  },
+  {
+   "id": "lutmp29_95p59_71",
+   "region": "lut",
+   "lat": 29.95,
+   "lon": 59.712,
+   "indicators": {
+    "slope_median": 1.6297636032104492,
+    "slope_p90": 6.743703365325928,
+    "local_relief": 38.070343017578125,
+    "ruggedness": 8.017621994018555,
+    "hypsometric_integral": 0.32726910582811714
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 630.900390625,
+   "elev_max": 1365.69287109375,
+   "nearest_known": null
+  },
+  {
+   "id": "lutmp30_25p58_67",
+   "region": "lut",
+   "lat": 30.25,
+   "lon": 58.674,
+   "indicators": {
+    "slope_median": 2.7944512367248535,
+    "slope_p90": 8.639191627502441,
+    "local_relief": 62.5682373046875,
+    "ruggedness": 17.757061004638672,
+    "hypsometric_integral": 0.5945115841384304
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 138.8632049560547,
+   "elev_max": 446.4447326660156,
+   "nearest_known": null
+  },
+  {
+   "id": "lutmp30_25p59_02",
+   "region": "lut",
+   "lat": 30.25,
+   "lon": 59.021,
+   "indicators": {
+    "slope_median": 0.6278214454650879,
+    "slope_p90": 1.9436496496200562,
+    "local_relief": 15.00665283203125,
+    "ruggedness": 3.2496442794799805,
+    "hypsometric_integral": 0.4808147007358082
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 382.5627136230469,
+   "elev_max": 591.6131591796875,
+   "nearest_known": null
+  },
+  {
+   "id": "lutmp30_25p59_72",
+   "region": "lut",
+   "lat": 30.25,
+   "lon": 59.716,
+   "indicators": {
+    "slope_median": 4.85343074798584,
+    "slope_p90": 12.772517204284668,
+    "local_relief": 105.78091430664062,
+    "ruggedness": 27.696693420410156,
+    "hypsometric_integral": 0.5614644712713786
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 742.9046630859375,
+   "elev_max": 1154.04638671875,
+   "nearest_known": null,
+   "quicklooks": {
+    "hillshade": "data/quicklooks/screen-lutmp30_25p59_72-hillshade.webp",
+    "slope": "data/quicklooks/screen-lutmp30_25p59_72-slope.webp",
+    "imagery": "data/quicklooks/screen-lutmp30_25p59_72-imagery.webp"
+   }
+  },
+  {
+   "id": "lutmp30_55p59_02",
+   "region": "lut",
+   "lat": 30.55,
+   "lon": 59.023,
+   "indicators": {
+    "slope_median": 0.42540884017944336,
+    "slope_p90": 1.4715237617492676,
+    "local_relief": 9.9896240234375,
+    "ruggedness": 2.0264945030212402,
+    "hypsometric_integral": 0.4342354808437738
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 460.39947509765625,
+   "elev_max": 851.9224853515625,
+   "nearest_known": null
+  },
+  {
+   "id": "lutmp30_55p59_37",
+   "region": "lut",
+   "lat": 30.55,
+   "lon": 59.371,
+   "indicators": {
+    "slope_median": 6.004842281341553,
+    "slope_p90": 15.444500923156738,
+    "local_relief": 127.56991577148438,
+    "ruggedness": 30.46824836730957,
+    "hypsometric_integral": 0.4998359172838822
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 550.1600952148438,
+   "elev_max": 1019.2369995117188,
+   "nearest_known": null,
+   "quicklooks": {
+    "hillshade": "data/quicklooks/screen-lutmp30_55p59_37-hillshade.webp",
+    "slope": "data/quicklooks/screen-lutmp30_55p59_37-slope.webp",
+    "imagery": "data/quicklooks/screen-lutmp30_55p59_37-imagery.webp"
+   }
+  },
+  {
+   "id": "lutmp30_55p59_72",
+   "region": "lut",
+   "lat": 30.55,
+   "lon": 59.719,
+   "indicators": {
+    "slope_median": 7.326374053955078,
+    "slope_p90": 16.108938217163086,
+    "local_relief": 143.17190551757812,
+    "ruggedness": 39.248291015625,
+    "hypsometric_integral": 0.5908949776004945
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 718.3551635742188,
+   "elev_max": 1241.700927734375,
+   "nearest_known": null
+  },
+  {
+   "id": "lutmp30_85p58_67",
+   "region": "lut",
+   "lat": 30.85,
+   "lon": 58.675,
+   "indicators": {
+    "slope_median": 0.5584743022918701,
+    "slope_p90": 0.7485215663909912,
+    "local_relief": 13.653900146484375,
+    "ruggedness": 2.414466381072998,
+    "hypsometric_integral": 0.6862507814684653
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 242.20700073242188,
+   "elev_max": 682.4755249023438,
+   "nearest_known": null
+  },
+  {
+   "id": "lutmp30_85p59_02",
+   "region": "lut",
+   "lat": 30.85,
+   "lon": 59.024,
+   "indicators": {
+    "slope_median": 0.663253903388977,
+    "slope_p90": 1.3560428619384766,
+    "local_relief": 15.378509521484375,
+    "ruggedness": 2.891824245452881,
+    "hypsometric_integral": 0.3845165067226704
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 627.9835205078125,
+   "elev_max": 1071.468017578125,
+   "nearest_known": null
+  },
+  {
+   "id": "lutmp30_85p59_37",
+   "region": "lut",
+   "lat": 30.85,
+   "lon": 59.374,
+   "indicators": {
+    "slope_median": 2.054689884185791,
+    "slope_p90": 6.841063022613525,
+    "local_relief": 52.01800537109375,
+    "ruggedness": 10.821203231811523,
+    "hypsometric_integral": 0.4052700905856838
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 719.4795532226562,
+   "elev_max": 983.3980102539062,
+   "nearest_known": null
+  },
+  {
+   "id": "lutmp31_15p59_03",
+   "region": "lut",
+   "lat": 31.15,
+   "lon": 59.026,
+   "indicators": {
+    "slope_median": 0.8473559617996216,
+    "slope_p90": 1.750174641609192,
+    "local_relief": 18.019989013671875,
+    "ruggedness": 4.028511047363281,
+    "hypsometric_integral": 0.4616275348219329
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 815.7555541992188,
+   "elev_max": 1095.8623046875,
+   "nearest_known": null
+  },
+  {
+   "id": "lutmp31_15p59_38",
+   "region": "lut",
+   "lat": 31.15,
+   "lon": 59.376,
+   "indicators": {
+    "slope_median": 0.6755715608596802,
+    "slope_p90": 1.9538270235061646,
+    "local_relief": 15.54840087890625,
+    "ruggedness": 3.1247177124023438,
+    "hypsometric_integral": 0.3369496892386477
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 756.2440185546875,
+   "elev_max": 1060.364013671875,
+   "nearest_known": null
+  },
+  {
+   "id": "lutmp31_15p59_73",
+   "region": "lut",
+   "lat": 31.15,
+   "lon": 59.727,
+   "indicators": {
+    "slope_median": 0.7568224668502808,
+    "slope_p90": 2.4701526165008545,
+    "local_relief": 16.57025146484375,
+    "ruggedness": 3.7344675064086914,
+    "hypsometric_integral": 0.3020370144013112
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 976.37744140625,
+   "elev_max": 1369.94677734375,
+   "nearest_known": null
+  },
+  {
+   "id": "lutmp31_45p59_38",
+   "region": "lut",
+   "lat": 31.45,
+   "lon": 59.379,
+   "indicators": {
+    "slope_median": 2.915217161178589,
+    "slope_p90": 14.050209045410156,
+    "local_relief": 81.13543701171875,
+    "ruggedness": 15.430091857910156,
+    "hypsometric_integral": 0.28245200041529844
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 899.0567016601562,
+   "elev_max": 2340.552978515625,
+   "nearest_known": null
+  },
+  {
+   "id": "lutmp31_45p59_73",
+   "region": "lut",
+   "lat": 31.45,
+   "lon": 59.731,
+   "indicators": {
+    "slope_median": 0.4190670847892761,
+    "slope_p90": 0.8394364714622498,
+    "local_relief": 8.1759033203125,
+    "ruggedness": 1.8848302364349365,
+    "hypsometric_integral": 0.26586579611768874
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1054.2125244140625,
+   "elev_max": 1253.625,
+   "nearest_known": null
+  },
+  {
+   "id": "qaidammp37_15p91_56",
+   "region": "qaidam",
+   "lat": 37.15,
+   "lon": 91.565,
+   "indicators": {
+    "slope_median": 7.334209442138672,
+    "slope_p90": 21.68241310119629,
+    "local_relief": 155.94482421875,
+    "ruggedness": 42.30784225463867,
+    "hypsometric_integral": 0.36554776081011875
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 3933.11962890625,
+   "elev_max": 5100.423828125,
+   "nearest_known": null
+  },
+  {
+   "id": "qaidammp37_15p92_32",
+   "region": "qaidam",
+   "lat": 37.15,
+   "lon": 92.317,
+   "indicators": {
+    "slope_median": 0.9580583572387695,
+    "slope_p90": 5.431543827056885,
+    "local_relief": 23.751708984375,
+    "ruggedness": 4.954804420471191,
+    "hypsometric_integral": 0.5252651114348704
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2954.736572265625,
+   "elev_max": 3532.212158203125,
+   "nearest_known": null
+  },
+  {
+   "id": "qaidammp37_15p93_07",
+   "region": "qaidam",
+   "lat": 37.15,
+   "lon": 93.07,
+   "indicators": {
+    "slope_median": 0.19038480520248413,
+    "slope_p90": 0.3409234881401062,
+    "local_relief": 4.2066650390625,
+    "ruggedness": 0.9177919030189514,
+    "hypsometric_integral": 0.3678493824357535
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2788.593505859375,
+   "elev_max": 2865.820068359375,
+   "nearest_known": null
+  },
+  {
+   "id": "qaidammp37_15p93_82",
+   "region": "qaidam",
+   "lat": 37.15,
+   "lon": 93.823,
+   "indicators": {
+    "slope_median": 0.09540271759033203,
+    "slope_p90": 0.35108572244644165,
+    "local_relief": 2.197998046875,
+    "ruggedness": 0.5928615927696228,
+    "hypsometric_integral": 0.41869867544579253
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2690.1318359375,
+   "elev_max": 2722.98974609375,
+   "nearest_known": null
+  },
+  {
+   "id": "qaidammp37_45p91_57",
+   "region": "qaidam",
+   "lat": 37.45,
+   "lon": 91.567,
+   "indicators": {
+    "slope_median": 16.90270233154297,
+    "slope_p90": 29.284914016723633,
+    "local_relief": 309.76513671875,
+    "ruggedness": 92.83240509033203,
+    "hypsometric_integral": 0.43532914345425666
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 3388.455078125,
+   "elev_max": 5242.24951171875,
+   "nearest_known": null
+  },
+  {
+   "id": "qaidammp37_45p92_32",
+   "region": "qaidam",
+   "lat": 37.45,
+   "lon": 92.323,
+   "indicators": {
+    "slope_median": 0.8879693746566772,
+    "slope_p90": 3.773141622543335,
+    "local_relief": 22.351318359375,
+    "ruggedness": 4.083460330963135,
+    "hypsometric_integral": 0.3765625670416911
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2881.977783203125,
+   "elev_max": 3183.303466796875,
+   "nearest_known": null
+  },
+  {
+   "id": "qaidammp37_45p92_70",
+   "region": "qaidam",
+   "lat": 37.45,
+   "lon": 92.7,
+   "indicators": {
+    "slope_median": 0.27835285663604736,
+    "slope_p90": 0.7608129978179932,
+    "local_relief": 5.91650390625,
+    "ruggedness": 1.4453468322753906,
+    "hypsometric_integral": 0.33765098581572617
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2736.5,
+   "elev_max": 2870.076416015625,
+   "nearest_known": null
+  },
+  {
+   "id": "qaidammp37_45p93_08",
+   "region": "qaidam",
+   "lat": 37.45,
+   "lon": 93.078,
+   "indicators": {
+    "slope_median": 0.3281674087047577,
+    "slope_p90": 1.17185378074646,
+    "local_relief": 7.48779296875,
+    "ruggedness": 1.860779047012329,
+    "hypsometric_integral": 0.26485697512877426
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2727.821044921875,
+   "elev_max": 2814.357421875,
+   "nearest_known": null
+  },
+  {
+   "id": "qaidammp37_75p91_57",
+   "region": "qaidam",
+   "lat": 37.75,
+   "lon": 91.569,
+   "indicators": {
+    "slope_median": 1.3585352897644043,
+    "slope_p90": 3.7996110916137695,
+    "local_relief": 30.5084228515625,
+    "ruggedness": 6.471923828125,
+    "hypsometric_integral": 0.3727970099473057
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2941.964599609375,
+   "elev_max": 3453.847412109375,
+   "nearest_known": null
+  },
+  {
+   "id": "qaidammp37_75p93_47",
+   "region": "qaidam",
+   "lat": 37.75,
+   "lon": 93.466,
+   "indicators": {
+    "slope_median": 0.35102900862693787,
+    "slope_p90": 1.3499109745025635,
+    "local_relief": 9.689697265625,
+    "ruggedness": 2.4852566719055176,
+    "hypsometric_integral": 0.2385357326951109
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2682.167724609375,
+   "elev_max": 2831.169677734375,
+   "nearest_known": null
+  },
+  {
+   "id": "qaidammp37_75p93_85",
+   "region": "qaidam",
+   "lat": 37.75,
+   "lon": 93.846,
+   "indicators": {
+    "slope_median": 0.7054758071899414,
+    "slope_p90": 1.7669380903244019,
+    "local_relief": 14.34814453125,
+    "ruggedness": 4.459184646606445,
+    "hypsometric_integral": 0.3377777985521393
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2688.878173828125,
+   "elev_max": 2814.522705078125,
+   "nearest_known": null
+  },
+  {
+   "id": "qaidammp38_05p91_19",
+   "region": "qaidam",
+   "lat": 38.05,
+   "lon": 91.19,
+   "indicators": {
+    "slope_median": 2.921480655670166,
+    "slope_p90": 9.61639404296875,
+    "local_relief": 65.463134765625,
+    "ruggedness": 17.921585083007812,
+    "hypsometric_integral": 0.4199320269427098
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2866.37939453125,
+   "elev_max": 3379.015625,
+   "nearest_known": null
+  },
+  {
+   "id": "qaidammp38_05p91_57",
+   "region": "qaidam",
+   "lat": 38.05,
+   "lon": 91.571,
+   "indicators": {
+    "slope_median": 3.155587911605835,
+    "slope_p90": 8.197087287902832,
+    "local_relief": 72.112548828125,
+    "ruggedness": 18.4346923828125,
+    "hypsometric_integral": 0.544690109725175
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2730.87939453125,
+   "elev_max": 3416.16796875,
+   "nearest_known": null
+  },
+  {
+   "id": "qaidammp38_05p91_95",
+   "region": "qaidam",
+   "lat": 38.05,
+   "lon": 91.952,
+   "indicators": {
+    "slope_median": 0.7351185083389282,
+    "slope_p90": 3.4298954010009766,
+    "local_relief": 18.034912109375,
+    "ruggedness": 3.7835168838500977,
+    "hypsometric_integral": 0.3555919398334654
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2681.545654296875,
+   "elev_max": 2881.29052734375,
+   "nearest_known": null
+  },
+  {
+   "id": "qaidammp38_05p92_33",
+   "region": "qaidam",
+   "lat": 38.05,
+   "lon": 92.333,
+   "indicators": {
+    "slope_median": 0.5686905384063721,
+    "slope_p90": 1.5983830690383911,
+    "local_relief": 12.0909423828125,
+    "ruggedness": 3.3754355907440186,
+    "hypsometric_integral": 0.4381200337945986
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2674.6103515625,
+   "elev_max": 2783.53173828125,
+   "nearest_known": null
+  },
+  {
+   "id": "qaidammp38_05p93_86",
+   "region": "qaidam",
+   "lat": 38.05,
+   "lon": 93.857,
+   "indicators": {
+    "slope_median": 0.84148770570755,
+    "slope_p90": 1.8709338903427124,
+    "local_relief": 15.5322265625,
+    "ruggedness": 5.889782428741455,
+    "hypsometric_integral": 0.5815154879860119
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2668.207275390625,
+   "elev_max": 2864.132080078125,
+   "nearest_known": null
+  },
+  {
+   "id": "qaidammp38_35p91_19",
+   "region": "qaidam",
+   "lat": 38.35,
+   "lon": 91.191,
+   "indicators": {
+    "slope_median": 2.055767297744751,
+    "slope_p90": 11.132538795471191,
+    "local_relief": 52.069091796875,
+    "ruggedness": 11.787374496459961,
+    "hypsometric_integral": 0.27649965953238276
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2720.447265625,
+   "elev_max": 3469.262939453125,
+   "nearest_known": null,
+   "quicklooks": {
+    "hillshade": "data/quicklooks/screen-qaidammp38_35p91_19-hillshade.webp",
+    "slope": "data/quicklooks/screen-qaidammp38_35p91_19-slope.webp",
+    "imagery": "data/quicklooks/screen-qaidammp38_35p91_19-imagery.webp"
+   }
+  },
+  {
+   "id": "qaidammp38_35p92_34",
+   "region": "qaidam",
+   "lat": 38.35,
+   "lon": 92.339,
+   "indicators": {
+    "slope_median": 0.265364408493042,
+    "slope_p90": 1.611449956893921,
+    "local_relief": 5.39306640625,
+    "ruggedness": 1.7046244144439697,
+    "hypsometric_integral": 0.28198571332919026
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2695.9755859375,
+   "elev_max": 2772.3759765625,
+   "nearest_known": null
+  },
+  {
+   "id": "qaidammp38_35p93_10",
+   "region": "qaidam",
+   "lat": 38.35,
+   "lon": 93.104,
+   "indicators": {
+    "slope_median": 0.9322581887245178,
+    "slope_p90": 2.4444267749786377,
+    "local_relief": 18.282470703125,
+    "ruggedness": 6.781764030456543,
+    "hypsometric_integral": 0.3527593798696263
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2733.0380859375,
+   "elev_max": 2938.298828125,
+   "nearest_known": null
+  },
+  {
+   "id": "qaidammp38_35p93_49",
+   "region": "qaidam",
+   "lat": 38.35,
+   "lon": 93.486,
+   "indicators": {
+    "slope_median": 1.1228158473968506,
+    "slope_p90": 3.8554680347442627,
+    "local_relief": 23.00537109375,
+    "ruggedness": 7.646439552307129,
+    "hypsometric_integral": 0.26735282096403434
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2723.065185546875,
+   "elev_max": 3021.458740234375,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp43_15p102_44",
+   "region": "gobi",
+   "lat": 43.15,
+   "lon": 102.439,
+   "indicators": {
+    "slope_median": 1.6294845342636108,
+    "slope_p90": 4.822134017944336,
+    "local_relief": 35.67724609375,
+    "ruggedness": 8.122456550598145,
+    "hypsometric_integral": 0.4131339281868304
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1459.162841796875,
+   "elev_max": 1950.651611328125,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp43_15p104_91",
+   "region": "gobi",
+   "lat": 43.15,
+   "lon": 104.906,
+   "indicators": {
+    "slope_median": 1.0841697454452515,
+    "slope_p90": 3.2745742797851562,
+    "local_relief": 22.37493896484375,
+    "ruggedness": 5.348604202270508,
+    "hypsometric_integral": 0.24741353516508963
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1373.180419921875,
+   "elev_max": 1918.5570068359375,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp43_45p102_45",
+   "region": "gobi",
+   "lat": 43.45,
+   "lon": 102.446,
+   "indicators": {
+    "slope_median": 1.0072338581085205,
+    "slope_p90": 2.214907169342041,
+    "local_relief": 21.76348876953125,
+    "ruggedness": 4.502997398376465,
+    "hypsometric_integral": 0.29545932301399647
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1417.2197265625,
+   "elev_max": 1901.6922607421875,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp43_45p102_86",
+   "region": "gobi",
+   "lat": 43.45,
+   "lon": 102.86,
+   "indicators": {
+    "slope_median": 3.5905256271362305,
+    "slope_p90": 11.604169845581055,
+    "local_relief": 86.7979736328125,
+    "ruggedness": 23.806007385253906,
+    "hypsometric_integral": 0.47612790749996503
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1465.5916748046875,
+   "elev_max": 2291.923583984375,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp43_45p103_69",
+   "region": "gobi",
+   "lat": 43.45,
+   "lon": 103.686,
+   "indicators": {
+    "slope_median": 1.176685094833374,
+    "slope_p90": 2.1695797443389893,
+    "local_relief": 28.1806640625,
+    "ruggedness": 5.071110725402832,
+    "hypsometric_integral": 0.3569739310768738
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1526.611083984375,
+   "elev_max": 2070.483642578125,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp43_75p101_21",
+   "region": "gobi",
+   "lat": 43.75,
+   "lon": 101.208,
+   "indicators": {
+    "slope_median": 1.1806327104568481,
+    "slope_p90": 4.590526103973389,
+    "local_relief": 25.4361572265625,
+    "ruggedness": 5.4995293617248535,
+    "hypsometric_integral": 0.26092311875873925
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1075.708740234375,
+   "elev_max": 1936.3414306640625,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp43_75p101_62",
+   "region": "gobi",
+   "lat": 43.75,
+   "lon": 101.623,
+   "indicators": {
+    "slope_median": 1.4533367156982422,
+    "slope_p90": 2.1540966033935547,
+    "local_relief": 29.15838623046875,
+    "ruggedness": 6.360349655151367,
+    "hypsometric_integral": 0.40360067346571343
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1116.7486572265625,
+   "elev_max": 1778.2274169921875,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp43_75p102_04",
+   "region": "gobi",
+   "lat": 43.75,
+   "lon": 102.038,
+   "indicators": {
+    "slope_median": 1.729301929473877,
+    "slope_p90": 4.038677215576172,
+    "local_relief": 32.9254150390625,
+    "ruggedness": 8.316679000854492,
+    "hypsometric_integral": 0.3536109924614099
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1173.0799560546875,
+   "elev_max": 1905.217041015625,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp43_75p103_28",
+   "region": "gobi",
+   "lat": 43.75,
+   "lon": 103.284,
+   "indicators": {
+    "slope_median": 5.30094051361084,
+    "slope_p90": 15.155289649963379,
+    "local_relief": 104.135986328125,
+    "ruggedness": 33.035762786865234,
+    "hypsometric_integral": 0.4434892140398627
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1915.2762451171875,
+   "elev_max": 2593.231201171875,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp43_75p104_53",
+   "region": "gobi",
+   "lat": 43.75,
+   "lon": 104.53,
+   "indicators": {
+    "slope_median": 0.61170494556427,
+    "slope_p90": 1.4368807077407837,
+    "local_relief": 13.78021240234375,
+    "ruggedness": 2.8654932975769043,
+    "hypsometric_integral": 0.4346392058337166
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1390.4525146484375,
+   "elev_max": 1647.3109130859375,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp44_05p101_63",
+   "region": "gobi",
+   "lat": 44.05,
+   "lon": 101.626,
+   "indicators": {
+    "slope_median": 0.9340306520462036,
+    "slope_p90": 2.7151639461517334,
+    "local_relief": 21.7999267578125,
+    "ruggedness": 5.283768177032471,
+    "hypsometric_integral": 0.43603462318680897
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 951.611083984375,
+   "elev_max": 1149.499267578125,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp44_05p102_46",
+   "region": "gobi",
+   "lat": 44.05,
+   "lon": 102.461,
+   "indicators": {
+    "slope_median": 0.9501698017120361,
+    "slope_p90": 2.0828115940093994,
+    "local_relief": 21.0968017578125,
+    "ruggedness": 4.507880210876465,
+    "hypsometric_integral": 0.3850676475524016
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1198.31396484375,
+   "elev_max": 1505.691162109375,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp44_05p103_71",
+   "region": "gobi",
+   "lat": 44.05,
+   "lon": 103.713,
+   "indicators": {
+    "slope_median": 0.7975221872329712,
+    "slope_p90": 1.8586660623550415,
+    "local_relief": 18.1807861328125,
+    "ruggedness": 3.695930004119873,
+    "hypsometric_integral": 0.48934975013960313
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1201.2423095703125,
+   "elev_max": 1515.22998046875,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp44_35p102_89",
+   "region": "gobi",
+   "lat": 44.35,
+   "lon": 102.888,
+   "indicators": {
+    "slope_median": 2.762162208557129,
+    "slope_p90": 10.49182415008545,
+    "local_relief": 64.242431640625,
+    "ruggedness": 15.000576972961426,
+    "hypsometric_integral": 0.43473966262460334
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1203.7119140625,
+   "elev_max": 2115.85205078125,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp44_35p103_73",
+   "region": "gobi",
+   "lat": 44.35,
+   "lon": 103.727,
+   "indicators": {
+    "slope_median": 0.5919824838638306,
+    "slope_p90": 1.5793813467025757,
+    "local_relief": 13.67034912109375,
+    "ruggedness": 2.9761226177215576,
+    "hypsometric_integral": 0.3547340227074144
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1040.703125,
+   "elev_max": 1206.354736328125,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp44_65p102_48",
+   "region": "gobi",
+   "lat": 44.65,
+   "lon": 102.476,
+   "indicators": {
+    "slope_median": 1.0242061614990234,
+    "slope_p90": 2.4784512519836426,
+    "local_relief": 21.07373046875,
+    "ruggedness": 4.64585542678833,
+    "hypsometric_integral": 0.2634900475043868
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1356.185546875,
+   "elev_max": 1978.4727783203125,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp44_65p103_32",
+   "region": "gobi",
+   "lat": 44.65,
+   "lon": 103.319,
+   "indicators": {
+    "slope_median": 0.4912225604057312,
+    "slope_p90": 1.8536415100097656,
+    "local_relief": 13.4232177734375,
+    "ruggedness": 2.66340970993042,
+    "hypsometric_integral": 0.41310024564536935
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1046.49755859375,
+   "elev_max": 1174.7095947265625,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp44_65p103_74",
+   "region": "gobi",
+   "lat": 44.65,
+   "lon": 103.741,
+   "indicators": {
+    "slope_median": 0.47511619329452515,
+    "slope_p90": 1.402632474899292,
+    "local_relief": 10.739013671875,
+    "ruggedness": 2.4903359413146973,
+    "hypsometric_integral": 0.5417864150884693
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1032.342529296875,
+   "elev_max": 1131.5885009765625,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp44_95p102_06",
+   "region": "gobi",
+   "lat": 44.95,
+   "lon": 102.06,
+   "indicators": {
+    "slope_median": 0.8864824771881104,
+    "slope_p90": 2.301987886428833,
+    "local_relief": 19.5218505859375,
+    "ruggedness": 4.0935587882995605,
+    "hypsometric_integral": 0.3902202135080452
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1284.0770263671875,
+   "elev_max": 1591.80078125,
+   "nearest_known": null
+  },
+  {
+   "id": "gobimp44_95p103_75",
+   "region": "gobi",
+   "lat": 44.95,
+   "lon": 103.755,
+   "indicators": {
+    "slope_median": 1.5469069480895996,
+    "slope_p90": 4.177178859710693,
+    "local_relief": 35.7347412109375,
+    "ruggedness": 7.954479694366455,
+    "hypsometric_integral": 0.5095696113318203
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1128.6488037109375,
+   "elev_max": 1406.5880126953125,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm24_85p15_16",
+   "region": "namib",
+   "lat": -24.85,
+   "lon": 15.165,
+   "indicators": {
+    "slope_median": 3.6106293201446533,
+    "slope_p90": 9.237802505493164,
+    "local_relief": 70.4271240234375,
+    "ruggedness": 18.765626907348633,
+    "hypsometric_integral": 0.488394345835116
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 420.7393493652344,
+   "elev_max": 709.5557861328125,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm24_85p15_50",
+   "region": "namib",
+   "lat": -24.85,
+   "lon": 15.496,
+   "indicators": {
+    "slope_median": 4.38228702545166,
+    "slope_p90": 13.32496166229248,
+    "local_relief": 79.3792724609375,
+    "ruggedness": 23.446537017822266,
+    "hypsometric_integral": 0.5698705965411743
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 546.516357421875,
+   "elev_max": 1027.8858642578125,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm24_85p15_83",
+   "region": "namib",
+   "lat": -24.85,
+   "lon": 15.827,
+   "indicators": {
+    "slope_median": 2.668769598007202,
+    "slope_p90": 9.612585067749023,
+    "local_relief": 60.477294921875,
+    "ruggedness": 13.6779146194458,
+    "hypsometric_integral": 0.5348926190675878
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 695.1670532226562,
+   "elev_max": 1388.74951171875,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm24_85p16_49",
+   "region": "namib",
+   "lat": -24.85,
+   "lon": 16.488,
+   "indicators": {
+    "slope_median": 1.2670764923095703,
+    "slope_p90": 5.81461238861084,
+    "local_relief": 26.66552734375,
+    "ruggedness": 6.733608245849609,
+    "hypsometric_integral": 0.38306843516589956
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1406.7327880859375,
+   "elev_max": 1728.7158203125,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm24_55p15_49",
+   "region": "namib",
+   "lat": -24.55,
+   "lon": 15.495,
+   "indicators": {
+    "slope_median": 7.29245662689209,
+    "slope_p90": 15.257949829101562,
+    "local_relief": 134.22314453125,
+    "ruggedness": 38.79689025878906,
+    "hypsometric_integral": 0.5035368021987524
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 683.2305908203125,
+   "elev_max": 1049.583251953125,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm24_55p16_48",
+   "region": "namib",
+   "lat": -24.55,
+   "lon": 16.484,
+   "indicators": {
+    "slope_median": 1.1021695137023926,
+    "slope_p90": 2.9566729068756104,
+    "local_relief": 22.739013671875,
+    "ruggedness": 5.400870323181152,
+    "hypsometric_integral": 0.31723412158433206
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1378.482421875,
+   "elev_max": 1610.66455078125,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm24_25p15_16",
+   "region": "namib",
+   "lat": -24.25,
+   "lon": 15.165,
+   "indicators": {
+    "slope_median": 4.603759765625,
+    "slope_p90": 10.899699211120605,
+    "local_relief": 98.85720825195312,
+    "ruggedness": 22.658050537109375,
+    "hypsometric_integral": 0.48186503964590793
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 429.35595703125,
+   "elev_max": 764.3524169921875,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm24_25p15_49",
+   "region": "namib",
+   "lat": -24.25,
+   "lon": 15.494,
+   "indicators": {
+    "slope_median": 4.272022724151611,
+    "slope_p90": 8.798254013061523,
+    "local_relief": 77.36947631835938,
+    "ruggedness": 21.748363494873047,
+    "hypsometric_integral": 0.5383537235532474
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 728.9016723632812,
+   "elev_max": 1007.8837280273438,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm24_25p15_82",
+   "region": "namib",
+   "lat": -24.25,
+   "lon": 15.823,
+   "indicators": {
+    "slope_median": 2.3939027786254883,
+    "slope_p90": 9.034074783325195,
+    "local_relief": 70.13595581054688,
+    "ruggedness": 13.178851127624512,
+    "hypsometric_integral": 0.4991435734342727
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 853.4907836914062,
+   "elev_max": 1299.21826171875,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm24_25p16_15",
+   "region": "namib",
+   "lat": -24.25,
+   "lon": 16.152,
+   "indicators": {
+    "slope_median": 9.615796089172363,
+    "slope_p90": 23.848587036132812,
+    "local_relief": 165.71490478515625,
+    "ruggedness": 58.50177764892578,
+    "hypsometric_integral": 0.5967227969991599
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1208.4869384765625,
+   "elev_max": 1983.9039306640625,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm24_25p16_48",
+   "region": "namib",
+   "lat": -24.25,
+   "lon": 16.481,
+   "indicators": {
+    "slope_median": 1.1228036880493164,
+    "slope_p90": 3.896278142929077,
+    "local_relief": 26.6444091796875,
+    "ruggedness": 6.299196243286133,
+    "hypsometric_integral": 0.3070715273536898
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1386.8531494140625,
+   "elev_max": 1592.3759765625,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm23_95p15_16",
+   "region": "namib",
+   "lat": -23.95,
+   "lon": 15.164,
+   "indicators": {
+    "slope_median": 1.3967151641845703,
+    "slope_p90": 6.910277366638184,
+    "local_relief": 37.341339111328125,
+    "ruggedness": 7.340602874755859,
+    "hypsometric_integral": 0.5307693356145006
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 448.34112548828125,
+   "elev_max": 688.3907470703125,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm23_65p15_16",
+   "region": "namib",
+   "lat": -23.65,
+   "lon": 15.164,
+   "indicators": {
+    "slope_median": 1.629267692565918,
+    "slope_p90": 8.695307731628418,
+    "local_relief": 53.806640625,
+    "ruggedness": 8.866806983947754,
+    "hypsometric_integral": 0.5278838484098739
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 397.9200744628906,
+   "elev_max": 681.9437255859375,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm23_65p15_49",
+   "region": "namib",
+   "lat": -23.65,
+   "lon": 15.491,
+   "indicators": {
+    "slope_median": 2.7208590507507324,
+    "slope_p90": 11.79397201538086,
+    "local_relief": 52.542877197265625,
+    "ruggedness": 17.192108154296875,
+    "hypsometric_integral": 0.6853657662681116
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 483.4006652832031,
+   "elev_max": 956.4777221679688,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm23_65p16_47",
+   "region": "namib",
+   "lat": -23.65,
+   "lon": 16.474,
+   "indicators": {
+    "slope_median": 3.63413143157959,
+    "slope_p90": 15.694391250610352,
+    "local_relief": 112.466552734375,
+    "ruggedness": 20.47577476501465,
+    "hypsometric_integral": 0.3690644005364549
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1596.840576171875,
+   "elev_max": 2082.796875,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm23_35p15_82",
+   "region": "namib",
+   "lat": -23.35,
+   "lon": 15.817,
+   "indicators": {
+    "slope_median": 2.577859401702881,
+    "slope_p90": 9.341615676879883,
+    "local_relief": 47.725830078125,
+    "ruggedness": 16.937721252441406,
+    "hypsometric_integral": 0.38511532149020844
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 706.6946411132812,
+   "elev_max": 1378.7041015625,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm23_35p16_14",
+   "region": "namib",
+   "lat": -23.35,
+   "lon": 16.144,
+   "indicators": {
+    "slope_median": 6.259983062744141,
+    "slope_p90": 22.474258422851562,
+    "local_relief": 141.1058349609375,
+    "ruggedness": 38.142234802246094,
+    "hypsometric_integral": 0.22786713452371887
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 998.18359375,
+   "elev_max": 2347.82568359375,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm23_35p16_47",
+   "region": "namib",
+   "lat": -23.35,
+   "lon": 16.47,
+   "indicators": {
+    "slope_median": 1.4485952854156494,
+    "slope_p90": 4.404682159423828,
+    "local_relief": 28.0816650390625,
+    "ruggedness": 8.007261276245117,
+    "hypsometric_integral": 0.629260803979082
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1513.06005859375,
+   "elev_max": 1977.640869140625,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm23_05p16_14",
+   "region": "namib",
+   "lat": -23.05,
+   "lon": 16.141,
+   "indicators": {
+    "slope_median": 6.316938400268555,
+    "slope_p90": 18.51033592224121,
+    "local_relief": 122.70343017578125,
+    "ruggedness": 39.102020263671875,
+    "hypsometric_integral": 0.3498309122305801
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 932.5708618164062,
+   "elev_max": 1656.328857421875,
+   "nearest_known": null
+  },
+  {
+   "id": "namibmm23_05p16_47",
+   "region": "namib",
+   "lat": -23.05,
+   "lon": 16.467,
+   "indicators": {
+    "slope_median": 8.767058372497559,
+    "slope_p90": 19.583621978759766,
+    "local_relief": 145.42327880859375,
+    "ruggedness": 52.34003448486328,
+    "hypsometric_integral": 0.51293831798671
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1162.947998046875,
+   "elev_max": 2085.80322265625,
+   "nearest_known": null
+  },
+  {
+   "id": "punamm25_85m68_00",
+   "region": "puna",
+   "lat": -25.85,
+   "lon": -68.0,
+   "indicators": {
+    "slope_median": 3.898160934448242,
+    "slope_p90": 20.95965576171875,
+    "local_relief": 107.7969970703125,
+    "ruggedness": 19.723722457885742,
+    "hypsometric_integral": 0.5265316943455426
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 3323.1875,
+   "elev_max": 4350.599609375,
+   "nearest_known": null
+  },
+  {
+   "id": "punamm25_85m66_67",
+   "region": "puna",
+   "lat": -25.85,
+   "lon": -66.667,
+   "indicators": {
+    "slope_median": 5.921806812286377,
+    "slope_p90": 19.532451629638672,
+    "local_relief": 116.432861328125,
+    "ruggedness": 31.04751968383789,
+    "hypsometric_integral": 0.44582753796896035
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 3604.607666015625,
+   "elev_max": 5346.54248046875,
+   "nearest_known": null
+  },
+  {
+   "id": "punamm25_55m67_00",
+   "region": "puna",
+   "lat": -25.55,
+   "lon": -67.004,
+   "indicators": {
+    "slope_median": 5.979733467102051,
+    "slope_p90": 17.43935203552246,
+    "local_relief": 143.195556640625,
+    "ruggedness": 30.448776245117188,
+    "hypsometric_integral": 0.3574630791336939
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 3965.5263671875,
+   "elev_max": 5073.21240234375,
+   "nearest_known": null
+  },
+  {
+   "id": "punamm25_25m68_00",
+   "region": "puna",
+   "lat": -25.25,
+   "lon": -68.002,
+   "indicators": {
+    "slope_median": 5.202066421508789,
+    "slope_p90": 14.042973518371582,
+    "local_relief": 117.244873046875,
+    "ruggedness": 24.493640899658203,
+    "hypsometric_integral": 0.3780176380604762
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 3669.314697265625,
+   "elev_max": 5410.7802734375,
+   "nearest_known": null
+  },
+  {
+   "id": "punamm25_25m67_67",
+   "region": "puna",
+   "lat": -25.25,
+   "lon": -67.671,
+   "indicators": {
+    "slope_median": 6.527349472045898,
+    "slope_p90": 22.474090576171875,
+    "local_relief": 148.23388671875,
+    "ruggedness": 30.903301239013672,
+    "hypsometric_integral": 0.34252171625193306
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 3589.81201171875,
+   "elev_max": 5743.99658203125,
+   "nearest_known": null
+  },
+  {
+   "id": "punamm25_25m66_68",
+   "region": "puna",
+   "lat": -25.25,
+   "lon": -66.676,
+   "indicators": {
+    "slope_median": 11.337981224060059,
+    "slope_p90": 23.867124557495117,
+    "local_relief": 234.2353515625,
+    "ruggedness": 59.129451751708984,
+    "hypsometric_integral": 0.3366532153041539
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 3984.974365234375,
+   "elev_max": 5604.3095703125,
+   "nearest_known": null
+  },
+  {
+   "id": "punamm24_95m67_67",
+   "region": "puna",
+   "lat": -24.95,
+   "lon": -67.673,
+   "indicators": {
+    "slope_median": 0.01640891097486019,
+    "slope_p90": 0.12007845938205719,
+    "local_relief": 0.28759765625,
+    "ruggedness": 0.15137723088264465,
+    "hypsometric_integral": 0.04219534810043
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 3468.25244140625,
+   "elev_max": 3608.377685546875,
+   "nearest_known": null
+  },
+  {
+   "id": "punamm24_65m68_33",
+   "region": "puna",
+   "lat": -24.65,
+   "lon": -68.335,
+   "indicators": {
+    "slope_median": 11.500783920288086,
+    "slope_p90": 24.542863845825195,
+    "local_relief": 249.452880859375,
+    "ruggedness": 53.01738739013672,
+    "hypsometric_integral": 0.4480374485603383
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 3753.29052734375,
+   "elev_max": 5363.4541015625,
+   "nearest_known": null
+  },
+  {
+   "id": "punamm24_65m67_02",
+   "region": "puna",
+   "lat": -24.65,
+   "lon": -67.015,
+   "indicators": {
+    "slope_median": 1.021723747253418,
+    "slope_p90": 8.534381866455078,
+    "local_relief": 18.8128662109375,
+    "ruggedness": 5.160656452178955,
+    "hypsometric_integral": 0.15665158583548
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 3655.691162109375,
+   "elev_max": 4454.3125,
+   "nearest_known": null
+  },
+  {
+   "id": "punamm24_65m66_69",
+   "region": "puna",
+   "lat": -24.65,
+   "lon": -66.685,
+   "indicators": {
+    "slope_median": 2.7686262130737305,
+    "slope_p90": 10.669358253479004,
+    "local_relief": 66.0673828125,
+    "ruggedness": 14.107887268066406,
+    "hypsometric_integral": 0.29658192196442507
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 3756.00830078125,
+   "elev_max": 4222.9052734375,
+   "nearest_known": null
+  },
+  {
+   "id": "punamm24_35m67_68",
+   "region": "puna",
+   "lat": -24.35,
+   "lon": -67.677,
+   "indicators": {
+    "slope_median": 5.804299831390381,
+    "slope_p90": 17.739423751831055,
+    "local_relief": 123.7020263671875,
+    "ruggedness": 28.977724075317383,
+    "hypsometric_integral": 0.21272085897045426
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 3466.70263671875,
+   "elev_max": 5624.21826171875,
+   "nearest_known": null
+  },
+  {
+   "id": "punamm24_35m67_02",
+   "region": "puna",
+   "lat": -24.35,
+   "lon": -67.018,
+   "indicators": {
+    "slope_median": 1.3798518180847168,
+    "slope_p90": 12.978045463562012,
+    "local_relief": 28.341796875,
+    "ruggedness": 6.184123516082764,
+    "hypsometric_integral": 0.13166374311867007
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 3655.18798828125,
+   "elev_max": 4889.40380859375,
+   "nearest_known": null
+  },
+  {
+   "id": "punamm23_75m67_35",
+   "region": "puna",
+   "lat": -23.75,
+   "lon": -67.353,
+   "indicators": {
+    "slope_median": 3.722438335418701,
+    "slope_p90": 15.10202407836914,
+    "local_relief": 88.73974609375,
+    "ruggedness": 19.350038528442383,
+    "hypsometric_integral": 0.3329404921132726
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 4092.310791015625,
+   "elev_max": 5377.90234375,
+   "nearest_known": null
+  },
+  {
+   "id": "punamm23_45m67_68",
+   "region": "puna",
+   "lat": -23.45,
+   "lon": -67.682,
+   "indicators": {
+    "slope_median": 7.1192307472229,
+    "slope_p90": 23.731571197509766,
+    "local_relief": 148.609375,
+    "ruggedness": 34.6229248046875,
+    "hypsometric_integral": 0.26354875211295264
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 4087.072998046875,
+   "elev_max": 5896.26904296875,
+   "nearest_known": null
+  },
+  {
+   "id": "punamm23_15m66_71",
+   "region": "puna",
+   "lat": -23.15,
+   "lon": -66.706,
+   "indicators": {
+    "slope_median": 4.0369391441345215,
+    "slope_p90": 11.603131294250488,
+    "local_relief": 86.359375,
+    "ruggedness": 22.892574310302734,
+    "hypsometric_integral": 0.385446804995135
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 3925.641845703125,
+   "elev_max": 4482.8681640625,
+   "nearest_known": null
+  },
+  {
+   "id": "punamm22_85m67_03",
+   "region": "puna",
+   "lat": -22.85,
+   "lon": -67.035,
+   "indicators": {
+    "slope_median": 6.299099922180176,
+    "slope_p90": 15.91707992553711,
+    "local_relief": 124.974609375,
+    "ruggedness": 31.288467407226562,
+    "hypsometric_integral": 0.3128760471309504
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 4447.46142578125,
+   "elev_max": 5838.22412109375,
+   "nearest_known": null
+  },
+  {
+   "id": "punamm22_55m68_34",
+   "region": "puna",
+   "lat": -22.55,
+   "lon": -68.338,
+   "indicators": {
+    "slope_median": 5.171738147735596,
+    "slope_p90": 15.138895034790039,
+    "local_relief": 106.438232421875,
+    "ruggedness": 29.667104721069336,
+    "hypsometric_integral": 0.5260198102135875
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 2886.033447265625,
+   "elev_max": 4026.907958984375,
+   "nearest_known": null,
+   "quicklooks": {
+    "hillshade": "data/quicklooks/screen-punamm22_55m68_34-hillshade.webp",
+    "slope": "data/quicklooks/screen-punamm22_55m68_34-slope.webp",
+    "imagery": "data/quicklooks/screen-punamm22_55m68_34-imagery.webp"
+   }
+  },
+  {
+   "id": "punamm22_25m68_01",
+   "region": "puna",
+   "lat": -22.25,
+   "lon": -68.014,
+   "indicators": {
+    "slope_median": 12.276954650878906,
+    "slope_p90": 26.16709327697754,
+    "local_relief": 253.979248046875,
+    "ruggedness": 60.5889892578125,
+    "hypsometric_integral": 0.48273425412199666
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 3509.058349609375,
+   "elev_max": 5605.68115234375,
+   "nearest_known": null
+  },
+  {
+   "id": "punamm22_25m67_37",
+   "region": "puna",
+   "lat": -22.25,
+   "lon": -67.366,
+   "indicators": {
+    "slope_median": 4.391571998596191,
+    "slope_p90": 14.989104270935059,
+    "local_relief": 91.318603515625,
+    "ruggedness": 21.649822235107422,
+    "hypsometric_integral": 0.25915934415167674
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 4124.44775390625,
+   "elev_max": 5698.69091796875,
+   "nearest_known": null
+  },
+  {
+   "id": "punamm22_25m66_72",
+   "region": "puna",
+   "lat": -22.25,
+   "lon": -66.717,
+   "indicators": {
+    "slope_median": 10.364607810974121,
+    "slope_p90": 21.86625862121582,
+    "local_relief": 200.379150390625,
+    "ruggedness": 53.182064056396484,
+    "hypsometric_integral": 0.4185630810423691
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 4212.1181640625,
+   "elev_max": 5606.98095703125,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm22_85p118_49",
+   "region": "pilbara",
+   "lat": -22.85,
+   "lon": 118.488,
+   "indicators": {
+    "slope_median": 1.9809722900390625,
+    "slope_p90": 15.901926040649414,
+    "local_relief": 61.61602783203125,
+    "ruggedness": 10.209904670715332,
+    "hypsometric_integral": 0.3333554573414159
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 677.5355224609375,
+   "elev_max": 1199.23974609375,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm22_55p118_16",
+   "region": "pilbara",
+   "lat": -22.55,
+   "lon": 118.162,
+   "indicators": {
+    "slope_median": 2.394874095916748,
+    "slope_p90": 17.690902709960938,
+    "local_relief": 100.27658081054688,
+    "ruggedness": 12.093835830688477,
+    "hypsometric_integral": 0.2736740561492854
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 679.99072265625,
+   "elev_max": 1221.8575439453125,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm22_55p118_49",
+   "region": "pilbara",
+   "lat": -22.55,
+   "lon": 118.487,
+   "indicators": {
+    "slope_median": 1.8925526142120361,
+    "slope_p90": 12.58964729309082,
+    "local_relief": 73.12588500976562,
+    "ruggedness": 9.415916442871094,
+    "hypsometric_integral": 0.36253941505232984
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 565.0065307617188,
+   "elev_max": 971.7332153320312,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm22_55p118_81",
+   "region": "pilbara",
+   "lat": -22.55,
+   "lon": 118.812,
+   "indicators": {
+    "slope_median": 2.0965046882629395,
+    "slope_p90": 15.090932846069336,
+    "local_relief": 60.13330078125,
+    "ruggedness": 11.434154510498047,
+    "hypsometric_integral": 0.44598536619854273
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 497.7923278808594,
+   "elev_max": 1000.13330078125,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm22_25p118_16",
+   "region": "pilbara",
+   "lat": -22.25,
+   "lon": 118.162,
+   "indicators": {
+    "slope_median": 6.915098190307617,
+    "slope_p90": 18.477890014648438,
+    "local_relief": 142.7728271484375,
+    "ruggedness": 41.596702575683594,
+    "hypsometric_integral": 0.40525493024970566
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 413.29852294921875,
+   "elev_max": 1124.165771484375,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm22_25p119_13",
+   "region": "pilbara",
+   "lat": -22.25,
+   "lon": 119.134,
+   "indicators": {
+    "slope_median": 0.4236050248146057,
+    "slope_p90": 3.192655563354492,
+    "local_relief": 15.46075439453125,
+    "ruggedness": 2.323582887649536,
+    "hypsometric_integral": 0.364827525351698
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 405.35076904296875,
+   "elev_max": 522.5199584960938,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm22_25p119_46",
+   "region": "pilbara",
+   "lat": -22.25,
+   "lon": 119.459,
+   "indicators": {
+    "slope_median": 2.010392189025879,
+    "slope_p90": 4.892984867095947,
+    "local_relief": 37.309112548828125,
+    "ruggedness": 12.077058792114258,
+    "hypsometric_integral": 0.4698743586580935
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 381.28485107421875,
+   "elev_max": 562.3944702148438,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm21_95p118_16",
+   "region": "pilbara",
+   "lat": -21.95,
+   "lon": 118.162,
+   "indicators": {
+    "slope_median": 1.0166654586791992,
+    "slope_p90": 3.100740671157837,
+    "local_relief": 22.908355712890625,
+    "ruggedness": 5.133228302001953,
+    "hypsometric_integral": 0.4145077153468549
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 383.73065185546875,
+   "elev_max": 510.6369934082031,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm21_95p118_81",
+   "region": "pilbara",
+   "lat": -21.95,
+   "lon": 118.809,
+   "indicators": {
+    "slope_median": 2.247830629348755,
+    "slope_p90": 6.634204864501953,
+    "local_relief": 52.23063659667969,
+    "ruggedness": 13.916683197021484,
+    "hypsometric_integral": 0.44354871986969074
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 289.3388671875,
+   "elev_max": 516.892822265625,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm21_65p118_48",
+   "region": "pilbara",
+   "lat": -21.65,
+   "lon": 118.484,
+   "indicators": {
+    "slope_median": 1.4054694175720215,
+    "slope_p90": 8.483813285827637,
+    "local_relief": 46.70738983154297,
+    "ruggedness": 8.029296875,
+    "hypsometric_integral": 0.335149432171651
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 187.06796264648438,
+   "elev_max": 450.1076965332031,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm21_65p118_81",
+   "region": "pilbara",
+   "lat": -21.65,
+   "lon": 118.807,
+   "indicators": {
+    "slope_median": 0.5366433262825012,
+    "slope_p90": 0.990800678730011,
+    "local_relief": 10.018844604492188,
+    "ruggedness": 2.8606672286987305,
+    "hypsometric_integral": 0.5250520200397124
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 211.24708557128906,
+   "elev_max": 298.51287841796875,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm21_65p119_13",
+   "region": "pilbara",
+   "lat": -21.65,
+   "lon": 119.13,
+   "indicators": {
+    "slope_median": 1.4718897342681885,
+    "slope_p90": 6.088284969329834,
+    "local_relief": 38.9161376953125,
+    "ruggedness": 9.549230575561523,
+    "hypsometric_integral": 0.3380335453559477
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 276.2369079589844,
+   "elev_max": 496.6974182128906,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm21_65p119_45",
+   "region": "pilbara",
+   "lat": -21.65,
+   "lon": 119.452,
+   "indicators": {
+    "slope_median": 0.9387648105621338,
+    "slope_p90": 3.9515299797058105,
+    "local_relief": 24.8720703125,
+    "ruggedness": 5.135249137878418,
+    "hypsometric_integral": 0.4353334126978368
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 233.33924865722656,
+   "elev_max": 403.2078552246094,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm21_65p119_78",
+   "region": "pilbara",
+   "lat": -21.65,
+   "lon": 119.775,
+   "indicators": {
+    "slope_median": 0.7106949687004089,
+    "slope_p90": 4.296177864074707,
+    "local_relief": 12.704925537109375,
+    "ruggedness": 3.490574598312378,
+    "hypsometric_integral": 0.39443107589595444
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 260.0894470214844,
+   "elev_max": 431.17498779296875,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm21_35p119_13",
+   "region": "pilbara",
+   "lat": -21.35,
+   "lon": 119.127,
+   "indicators": {
+    "slope_median": 3.017880439758301,
+    "slope_p90": 9.767110824584961,
+    "local_relief": 62.745025634765625,
+    "ruggedness": 20.237411499023438,
+    "hypsometric_integral": 0.44015336855370313
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 188.41822814941406,
+   "elev_max": 430.9114685058594,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm21_35p119_77",
+   "region": "pilbara",
+   "lat": -21.35,
+   "lon": 119.772,
+   "indicators": {
+    "slope_median": 1.3563499450683594,
+    "slope_p90": 6.338554382324219,
+    "local_relief": 40.715232849121094,
+    "ruggedness": 9.09692668914795,
+    "hypsometric_integral": 0.3712094467196113
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 189.55128479003906,
+   "elev_max": 460.5733642578125,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm21_05p118_16",
+   "region": "pilbara",
+   "lat": -21.05,
+   "lon": 118.161,
+   "indicators": {
+    "slope_median": 0.43530386686325073,
+    "slope_p90": 2.2427492141723633,
+    "local_relief": 10.708023071289062,
+    "ruggedness": 2.3120694160461426,
+    "hypsometric_integral": 0.3052422823642681
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 65.25279998779297,
+   "elev_max": 238.0614776611328,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm21_05p118_48",
+   "region": "pilbara",
+   "lat": -21.05,
+   "lon": 118.482,
+   "indicators": {
+    "slope_median": 0.2871935963630676,
+    "slope_p90": 2.6545042991638184,
+    "local_relief": 7.3275604248046875,
+    "ruggedness": 1.4865434169769287,
+    "hypsometric_integral": 0.23778640954639604
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 78.19487762451172,
+   "elev_max": 244.93692016601562,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm21_05p118_80",
+   "region": "pilbara",
+   "lat": -21.05,
+   "lon": 118.804,
+   "indicators": {
+    "slope_median": 0.41571423411369324,
+    "slope_p90": 0.8429821729660034,
+    "local_relief": 7.6442413330078125,
+    "ruggedness": 2.160529613494873,
+    "hypsometric_integral": 0.4263115989304021
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 122.36272430419922,
+   "elev_max": 229.0933380126953,
+   "nearest_known": null
+  },
+  {
+   "id": "pilbaramm21_05p119_12",
+   "region": "pilbara",
+   "lat": -21.05,
+   "lon": 119.125,
+   "indicators": {
+    "slope_median": 0.41006535291671753,
+    "slope_p90": 4.443502426147461,
+    "local_relief": 8.103240966796875,
+    "ruggedness": 2.139492988586426,
+    "hypsometric_integral": 0.2376697559585826
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 123.10021209716797,
+   "elev_max": 367.7193603515625,
+   "nearest_known": null
+  },
+  {
+   "id": "greatmbasinmp35_15m117_08",
+   "region": "great-basin",
+   "lat": 35.15,
+   "lon": -117.083,
+   "indicators": {
+    "slope_median": 1.8719549179077148,
+    "slope_p90": 6.338637351989746,
+    "local_relief": 43.8262939453125,
+    "ruggedness": 8.654404640197754,
+    "hypsometric_integral": 0.5132527922719752
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 656.6842651367188,
+   "elev_max": 1280.3511962890625,
+   "nearest_known": null
+  },
+  {
+   "id": "greatmbasinmp35_15m114_51",
+   "region": "great-basin",
+   "lat": 35.15,
+   "lon": -114.514,
+   "indicators": {
+    "slope_median": 3.2603683471679688,
+    "slope_p90": 9.078808784484863,
+    "local_relief": 65.58212280273438,
+    "ruggedness": 18.40281105041504,
+    "hypsometric_integral": 0.3468495032765931
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 146.5,
+   "elev_max": 1368.0394287109375,
+   "nearest_known": null
+  },
+  {
+   "id": "greatmbasinmp35_45m117_82",
+   "region": "great-basin",
+   "lat": 35.45,
+   "lon": -117.816,
+   "indicators": {
+    "slope_median": 5.194194793701172,
+    "slope_p90": 16.249874114990234,
+    "local_relief": 126.1807861328125,
+    "ruggedness": 27.015060424804688,
+    "hypsometric_integral": 0.43999338230772445
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 577.9398193359375,
+   "elev_max": 1584.638916015625,
+   "nearest_known": null,
+   "quicklooks": {
+    "hillshade": "data/quicklooks/screen-greatmbasinmp35_45m117_82-hillshade.webp",
+    "slope": "data/quicklooks/screen-greatmbasinmp35_45m117_82-slope.webp",
+    "imagery": "data/quicklooks/screen-greatmbasinmp35_45m117_82-imagery.webp"
+   }
+  },
+  {
+   "id": "greatmbasinmp35_45m116_34",
+   "region": "great-basin",
+   "lat": 35.45,
+   "lon": -116.343,
+   "indicators": {
+    "slope_median": 6.437565803527832,
+    "slope_p90": 19.528566360473633,
+    "local_relief": 141.655517578125,
+    "ruggedness": 35.33725357055664,
+    "hypsometric_integral": 0.47066710343006046
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 331.5538635253906,
+   "elev_max": 1859.6470947265625,
+   "nearest_known": null
+  },
+  {
+   "id": "greatmbasinmp36_35m114_09",
+   "region": "great-basin",
+   "lat": 36.35,
+   "lon": -114.089,
+   "indicators": {
+    "slope_median": 5.493719100952148,
+    "slope_p90": 18.833518981933594,
+    "local_relief": 122.94010925292969,
+    "ruggedness": 31.684436798095703,
+    "hypsometric_integral": 0.4016574507871083
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 377.5335693359375,
+   "elev_max": 1721.099609375,
+   "nearest_known": null
+  },
+  {
+   "id": "greatmbasinmp36_65m117_06",
+   "region": "great-basin",
+   "lat": 36.65,
+   "lon": -117.065,
+   "indicators": {
+    "slope_median": 2.9323108196258545,
+    "slope_p90": 10.799299240112305,
+    "local_relief": 63.48792266845703,
+    "ruggedness": 13.423763275146484,
+    "hypsometric_integral": 0.232436351249454
+   },
+   "valid_fraction": 1.0,
+   "elev_min": -77.9178237915039,
+   "elev_max": 1114.8714599609375,
+   "nearest_known": {
+    "name": "Death Valley",
+    "km": 27.4
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/screen-greatmbasinmp36_65m117_06-hillshade.webp",
+    "slope": "data/quicklooks/screen-greatmbasinmp36_65m117_06-slope.webp",
+    "imagery": "data/quicklooks/screen-greatmbasinmp36_65m117_06-imagery.webp"
+   }
+  },
+  {
+   "id": "greatmbasinmp36_65m114_45",
+   "region": "great-basin",
+   "lat": 36.65,
+   "lon": -114.448,
+   "indicators": {
+    "slope_median": 1.6493909358978271,
+    "slope_p90": 8.254009246826172,
+    "local_relief": 42.68780517578125,
+    "ruggedness": 8.738523483276367,
+    "hypsometric_integral": 0.49741334401140824
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 371.5783386230469,
+   "elev_max": 908.9957885742188,
+   "nearest_known": null
+  },
+  {
+   "id": "greatmbasinmp36_95m117_81",
+   "region": "great-basin",
+   "lat": 36.95,
+   "lon": -117.812,
+   "indicators": {
+    "slope_median": 7.935239791870117,
+    "slope_p90": 19.415760040283203,
+    "local_relief": 174.17791748046875,
+    "ruggedness": 41.353797912597656,
+    "hypsometric_integral": 0.5636537920817348
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 640.826416015625,
+   "elev_max": 2142.03173828125,
+   "nearest_known": null
+  },
+  {
+   "id": "greatmbasinmp36_95m115_56",
+   "region": "great-basin",
+   "lat": 36.95,
+   "lon": -115.56,
+   "indicators": {
+    "slope_median": 3.3328394889831543,
+    "slope_p90": 17.45063591003418,
+    "local_relief": 81.62213134765625,
+    "ruggedness": 14.860673904418945,
+    "hypsometric_integral": 0.3926953944135733
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 952.1724853515625,
+   "elev_max": 1963.390380859375,
+   "nearest_known": null
+  },
+  {
+   "id": "greatmbasinmp36_95m114_06",
+   "region": "great-basin",
+   "lat": 36.95,
+   "lon": -114.058,
+   "indicators": {
+    "slope_median": 2.042860269546509,
+    "slope_p90": 5.746269226074219,
+    "local_relief": 45.496337890625,
+    "ruggedness": 10.754907608032227,
+    "hypsometric_integral": 0.44419662481986605
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 524.3807983398438,
+   "elev_max": 997.521728515625,
+   "nearest_known": null
+  },
+  {
+   "id": "greatmbasinmp37_25m115_93",
+   "region": "great-basin",
+   "lat": 37.25,
+   "lon": -115.927,
+   "indicators": {
+    "slope_median": 1.1195390224456787,
+    "slope_p90": 11.23390007019043,
+    "local_relief": 28.52838134765625,
+    "ruggedness": 5.0372209548950195,
+    "hypsometric_integral": 0.24271794845990605
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1295.0546875,
+   "elev_max": 1910.04345703125,
+   "nearest_known": null
+  },
+  {
+   "id": "greatmbasinmp37_25m115_55",
+   "region": "great-basin",
+   "lat": 37.25,
+   "lon": -115.55,
+   "indicators": {
+    "slope_median": 2.1328349113464355,
+    "slope_p90": 10.669711112976074,
+    "local_relief": 58.89544677734375,
+    "ruggedness": 10.62568473815918,
+    "hypsometric_integral": 0.3996147234615486
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1173.176025390625,
+   "elev_max": 1977.52099609375,
+   "nearest_known": null
+  },
+  {
+   "id": "greatmbasinmp37_55m117_05",
+   "region": "great-basin",
+   "lat": 37.55,
+   "lon": -117.054,
+   "indicators": {
+    "slope_median": 2.5174248218536377,
+    "slope_p90": 18.19701385498047,
+    "local_relief": 64.76275634765625,
+    "ruggedness": 11.653573989868164,
+    "hypsometric_integral": 0.22780590905848289
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1404.656005859375,
+   "elev_max": 2518.1962890625,
+   "nearest_known": null
+  },
+  {
+   "id": "greatmbasinmp37_55m114_03",
+   "region": "great-basin",
+   "lat": 37.55,
+   "lon": -114.027,
+   "indicators": {
+    "slope_median": 5.024706840515137,
+    "slope_p90": 15.851675033569336,
+    "local_relief": 98.41412353515625,
+    "ruggedness": 29.264732360839844,
+    "hypsometric_integral": 0.517458857341898
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1423.8983154296875,
+   "elev_max": 2268.604736328125,
+   "nearest_known": null
+  },
+  {
+   "id": "greatmbasinmp37_85m114_77",
+   "region": "great-basin",
+   "lat": 37.85,
+   "lon": -114.771,
+   "indicators": {
+    "slope_median": 1.0568736791610718,
+    "slope_p90": 4.21371603012085,
+    "local_relief": 21.06475830078125,
+    "ruggedness": 4.642038345336914,
+    "hypsometric_integral": 0.19411865604016196
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1394.9130859375,
+   "elev_max": 1981.1201171875,
+   "nearest_known": null
+  },
+  {
+   "id": "greatmbasinmp38_15m117_81",
+   "region": "great-basin",
+   "lat": 38.15,
+   "lon": -117.809,
+   "indicators": {
+    "slope_median": 5.220772743225098,
+    "slope_p90": 14.290436744689941,
+    "local_relief": 123.04541015625,
+    "ruggedness": 29.39745330810547,
+    "hypsometric_integral": 0.5242692635036034
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1376.8751220703125,
+   "elev_max": 2269.6572265625,
+   "nearest_known": null,
+   "quicklooks": {
+    "hillshade": "data/quicklooks/screen-greatmbasinmp38_15m117_81-hillshade.webp",
+    "slope": "data/quicklooks/screen-greatmbasinmp38_15m117_81-slope.webp",
+    "imagery": "data/quicklooks/screen-greatmbasinmp38_15m117_81-imagery.webp"
+   }
+  },
+  {
+   "id": "greatmbasinmp38_15m115_90",
+   "region": "great-basin",
+   "lat": 38.15,
+   "lon": -115.902,
+   "indicators": {
+    "slope_median": 1.4894630908966064,
+    "slope_p90": 11.123822212219238,
+    "local_relief": 32.83416748046875,
+    "ruggedness": 6.571706295013428,
+    "hypsometric_integral": 0.20174173383333227
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1466.296630859375,
+   "elev_max": 2730.068603515625,
+   "nearest_known": null
+  },
+  {
+   "id": "greatmbasinmp38_15m115_14",
+   "region": "great-basin",
+   "lat": 38.15,
+   "lon": -115.139,
+   "indicators": {
+    "slope_median": 2.450932025909424,
+    "slope_p90": 11.193193435668945,
+    "local_relief": 56.78216552734375,
+    "ruggedness": 11.47115421295166,
+    "hypsometric_integral": 0.26445476755750974
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1528.9215087890625,
+   "elev_max": 2601.69580078125,
+   "nearest_known": null,
+   "quicklooks": {
+    "hillshade": "data/quicklooks/screen-greatmbasinmp38_15m115_14-hillshade.webp",
+    "slope": "data/quicklooks/screen-greatmbasinmp38_15m115_14-slope.webp",
+    "imagery": "data/quicklooks/screen-greatmbasinmp38_15m115_14-imagery.webp"
+   }
+  },
+  {
+   "id": "greatmbasinmp38_45m115_89",
+   "region": "great-basin",
+   "lat": 38.45,
+   "lon": -115.893,
+   "indicators": {
+    "slope_median": 2.2964415550231934,
+    "slope_p90": 12.14054012298584,
+    "local_relief": 61.42498779296875,
+    "ruggedness": 10.339093208312988,
+    "hypsometric_integral": 0.39872804747349744
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1439.661376953125,
+   "elev_max": 2195.125244140625,
+   "nearest_known": null
+  },
+  {
+   "id": "greatmbasinmp38_75m115_11",
+   "region": "great-basin",
+   "lat": 38.75,
+   "lon": -115.115,
+   "indicators": {
+    "slope_median": 0.8088589906692505,
+    "slope_p90": 9.257136344909668,
+    "local_relief": 16.14947509765625,
+    "ruggedness": 3.5596923828125,
+    "hypsometric_integral": 0.14100046934155963
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1620.24609375,
+   "elev_max": 2587.4580078125,
+   "nearest_known": null
+  },
+  {
+   "id": "icelandmp64_35m17_65",
+   "region": "iceland",
+   "lat": 64.35,
+   "lon": -17.653,
+   "indicators": {
+    "slope_median": 1.2358677387237549,
+    "slope_p90": 3.197765350341797,
+    "local_relief": 27.54754638671875,
+    "ruggedness": 5.369080543518066,
+    "hypsometric_integral": 0.47084710506934035
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 1107.3385009765625,
+   "elev_max": 1643.738525390625,
+   "nearest_known": null
+  },
+  {
+   "id": "icelandmp64_35m16_96",
+   "region": "iceland",
+   "lat": 64.35,
+   "lon": -16.96,
+   "indicators": {
+    "slope_median": 1.2716370820999146,
+    "slope_p90": 2.531019687652588,
+    "local_relief": 28.73193359375,
+    "ruggedness": 5.554845809936523,
+    "hypsometric_integral": 0.6200452945870775
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 941.818603515625,
+   "elev_max": 1619.0987548828125,
+   "nearest_known": null
+  },
+  {
+   "id": "icelandmp64_35m16_27",
+   "region": "iceland",
+   "lat": 64.35,
+   "lon": -16.267,
+   "indicators": {
+    "slope_median": 1.882645606994629,
+    "slope_p90": 7.089381694793701,
+    "local_relief": 43.7137451171875,
+    "ruggedness": 8.221010208129883,
+    "hypsometric_integral": 0.6796698441125507
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 504.4849548339844,
+   "elev_max": 1541.4732666015625,
+   "nearest_known": null
+  },
+  {
+   "id": "icelandmp64_35m15_57",
+   "region": "iceland",
+   "lat": 64.35,
+   "lon": -15.574,
+   "indicators": {
+    "slope_median": 5.202975749969482,
+    "slope_p90": 27.733137130737305,
+    "local_relief": 177.7678985595703,
+    "ruggedness": 26.780500411987305,
+    "hypsometric_integral": 0.2743244090767951
+   },
+   "valid_fraction": 1.0,
+   "elev_min": -0.7375293374061584,
+   "elev_max": 1256.9884033203125,
+   "nearest_known": null
+  },
+  {
+   "id": "icelandmp64_65m17_65",
+   "region": "iceland",
+   "lat": 64.65,
+   "lon": -17.65,
+   "indicators": {
+    "slope_median": 3.4289982318878174,
+    "slope_p90": 10.8488187789917,
+    "local_relief": 86.75033569335938,
+    "ruggedness": 16.276731491088867,
+    "hypsometric_integral": 0.41420029933764446
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 905.4834594726562,
+   "elev_max": 1998.4161376953125,
+   "nearest_known": null
+  },
+  {
+   "id": "icelandmp64_65m16_95",
+   "region": "iceland",
+   "lat": 64.65,
+   "lon": -16.949,
+   "indicators": {
+    "slope_median": 1.3573399782180786,
+    "slope_p90": 3.606032371520996,
+    "local_relief": 31.7110595703125,
+    "ruggedness": 5.897994041442871,
+    "hypsometric_integral": 0.5090222316398445
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 969.0953369140625,
+   "elev_max": 1767.586181640625,
+   "nearest_known": {
+    "name": "Askja volcano",
+    "km": 44.8
+   }
+  },
+  {
+   "id": "icelandmp64_65m16_25",
+   "region": "iceland",
+   "lat": 64.65,
+   "lon": -16.248,
+   "indicators": {
+    "slope_median": 1.3359742164611816,
+    "slope_p90": 2.279343366622925,
+    "local_relief": 28.29864501953125,
+    "ruggedness": 5.7794508934021,
+    "hypsometric_integral": 0.5535147118926969
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 722.460693359375,
+   "elev_max": 1287.30712890625,
+   "nearest_known": null
+  },
+  {
+   "id": "icelandmp64_65m15_55",
+   "region": "iceland",
+   "lat": 64.65,
+   "lon": -15.548,
+   "indicators": {
+    "slope_median": 3.3593621253967285,
+    "slope_p90": 11.675347328186035,
+    "local_relief": 77.26544189453125,
+    "ruggedness": 15.60515022277832,
+    "hypsometric_integral": 0.44999968336649326
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 648.9496459960938,
+   "elev_max": 1554.018798828125,
+   "nearest_known": null
+  },
+  {
+   "id": "icelandmp64_95m17_65",
+   "region": "iceland",
+   "lat": 64.95,
+   "lon": -17.646,
+   "indicators": {
+    "slope_median": 1.4954869747161865,
+    "slope_p90": 4.890922546386719,
+    "local_relief": 31.8822021484375,
+    "ruggedness": 7.995916366577148,
+    "hypsometric_integral": 0.5354285268445205
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 492.2317810058594,
+   "elev_max": 890.0572509765625,
+   "nearest_known": {
+    "name": "Askja volcano",
+    "km": 43.0
+   }
+  },
+  {
+   "id": "icelandmp64_95m16_94",
+   "region": "iceland",
+   "lat": 64.95,
+   "lon": -16.937,
+   "indicators": {
+    "slope_median": 1.426093578338623,
+    "slope_p90": 6.779237270355225,
+    "local_relief": 37.889739990234375,
+    "ruggedness": 7.1760573387146,
+    "hypsometric_integral": 0.30050464467056454
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 692.0455322265625,
+   "elev_max": 1490.4732666015625,
+   "nearest_known": {
+    "name": "Askja volcano",
+    "km": 13.4
+   }
+  },
+  {
+   "id": "icelandmp64_95m16_23",
+   "region": "iceland",
+   "lat": 64.95,
+   "lon": -16.229,
+   "indicators": {
+    "slope_median": 2.179668664932251,
+    "slope_p90": 11.993257522583008,
+    "local_relief": 65.06674194335938,
+    "ruggedness": 11.621221542358398,
+    "hypsometric_integral": 0.30454620922168324
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 568.9439086914062,
+   "elev_max": 1006.9552612304688,
+   "nearest_known": {
+    "name": "Vikursundar, Askja",
+    "km": 21.1
+   },
+   "quicklooks": {
+    "hillshade": "data/quicklooks/screen-icelandmp64_95m16_23-hillshade.webp",
+    "slope": "data/quicklooks/screen-icelandmp64_95m16_23-slope.webp",
+    "imagery": "data/quicklooks/screen-icelandmp64_95m16_23-imagery.webp"
+   }
+  },
+  {
+   "id": "icelandmp64_95m15_52",
+   "region": "iceland",
+   "lat": 64.95,
+   "lon": -15.52,
+   "indicators": {
+    "slope_median": 2.543570041656494,
+    "slope_p90": 10.585089683532715,
+    "local_relief": 63.494384765625,
+    "ruggedness": 12.129904747009277,
+    "hypsometric_integral": 0.5888733375420956
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 365.61273193359375,
+   "elev_max": 1090.3897705078125,
+   "nearest_known": {
+    "name": "Vikursundar, Askja",
+    "km": 48.0
+   }
+  },
+  {
+   "id": "canadianmarcticmp75_15m89_07",
+   "region": "canadian-arctic",
+   "lat": 75.15,
+   "lon": -89.074,
+   "indicators": {
+    "slope_median": 2.571169376373291,
+    "slope_p90": 7.872875213623047,
+    "local_relief": 53.707733154296875,
+    "ruggedness": 12.504934310913086,
+    "hypsometric_integral": 0.7248472635965382
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 103.81082916259766,
+   "elev_max": 426.6903991699219,
+   "nearest_known": {
+    "name": "Haughton impact structure",
+    "km": 31.1
+   }
+  },
+  {
+   "id": "canadianmarcticmp75_15m87_90",
+   "region": "canadian-arctic",
+   "lat": 75.15,
+   "lon": -87.903,
+   "indicators": {
+    "slope_median": 1.867136001586914,
+    "slope_p90": 5.409194469451904,
+    "local_relief": 40.53575134277344,
+    "ruggedness": 8.837789535522461,
+    "hypsometric_integral": 0.5357987393474215
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 242.48362731933594,
+   "elev_max": 492.49371337890625,
+   "nearest_known": null
+  },
+  {
+   "id": "canadianmarcticmp75_15m86_73",
+   "region": "canadian-arctic",
+   "lat": 75.15,
+   "lon": -86.733,
+   "indicators": {
+    "slope_median": 2.72025728225708,
+    "slope_p90": 6.280028820037842,
+    "local_relief": 57.7457275390625,
+    "ruggedness": 12.841492652893066,
+    "hypsometric_integral": 0.7840213151015543
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 77.4529800415039,
+   "elev_max": 587.5808715820312,
+   "nearest_known": null
+  },
+  {
+   "id": "canadianmarcticmp75_45m91_40",
+   "region": "canadian-arctic",
+   "lat": 75.45,
+   "lon": -91.403,
+   "indicators": {
+    "slope_median": 2.406998634338379,
+    "slope_p90": 6.487771987915039,
+    "local_relief": 51.58872604370117,
+    "ruggedness": 11.789020538330078,
+    "hypsometric_integral": 0.49035983223093005
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 53.089027404785156,
+   "elev_max": 327.8475341796875,
+   "nearest_known": {
+    "name": "Haughton impact structure",
+    "km": 48.7
+   }
+  },
+  {
+   "id": "canadianmarcticmp75_75m91_39",
+   "region": "canadian-arctic",
+   "lat": 75.75,
+   "lon": -91.391,
+   "indicators": {
+    "slope_median": 1.9623544216156006,
+    "slope_p90": 5.78811502456665,
+    "local_relief": 43.48641586303711,
+    "ruggedness": 9.194337844848633,
+    "hypsometric_integral": 0.5773033220011764
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 0.0,
+   "elev_max": 298.38006591796875,
+   "nearest_known": null
+  },
+  {
+   "id": "canadianmarcticmp75_75m90_17",
+   "region": "canadian-arctic",
+   "lat": 75.75,
+   "lon": -90.172,
+   "indicators": {
+    "slope_median": 2.959284782409668,
+    "slope_p90": 7.718704700469971,
+    "local_relief": 61.48297882080078,
+    "ruggedness": 14.636494636535645,
+    "hypsometric_integral": 0.6841148722623198
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 0.40040212869644165,
+   "elev_max": 327.44000244140625,
+   "nearest_known": {
+    "name": "Haughton impact structure",
+    "km": 43.0
+   }
+  },
+  {
+   "id": "canadianmarcticmp76_35m91_36",
+   "region": "canadian-arctic",
+   "lat": 76.35,
+   "lon": -91.364,
+   "indicators": {
+    "slope_median": 3.941303253173828,
+    "slope_p90": 13.649203300476074,
+    "local_relief": 88.62210083007812,
+    "ruggedness": 18.45592498779297,
+    "hypsometric_integral": 0.6687153848223749
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 0.0,
+   "elev_max": 525.245361328125,
+   "nearest_known": null
+  },
+  {
+   "id": "canadianmarcticmp76_95m87_35",
+   "region": "canadian-arctic",
+   "lat": 76.95,
+   "lon": -87.35,
+   "indicators": {
+    "slope_median": 4.154724597930908,
+    "slope_p90": 9.774311065673828,
+    "local_relief": 96.43476867675781,
+    "ruggedness": 19.119403839111328,
+    "hypsometric_integral": 0.48710885158498746
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 161.13864135742188,
+   "elev_max": 743.0540161132812,
+   "nearest_known": null
+  },
+  {
+   "id": "drymvalleysmm77_85p160_71",
+   "region": "dry-valleys",
+   "lat": -77.85,
+   "lon": 160.713,
+   "indicators": {
+    "slope_median": 8.742424011230469,
+    "slope_p90": 32.37619400024414,
+    "local_relief": 291.08526611328125,
+    "ruggedness": 42.962623596191406,
+    "hypsometric_integral": 0.36136865581316985
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 939.6112060546875,
+   "elev_max": 2829.084716796875,
+   "nearest_known": null
+  },
+  {
+   "id": "drymvalleysmm77_85p162_14",
+   "region": "dry-valleys",
+   "lat": -77.85,
+   "lon": 162.138,
+   "indicators": {
+    "slope_median": 5.488648414611816,
+    "slope_p90": 32.71949005126953,
+    "local_relief": 181.9390869140625,
+    "ruggedness": 26.487274169921875,
+    "hypsometric_integral": 0.40277957776439705
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 429.3969421386719,
+   "elev_max": 2186.235595703125,
+   "nearest_known": null
+  },
+  {
+   "id": "drymvalleysmm77_55p160_70",
+   "region": "dry-valleys",
+   "lat": -77.55,
+   "lon": 160.696,
+   "indicators": {
+    "slope_median": 8.020257949829102,
+    "slope_p90": 29.508764266967773,
+    "local_relief": 213.55816650390625,
+    "ruggedness": 39.17833709716797,
+    "hypsometric_integral": 0.6258911045577624
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 159.07363891601562,
+   "elev_max": 2344.800048828125,
+   "nearest_known": null
+  },
+  {
+   "id": "drymvalleysmm77_55p162_09",
+   "region": "dry-valleys",
+   "lat": -77.55,
+   "lon": 162.087,
+   "indicators": {
+    "slope_median": 13.537446022033691,
+    "slope_p90": 29.712602615356445,
+    "local_relief": 316.0163879394531,
+    "ruggedness": 63.3895263671875,
+    "hypsometric_integral": 0.554368731804346
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 90.74763488769531,
+   "elev_max": 2137.9150390625,
+   "nearest_known": null
+  },
+  {
+   "id": "drymvalleysmm77_25p160_68",
+   "region": "dry-valleys",
+   "lat": -77.25,
+   "lon": 160.68,
+   "indicators": {
+    "slope_median": 8.774374008178711,
+    "slope_p90": 30.818649291992188,
+    "local_relief": 258.812744140625,
+    "ruggedness": 40.655723571777344,
+    "hypsometric_integral": 0.5344470442472368
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 648.484375,
+   "elev_max": 2506.720703125,
+   "nearest_known": null
+  },
+  {
+   "id": "drymvalleysmm77_25p162_04",
+   "region": "dry-valleys",
+   "lat": -77.25,
+   "lon": 162.039,
+   "indicators": {
+    "slope_median": 8.944568634033203,
+    "slope_p90": 29.203447341918945,
+    "local_relief": 255.427001953125,
+    "ruggedness": 42.193519592285156,
+    "hypsometric_integral": 0.5178049806724276
+   },
+   "valid_fraction": 1.0,
+   "elev_min": 389.5773620605469,
+   "elev_max": 1609.1614990234375,
+   "nearest_known": null
+  }
+ ],
+ "top_equal_weights": {
+  "jezero": [
+   {
+    "id": "qaidammp38_35p91_19",
+    "score": 0.9948334738878939
+   },
+   {
+    "id": "greatmbasinmp38_15m115_14",
+    "score": 0.9902388497641137
+   },
+   {
+    "id": "hoggarmp23_25p4_66",
+    "score": 0.9757415063898156
+   },
+   {
+    "id": "afarmp12_65p41_38",
+    "score": 0.9747570653195983
+   },
+   {
+    "id": "icelandmp64_95m16_23",
+    "score": 0.9745947701464374
+   },
+   {
+    "id": "greatmbasinmp36_65m117_06",
+    "score": 0.9702694606310969
+   },
+   {
+    "id": "pilbaramm21_65p118_48",
+    "score": 0.9695185123062071
+   },
+   {
+    "id": "greatmbasinmp38_15m115_90",
+    "score": 0.9663167575226161
+   },
+   {
+    "id": "punamm24_65m66_69",
+    "score": 0.9659017855257781
+   },
+   {
+    "id": "lutmp29_95p59_71",
+    "score": 0.9639217596777092
+   }
+  ],
+  "mons-mouton-plateau": [
+   {
+    "id": "lutmp30_55p59_37",
+    "score": 0.9819150725394297
+   },
+   {
+    "id": "greatmbasinmp38_15m117_81",
+    "score": 0.9790124784976871
+   },
+   {
+    "id": "punamm22_55m68_34",
+    "score": 0.9575728223773382
+   },
+   {
+    "id": "lutmp30_25p59_72",
+    "score": 0.9543679427950087
+   },
+   {
+    "id": "greatmbasinmp35_45m117_82",
+    "score": 0.9473669880231741
+   },
+   {
+    "id": "tibestimp20_55p18_44",
+    "score": 0.9450087105586187
+   },
+   {
+    "id": "greatmbasinmp37_55m114_03",
+    "score": 0.9358381619692185
+   },
+   {
+    "id": "gobimp43_75p103_28",
+    "score": 0.9218988726952266
+   },
+   {
+    "id": "punamm25_25m68_00",
+    "score": 0.9175061364766994
+   },
+   {
+    "id": "hoggarmp23_25p5_97",
+    "score": 0.9149458809641902
+   }
+  ]
+ }
+}

@@ -1,0 +1,6 @@
+source: https://science.nasa.gov/solar-system/analog-explorer/#life-turkey-mars
+title: NASA Planetary Analog Explorer - Looking for Life: Turkey and Mars
+retrieved: 2026-10-12
+type: verbatim passage (Image Details)
+---
+The light-colored sediments seen at the edge of Lake Salda, in Turkey, may have formed with the help of tiny living things. In Jezero Crater, a place on Mars that has geological and mineral characteristics in common with Lake Salda, NASA's Perseverance Rover is searching for similar signs of ancient life. Evidence of a former river flow along Jezero’s rim suggests that this crater was once a vast lakebed. Images not to scale; Lake Salda is similar in size to the oval-shaped landing area, shown here, that Perseverance targeted for landing.

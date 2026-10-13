@@ -1,0 +1,6 @@
+source: https://science.nasa.gov/solar-system/analog-explorer/#subsurface-ice-iceland-moon
+title: NASA Planetary Analog Explorer - Subsurface Ice: Iceland and the Lunar South Pole
+retrieved: 2026-10-12
+type: verbatim passage (Image Details)
+---
+Scientists use ground-penetrating radar to find buried ice near Askja volcano in Iceland. The same technology will help future lunar explorers to detect water ice beneath the lunar surface in permanently shadowed regions near the lunar South Pole. Humans have not yet set foot on this part of the Moon, and even if there were astronauts in this view, they would be much too small to see. The large crater near the center of this image is about 100 kilometers (62 miles) wide.

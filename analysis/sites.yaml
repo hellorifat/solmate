@@ -1,0 +1,202 @@
+# SolMate analysis sites (v1)
+#
+# Roles
+#   references - planetary targets; every Earth site is compared with each one
+#   documented - Earth field sites featured in NASA's Planetary Analog Explorer
+#                (https://science.nasa.gov/solar-system/analog-explorer/), used as the
+#                positive set in validation. `pair` records the world NASA pairs them with.
+#   candidate  - other well-known analog field sites from the literature; ranked but not
+#                used to score the validation.
+#   control    - negative controls: terrain with no planetary-analog use (farmland, forest,
+#                alpine glaciers). The method should rank these below documented sites.
+#
+# Coordinates are the centre of the analysis window (approximate field-area centre, WGS84 /
+# Mars 2000 planetocentric, east-positive). Windows are square and centred on these points.
+
+references:
+  - id: jezero
+    name: Jezero Crater landing region
+    short: Jezero Crater
+    body: mars
+    pair: Mars
+    lat: 18.4447
+    lon: 77.4508
+    note: Octavia E. Butler landing site of NASA's Perseverance rover, on the crater floor east of the western delta.
+    source: https://science.nasa.gov/mission/mars-2020-perseverance/
+    dem: ctx_jezero
+  - id: mons-mouton-plateau
+    name: Mons Mouton Plateau, lunar south pole
+    short: Mons Mouton Plateau
+    body: moon
+    pair: Moon
+    lat: -84.5338
+    lon: 30.6556
+    note: One of NASA's nine Artemis III candidate landing regions (2024 update) and the region with the largest landing-suitable area in Wueller et al. (2026); window centred on the centroid of its 11 candidate landing sites.
+    source: https://doi.org/10.1029/2025JE009434
+    dem: lola_80s_20m
+
+sites:
+  # --- documented analog sites (NASA Planetary Analog Explorer) ---
+  - id: lake-salda
+    name: Lake Salda
+    country: Türkiye
+    lat: 37.555
+    lon: 29.680
+    role: documented
+    pair: Mars
+    context: Light-coloured lake-edge sediments; NASA notes Jezero shares geological and mineral characteristics with Lake Salda.
+    source: https://science.nasa.gov/solar-system/analog-explorer/#life-turkey-mars
+  - id: death-valley
+    name: Death Valley
+    country: USA (California)
+    lat: 36.460
+    lon: -116.870
+    role: documented
+    pair: Mars
+    context: Landscape NASA likens to Viking 2's view of Utopia Planitia; the Mars 2020 team practised hazard avoidance here.
+    source: https://science.nasa.gov/solar-system/analog-explorer/#rocky-reconnaissance-california-mars
+  - id: atacama-yungay
+    name: Atacama Desert (Yungay)
+    country: Chile
+    lat: -24.083
+    lon: -70.017
+    role: documented
+    pair: Mars
+    context: One of the driest places on Earth, used to study how the building blocks of life respond to Martian conditions.
+    source: https://science.nasa.gov/solar-system/analog-explorer/#life-atacama-desert-mars
+  - id: pilot-valley
+    name: Pilot Valley
+    country: USA (Utah)
+    lat: 40.980
+    lon: -114.030
+    role: documented
+    pair: Mars
+    context: Salt deposits that help explain how perchlorate, also observed on Mars, can serve as an energy source for microbes.
+    source: https://science.nasa.gov/solar-system/analog-explorer/#life-utah-mars
+  - id: verde-valley
+    name: Verde Valley
+    country: USA (Arizona)
+    lat: 34.560
+    lon: -111.860
+    role: documented
+    pair: Mars
+    context: Field and laboratory research on how biosignatures are preserved, to guide what Mars rovers look for.
+    source: https://science.nasa.gov/solar-system/analog-explorer/#life-arizona-mars
+  - id: vikursundar
+    name: Vikursundar, Askja
+    country: Iceland
+    lat: 65.110
+    lon: -16.470
+    role: documented
+    pair: Mars
+    context: Gravel ripples monitored with drone-derived terrain models as analogs of Martian ridges.
+    source: https://science.nasa.gov/solar-system/analog-explorer/#land-ripples-iceland-mars
+  - id: askja
+    name: Askja volcano
+    country: Iceland
+    lat: 65.045
+    lon: -16.760
+    role: documented
+    pair: Moon
+    context: Ground-penetrating radar finds buried ice here; the same technology is planned for ice near the lunar south pole.
+    source: https://science.nasa.gov/solar-system/analog-explorer/#subsurface-ice-iceland-moon
+  - id: kilauea
+    name: Kīlauea volcano
+    country: USA (Hawaiʻi)
+    lat: 19.406
+    lon: -155.283
+    role: documented
+    pair: Moon
+    context: Researchers measure how long volcanic field-geology tasks take, to plan similar work on the lunar surface.
+    source: https://science.nasa.gov/solar-system/analog-explorer/#basalt-landscapes-kilauea-moon
+  - id: lava-beds
+    name: Lava Beds, Medicine Lake Volcano
+    country: USA (California)
+    lat: 41.715
+    lon: -121.509
+    role: documented
+    pair: Moon
+    context: Lava caves explored from inside and out, working towards detecting hidden caves from above ground.
+    source: https://science.nasa.gov/solar-system/analog-explorer/#lava-caves-california-moon
+  - id: sf-volcanic-field
+    name: San Francisco Volcanic Field
+    country: USA (Arizona)
+    lat: 35.580
+    lon: -111.480
+    role: documented
+    pair: Moon
+    context: Moon-like volcanic field where NASA astronauts rehearsed Artemis moonwalks and tested surface technology.
+    source: https://science.nasa.gov/missions/artemis/behind-the-scenes-of-a-nasa-moonwalk-in-the-arizona-desert/
+
+  # --- other literature candidates (ranked, not used to score validation) ---
+  - id: haughton
+    name: Haughton impact structure
+    country: Canada (Nunavut)
+    lat: 75.383
+    lon: -89.683
+    role: candidate
+    pair: Mars
+    context: High-Arctic impact structure with intra-crater sedimentary deposits, including later paleolacustrine (lake) sediments.
+    source: https://doi.org/10.1111/j.1945-5100.2005.tb00152.x
+  - id: meteor-crater
+    name: Meteor Crater
+    country: USA (Arizona)
+    lat: 35.027
+    lon: -111.022
+    role: candidate
+    pair: Moon
+    context: Impact crater whose shocked Coconino Sandstone contains high-pressure silica phases such as coesite and stishovite.
+    source: https://doi.org/10.1029/jb076i023p05449
+  - id: lonar
+    name: Lonar crater
+    country: India
+    lat: 19.976
+    lon: 76.508
+    role: candidate
+    pair: Mars
+    context: Impact crater in basalt whose shocked rocks are studied for comparison with Mars.
+    source: https://doi.org/10.1029/2010je003785
+
+  # --- negative controls ---
+  - id: flevoland
+    name: Flevoland polder
+    country: Netherlands
+    lat: 52.530
+    lon: 5.600
+    role: control
+    context: Reclaimed, intensively farmed polder; no planetary-analog use.
+  - id: iowa
+    name: Central Iowa cropland
+    country: USA (Iowa)
+    lat: 42.200
+    lon: -93.900
+    role: control
+    context: Glaciated cropland plain; no planetary-analog use.
+  - id: ganges-plain
+    name: Ganges plain
+    country: India
+    lat: 26.400
+    lon: 81.800
+    role: control
+    context: Alluvial farmland plain; no planetary-analog use.
+  - id: amazon-forest
+    name: Central Amazon rainforest
+    country: Brazil
+    lat: -2.600
+    lon: -60.200
+    role: control
+    context: Closed-canopy lowland forest; the surface model records canopy, not ground.
+  - id: black-forest
+    name: Black Forest
+    country: Germany
+    lat: 48.000
+    lon: 8.150
+    role: control
+    context: Forested low mountains; no planetary-analog use.
+  - id: aletsch
+    name: Aletsch glacier region
+    country: Switzerland
+    lat: 46.450
+    lon: 8.050
+    role: control
+    context: Glaciated high alpine relief, a different formation process.

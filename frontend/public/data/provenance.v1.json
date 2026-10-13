@@ -1,0 +1,250 @@
+{
+ "version": 1,
+ "generated_at": "2026-10-11T19:31:01+00:00",
+ "datasets": [
+  {
+   "id": "ctx-jezero-dtm",
+   "name": "Mars 2020 Terrain Relative Navigation CTX DTM Mosaic (Jezero)",
+   "provider": "USGS Astrogeology Science Center",
+   "body": "Mars",
+   "role": "Reference elevation (scored)",
+   "resolution": "20 m/pixel, equirectangular, Mars 2000 sphere (R = 3,396,190 m)",
+   "coverage": "18.21–18.72°N, 77.16–77.70°E",
+   "url": "https://astrogeology.usgs.gov/search/map/mars_2020_terrain_relative_navigation_ctx_dtm_mosaic",
+   "doi": "https://doi.org/10.5066/P906QQT8",
+   "licence": "No access constraints; please cite authors (Fergason et al., 2020)",
+   "citation": "Fergason, R. L., et al. (2020). Mars 2020 Terrain Relative Navigation Flight Product Generation. 51st LPSC, abstract 2020.",
+   "quality": "Vertical registration between CTX DTMs 3.8 m; aligned to HRSC; manually edited for erroneous posts."
+  },
+  {
+   "id": "lola-sp-20m",
+   "name": "LOLA south-pole DEM mosaic, 20 m/pixel (LDEM_80S_20MPP_ADJ)",
+   "provider": "NASA Goddard Planetary Geodesy Data Archive (PGDA product 90)",
+   "body": "Moon",
+   "role": "Reference elevation (scored)",
+   "resolution": "20 m/pixel, polar stereographic, Moon (2015) sphere (R = 1,737,400 m)",
+   "coverage": "80–90°S",
+   "url": "https://pgda.gsfc.nasa.gov/products/90",
+   "licence": "NASA open data",
+   "quality": "Crossover-adjusted LOLA tracks; effective-resolution and error maps are published alongside the DEM.",
+   "citation": "Barker, M. K. et al. (2021). Improved LOLA elevation maps for south pole landing sites. Planetary and Space Science 203, 105119.",
+   "doi": "10.1016/j.pss.2020.105119"
+  },
+  {
+   "id": "pgda-sun-visibility",
+   "name": "Lunar polar average Sun visibility (AVGVISIB_75S_120M)",
+   "provider": "NASA Goddard Planetary Geodesy Data Archive (PGDA product 69)",
+   "body": "Moon",
+   "role": "Context imagery only (not scored)",
+   "resolution": "120 m/pixel, polar stereographic",
+   "url": "https://pgda.gsfc.nasa.gov/products/69",
+   "licence": "NASA open data",
+   "citation": "Mazarico, E. et al. (2011). Illumination conditions of the lunar polar regions using LOLA topography. Icarus 211, 1066-1081.",
+   "doi": "10.1016/j.icarus.2010.10.030"
+  },
+  {
+   "id": "ctx-jezero-ortho",
+   "name": "Mars 2020 TRN CTX orthomosaic (Jezero)",
+   "provider": "USGS Astrogeology Science Center",
+   "body": "Mars",
+   "role": "Context imagery only (not scored)",
+   "resolution": "6 m/pixel",
+   "url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/mars2020_trn/CTX/index.html",
+   "licence": "No access constraints; please cite authors"
+  },
+  {
+   "id": "copernicus-glo30",
+   "name": "Copernicus DEM GLO-30 (Digital Surface Model)",
+   "provider": "European Space Agency / Copernicus, via AWS Open Data",
+   "body": "Earth",
+   "role": "Earth elevation (scored)",
+   "resolution": "1 arc-second (~30 m); resampled by area averaging to the analysis grid",
+   "coverage": "Global land",
+   "url": "https://registry.opendata.aws/copernicus-dem/",
+   "licence": "Free of charge for any use with attribution (Copernicus DEM licence)",
+   "attribution": "Produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+   "quality": "Surface model: includes vegetation and buildings; water bodies flattened."
+  },
+  {
+   "id": "s2-cloudless",
+   "name": "Sentinel-2 cloudless mosaic",
+   "provider": "EOX IT Services GmbH",
+   "body": "Earth",
+   "role": "Context imagery only (not scored)",
+   "resolution": "~10 m source; shown as 400 px thumbnails",
+   "url": "https://s2maps.eu",
+   "licence": "CC BY-NC-SA 4.0",
+   "attribution": "Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data)"
+  },
+  {
+   "id": "nasa-analog-explorer",
+   "name": "NASA Planetary Analog Explorer",
+   "provider": "NASA Science",
+   "body": "Earth",
+   "role": "Validation labels (documented analog sites)",
+   "url": "https://science.nasa.gov/solar-system/analog-explorer/",
+   "licence": "Public NASA web content"
+  },
+  {
+   "id": "artemis-regions",
+   "name": "Artemis III candidate landing sites (Table A1)",
+   "provider": "Wueller et al. (2026), JGR Planets",
+   "body": "Moon",
+   "role": "Target definition (window centre)",
+   "url": "https://doi.org/10.1029/2025JE009434",
+   "licence": "Published article",
+   "doi": "10.1029/2025JE009434"
+  }
+ ],
+ "processing": [
+  "Earth: GLO-30 tiles covering each window are warped with area averaging to a local azimuthal-equidistant grid (WGS84) centred on the site.",
+  "Mars: the CTX DTM is resampled with area averaging in its own equirectangular CRS, using a 1/cos(latitude) east-west pixel so cells are square on the ground.",
+  "Moon: the LOLA south-pole DEM is resampled with area averaging in its own polar stereographic CRS, with pixels enlarged by the projection scale factor k = 2/(1+sin|latitude|) so cells are 100 m on the ground.",
+  "Primary grid: 200 x 200 cells of 100 m (20 km window). Sensitivity grids: 20 km at 200 m and 12 km at 100 m.",
+  "Edge cells without a complete neighbourhood are excluded from every statistic.",
+  "Windows with less than 90% valid elevation cells are excluded from scoring."
+ ],
+ "sites": {
+  "lake-salda": {
+   "tiles": [
+    "Copernicus_DSM_COG_10_N37_00_E029_00_DEM"
+   ],
+   "valid_fraction": 1.0
+  },
+  "death-valley": {
+   "tiles": [
+    "Copernicus_DSM_COG_10_N36_00_W117_00_DEM",
+    "Copernicus_DSM_COG_10_N36_00_W118_00_DEM"
+   ],
+   "valid_fraction": 1.0
+  },
+  "atacama-yungay": {
+   "tiles": [
+    "Copernicus_DSM_COG_10_S24_00_W070_00_DEM",
+    "Copernicus_DSM_COG_10_S24_00_W071_00_DEM",
+    "Copernicus_DSM_COG_10_S25_00_W070_00_DEM",
+    "Copernicus_DSM_COG_10_S25_00_W071_00_DEM"
+   ],
+   "valid_fraction": 1.0
+  },
+  "pilot-valley": {
+   "tiles": [
+    "Copernicus_DSM_COG_10_N40_00_W114_00_DEM",
+    "Copernicus_DSM_COG_10_N40_00_W115_00_DEM",
+    "Copernicus_DSM_COG_10_N41_00_W114_00_DEM",
+    "Copernicus_DSM_COG_10_N41_00_W115_00_DEM"
+   ],
+   "valid_fraction": 1.0
+  },
+  "verde-valley": {
+   "tiles": [
+    "Copernicus_DSM_COG_10_N34_00_W112_00_DEM"
+   ],
+   "valid_fraction": 1.0
+  },
+  "vikursundar": {
+   "tiles": [
+    "Copernicus_DSM_COG_10_N65_00_W017_00_DEM"
+   ],
+   "valid_fraction": 1.0
+  },
+  "askja": {
+   "tiles": [
+    "Copernicus_DSM_COG_10_N64_00_W017_00_DEM",
+    "Copernicus_DSM_COG_10_N64_00_W018_00_DEM",
+    "Copernicus_DSM_COG_10_N65_00_W017_00_DEM",
+    "Copernicus_DSM_COG_10_N65_00_W018_00_DEM"
+   ],
+   "valid_fraction": 1.0
+  },
+  "kilauea": {
+   "tiles": [
+    "Copernicus_DSM_COG_10_N19_00_W156_00_DEM"
+   ],
+   "valid_fraction": 1.0
+  },
+  "lava-beds": {
+   "tiles": [
+    "Copernicus_DSM_COG_10_N41_00_W122_00_DEM"
+   ],
+   "valid_fraction": 1.0
+  },
+  "sf-volcanic-field": {
+   "tiles": [
+    "Copernicus_DSM_COG_10_N35_00_W112_00_DEM"
+   ],
+   "valid_fraction": 1.0
+  },
+  "haughton": {
+   "tiles": [
+    "Copernicus_DSM_COG_10_N75_00_W090_00_DEM",
+    "Copernicus_DSM_COG_10_N75_00_W091_00_DEM"
+   ],
+   "valid_fraction": 1.0
+  },
+  "meteor-crater": {
+   "tiles": [
+    "Copernicus_DSM_COG_10_N34_00_W111_00_DEM",
+    "Copernicus_DSM_COG_10_N34_00_W112_00_DEM",
+    "Copernicus_DSM_COG_10_N35_00_W111_00_DEM",
+    "Copernicus_DSM_COG_10_N35_00_W112_00_DEM"
+   ],
+   "valid_fraction": 1.0
+  },
+  "lonar": {
+   "tiles": [
+    "Copernicus_DSM_COG_10_N19_00_E076_00_DEM",
+    "Copernicus_DSM_COG_10_N20_00_E076_00_DEM"
+   ],
+   "valid_fraction": 1.0
+  },
+  "flevoland": {
+   "tiles": [
+    "Copernicus_DSM_COG_10_N52_00_E005_00_DEM"
+   ],
+   "valid_fraction": 1.0
+  },
+  "iowa": {
+   "tiles": [
+    "Copernicus_DSM_COG_10_N42_00_W094_00_DEM",
+    "Copernicus_DSM_COG_10_N42_00_W095_00_DEM"
+   ],
+   "valid_fraction": 1.0
+  },
+  "ganges-plain": {
+   "tiles": [
+    "Copernicus_DSM_COG_10_N26_00_E081_00_DEM"
+   ],
+   "valid_fraction": 1.0
+  },
+  "amazon-forest": {
+   "tiles": [
+    "Copernicus_DSM_COG_10_S03_00_W061_00_DEM"
+   ],
+   "valid_fraction": 1.0
+  },
+  "black-forest": {
+   "tiles": [
+    "Copernicus_DSM_COG_10_N47_00_E007_00_DEM",
+    "Copernicus_DSM_COG_10_N47_00_E008_00_DEM",
+    "Copernicus_DSM_COG_10_N48_00_E007_00_DEM",
+    "Copernicus_DSM_COG_10_N48_00_E008_00_DEM"
+   ],
+   "valid_fraction": 1.0
+  },
+  "aletsch": {
+   "tiles": [
+    "Copernicus_DSM_COG_10_N46_00_E007_00_DEM",
+    "Copernicus_DSM_COG_10_N46_00_E008_00_DEM"
+   ],
+   "valid_fraction": 1.0
+  }
+ },
+ "software": {
+  "python": "3.11.9",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "rasterio": "1.4.4",
+  "gdal": "3.10.3"
+ }
+}

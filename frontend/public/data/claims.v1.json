@@ -1,0 +1,202 @@
+{
+ "version": 1,
+ "generated_at": "2026-10-11T18:49:59+00:00",
+ "checker": "TypeSafe System One Choice (supports / contradicts / says_nothing)",
+ "model": "jev-1.13.0",
+ "threshold": 0.8,
+ "scope": "Context claims only. Similarity scores are computed deterministically and never use this check.",
+ "results": {
+  "lake-salda": {
+   "claim": "Light-coloured lake-edge sediments; NASA notes Jezero shares geological and mineral characteristics with Lake Salda.",
+   "source": "https://science.nasa.gov/solar-system/analog-explorer/#life-turkey-mars",
+   "status": "needs_review",
+   "relation": "supports",
+   "confidence": 0.49,
+   "probabilities": {
+    "supports": 0.66,
+    "contradicts": 0.12,
+    "says_nothing": 0.22
+   }
+  },
+  "death-valley": {
+   "claim": "Landscape NASA likens to Viking 2's view of Utopia Planitia; the Mars 2020 team practised hazard avoidance here.",
+   "source": "https://science.nasa.gov/solar-system/analog-explorer/#rocky-reconnaissance-california-mars",
+   "status": "supported",
+   "relation": "supports",
+   "confidence": 0.97,
+   "probabilities": {
+    "supports": 0.98,
+    "contradicts": 0.0,
+    "says_nothing": 0.02
+   }
+  },
+  "atacama-yungay": {
+   "claim": "One of the driest places on Earth, used to study how the building blocks of life respond to Martian conditions.",
+   "source": "https://science.nasa.gov/solar-system/analog-explorer/#life-atacama-desert-mars",
+   "status": "supported",
+   "relation": "supports",
+   "confidence": 1.0,
+   "probabilities": {
+    "supports": 1.0,
+    "contradicts": 0.0,
+    "says_nothing": 0.0
+   }
+  },
+  "pilot-valley": {
+   "claim": "Salt deposits that help explain how perchlorate, also observed on Mars, can serve as an energy source for microbes.",
+   "source": "https://science.nasa.gov/solar-system/analog-explorer/#life-utah-mars",
+   "status": "supported",
+   "relation": "supports",
+   "confidence": 0.83,
+   "probabilities": {
+    "supports": 0.89,
+    "contradicts": 0.0,
+    "says_nothing": 0.11
+   }
+  },
+  "verde-valley": {
+   "claim": "Field and laboratory research on how biosignatures are preserved, to guide what Mars rovers look for.",
+   "source": "https://science.nasa.gov/solar-system/analog-explorer/#life-arizona-mars",
+   "status": "supported",
+   "relation": "supports",
+   "confidence": 1.0,
+   "probabilities": {
+    "supports": 1.0,
+    "contradicts": 0.0,
+    "says_nothing": 0.0
+   }
+  },
+  "vikursundar": {
+   "claim": "Gravel ripples monitored with drone-derived terrain models as analogs of Martian ridges.",
+   "source": "https://science.nasa.gov/solar-system/analog-explorer/#land-ripples-iceland-mars",
+   "status": "supported",
+   "relation": "supports",
+   "confidence": 0.97,
+   "probabilities": {
+    "supports": 0.98,
+    "contradicts": 0.0,
+    "says_nothing": 0.02
+   }
+  },
+  "askja": {
+   "claim": "Ground-penetrating radar finds buried ice here; the same technology is planned for ice near the lunar south pole.",
+   "source": "https://science.nasa.gov/solar-system/analog-explorer/#subsurface-ice-iceland-moon",
+   "status": "supported",
+   "relation": "supports",
+   "confidence": 0.98,
+   "probabilities": {
+    "supports": 0.99,
+    "contradicts": 0.0,
+    "says_nothing": 0.01
+   }
+  },
+  "kilauea": {
+   "claim": "Researchers measure how long volcanic field-geology tasks take, to plan similar work on the lunar surface.",
+   "source": "https://science.nasa.gov/solar-system/analog-explorer/#basalt-landscapes-kilauea-moon",
+   "status": "supported",
+   "relation": "supports",
+   "confidence": 0.83,
+   "probabilities": {
+    "supports": 0.89,
+    "contradicts": 0.0,
+    "says_nothing": 0.11
+   }
+  },
+  "lava-beds": {
+   "claim": "Lava caves explored from inside and out, working towards detecting hidden caves from above ground.",
+   "source": "https://science.nasa.gov/solar-system/analog-explorer/#lava-caves-california-moon",
+   "status": "supported",
+   "relation": "supports",
+   "confidence": 0.92,
+   "probabilities": {
+    "supports": 0.95,
+    "contradicts": 0.01,
+    "says_nothing": 0.04
+   }
+  },
+  "sf-volcanic-field": {
+   "claim": "Moon-like volcanic field where NASA astronauts rehearsed Artemis moonwalks and tested surface technology.",
+   "source": "https://science.nasa.gov/missions/artemis/behind-the-scenes-of-a-nasa-moonwalk-in-the-arizona-desert/",
+   "status": "supported",
+   "relation": "supports",
+   "confidence": 0.89,
+   "probabilities": {
+    "supports": 0.93,
+    "contradicts": 0.01,
+    "says_nothing": 0.06
+   }
+  },
+  "haughton": {
+   "claim": "High-Arctic impact structure with intra-crater sedimentary deposits, including later paleolacustrine (lake) sediments.",
+   "source": "https://doi.org/10.1111/j.1945-5100.2005.tb00152.x",
+   "status": "supported",
+   "relation": "supports",
+   "confidence": 1.0,
+   "probabilities": {
+    "supports": 1.0,
+    "contradicts": 0.0,
+    "says_nothing": 0.0
+   }
+  },
+  "meteor-crater": {
+   "claim": "Impact crater whose shocked Coconino Sandstone contains high-pressure silica phases such as coesite and stishovite.",
+   "source": "https://doi.org/10.1029/jb076i023p05449",
+   "status": "supported",
+   "relation": "supports",
+   "confidence": 0.98,
+   "probabilities": {
+    "supports": 0.99,
+    "contradicts": 0.0,
+    "says_nothing": 0.01
+   }
+  },
+  "lonar": {
+   "claim": "Impact crater in basalt whose shocked rocks are studied for comparison with Mars.",
+   "source": "https://doi.org/10.1029/2010je003785",
+   "status": "supported",
+   "relation": "supports",
+   "confidence": 0.97,
+   "probabilities": {
+    "supports": 0.98,
+    "contradicts": 0.0,
+    "says_nothing": 0.02
+   }
+  },
+  "flevoland": {
+   "claim": "Reclaimed, intensively farmed polder; no planetary-analog use.",
+   "source": null,
+   "status": "not_checked",
+   "reason": "no source cited"
+  },
+  "iowa": {
+   "claim": "Glaciated cropland plain; no planetary-analog use.",
+   "source": null,
+   "status": "not_checked",
+   "reason": "no source cited"
+  },
+  "ganges-plain": {
+   "claim": "Alluvial farmland plain; no planetary-analog use.",
+   "source": null,
+   "status": "not_checked",
+   "reason": "no source cited"
+  },
+  "amazon-forest": {
+   "claim": "Closed-canopy lowland forest; the surface model records canopy, not ground.",
+   "source": null,
+   "status": "not_checked",
+   "reason": "no source cited"
+  },
+  "black-forest": {
+   "claim": "Forested low mountains; no planetary-analog use.",
+   "source": null,
+   "status": "not_checked",
+   "reason": "no source cited"
+  },
+  "aletsch": {
+   "claim": "Glaciated high alpine relief, a different formation process.",
+   "source": null,
+   "status": "not_checked",
+   "reason": "no source cited"
+  }
+ }
+}

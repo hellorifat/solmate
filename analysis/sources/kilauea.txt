@@ -1,0 +1,6 @@
+source: https://science.nasa.gov/solar-system/analog-explorer/#basalt-landscapes-kilauea-moon
+title: NASA Planetary Analog Explorer - Basalt Landscapes: Kilauea and the Moon
+retrieved: 2026-10-12
+type: verbatim passage (Image Details)
+---
+On the slopes of Hawaiʻi’s Kilauea Volcano, researchers use aerial cameras and hand-held science instruments to characterize their surroundings. Their goal: to determine how long it would take a small team of geologists and astronauts to perform the same kinds of tasks in a different volcanically-formed environment, like the lunar surface. Future crews will draw on lessons learned from both modern mission simulation at sites on Earth and the Apollo missions. (Shown here: An Apollo 15 astronaut at work near Hadley Rille on the Moon.)

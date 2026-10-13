@@ -1,0 +1,6 @@
+source: https://science.nasa.gov/solar-system/analog-explorer/#rocky-reconnaissance-california-mars
+title: NASA Planetary Analog Explorer - Rocky Reconnaissance: California and Mars
+retrieved: 2026-10-12
+type: verbatim passage (Image Details)
+---
+Description: The Viking landers were the first to return images from the Martian surface, but the views they sent home were familiar. Utopia Planitia, as seen by Viking 2, looks a lot like Death Valley National Park. It’s no coincidence that NASA’s Mars 2020 team practiced hazard avoidance here before sending Perseverance and Ingenuity on their way to Mars.

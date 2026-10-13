@@ -1,0 +1,247 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import '@fontsource-variable/inter';
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/500.css';
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+  SolMate design tokens.
+  The palette follows the project film: deep ink, cool cyan for data, restrained amber for the
+  planetary reference, muted violet for derived layers, and a natural Martian red.
+*/
+:root {
+  --radius: 0.75rem;
+
+  /* raw palette */
+  --ink-950: #05080d;
+  --ink-900: #070b12;
+  --ink-850: #0a1019;
+  --ink-800: #0e1521;
+  --ink-700: #152031;
+  --ink-600: #1f2d42;
+  --ink-500: #2c3d56;
+  --slate-400: #7d8b9c;
+  --slate-300: #a4b1c1;
+  --slate-200: #c9d3de;
+  --slate-100: #eef3f8;
+  --cyan-400: #7fd8e6;
+  --cyan-600: #3b8fa3;
+  --amber-400: #f0bb6e;
+  --violet-400: #a99fdc;
+  --mars-400: #d9785a;
+  --green-400: #8fd3a8;
+  --red-400: #ef7d72;
+  --pink-400: #e7a1c9;
+
+  /* semantic (shadcn names) */
+  --background: var(--ink-900);
+  --foreground: var(--slate-100);
+  --card: var(--ink-850);
+  --card-foreground: var(--slate-100);
+  --popover: var(--ink-800);
+  --popover-foreground: var(--slate-100);
+  --primary: var(--slate-100);
+  --primary-foreground: var(--ink-900);
+  --secondary: var(--ink-700);
+  --secondary-foreground: var(--slate-100);
+  --muted: var(--ink-800);
+  --muted-foreground: var(--slate-400);
+  --accent: var(--ink-700);
+  --accent-foreground: var(--slate-100);
+  --destructive: var(--red-400);
+  --border: rgb(170 215 235 / 0.12);
+  --input: rgb(170 215 235 / 0.16);
+  --ring: var(--cyan-400);
+
+  /* domain roles */
+  --data: var(--cyan-400);
+  --reference: var(--amber-400);
+  --derived: var(--violet-400);
+  --mars: var(--mars-400);
+  --positive: var(--green-400);
+  --negative: var(--red-400);
+  --screen: var(--pink-400);
+}
+
+@theme inline {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-ink-950: var(--ink-950);
+  --color-ink-900: var(--ink-900);
+  --color-ink-850: var(--ink-850);
+  --color-ink-800: var(--ink-800);
+  --color-ink-700: var(--ink-700);
+  --color-ink-600: var(--ink-600);
+  --color-ink-500: var(--ink-500);
+  --color-slate-400: var(--slate-400);
+  --color-slate-300: var(--slate-300);
+  --color-slate-200: var(--slate-200);
+  --color-slate-100: var(--slate-100);
+  --color-data: var(--data);
+  --color-reference: var(--reference);
+  --color-derived: var(--derived);
+  --color-mars: var(--mars);
+  --color-positive: var(--positive);
+  --color-negative: var(--negative);
+  --color-screen: var(--screen);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    color-scheme: dark;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+  ::selection {
+    background: rgb(127 216 230 / 0.28);
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+  }
+}
+
+@layer utilities {
+  /* small uppercase technical label */
+  .label-mono {
+    @apply font-mono text-[11px] uppercase tracking-[0.16em] text-muted-foreground;
+  }
+  /* numbers: Inter tabular figures (JetBrains Mono's dotted zero reads as 8 at small sizes) */
+  .tabular {
+    font-family: var(--font-sans) !important;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+  /* solid elevated surface used for floating map panels (no glassmorphism) */
+  .surface {
+    background: color-mix(in oklab, var(--ink-850) 94%, transparent);
+    border: 1px solid var(--border);
+    box-shadow:
+      0 1px 0 rgb(255 255 255 / 0.03) inset,
+      0 18px 40px -18px rgb(0 0 0 / 0.7);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* MapLibre control restyling to match the design system */
+.maplibregl-ctrl-group {
+  background: var(--ink-850) !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: none !important;
+}
+.maplibregl-ctrl-group button + button {
+  border-top: 1px solid var(--border) !important;
+}
+.maplibregl-ctrl-group button .maplibregl-ctrl-icon {
+  filter: invert(0.9);
+}
+.maplibregl-ctrl-attrib {
+  background: rgb(7 11 18 / 0.75) !important;
+  color: var(--slate-400) !important;
+  font-size: 10px;
+}
+.maplibregl-ctrl-attrib a {
+  color: var(--slate-300) !important;
+}
+
+/* Explorer map markers (MapLibre owns the outer element's transform; animate the inner span) */
+.solmate-marker {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.solmate-marker > span {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  border: 2px solid var(--marker-color);
+  background: var(--ink-900);
+  color: var(--slate-100);
+  font: 500 11px/1 'JetBrains Mono', ui-monospace, monospace;
+  box-shadow: 0 0 0 3px rgb(5 8 13 / 0.55), 0 6px 16px -6px rgb(0 0 0 / 0.8);
+  transition: transform 220ms var(--ease-out-expo), background-color 220ms, color 220ms, box-shadow 220ms;
+}
+.solmate-marker[data-role='control'] > span {
+  border-style: dashed;
+  color: var(--slate-300);
+}
+.solmate-marker[data-hovered='true'] > span {
+  transform: scale(1.18);
+}
+.solmate-marker[data-selected='true'] > span {
+  transform: scale(1.35);
+  background: var(--marker-color);
+  color: var(--ink-950);
+  box-shadow: 0 0 0 4px rgb(5 8 13 / 0.6), 0 0 0 10px color-mix(in oklab, var(--marker-color) 25%, transparent);
+}
+.solmate-marker:focus-visible {
+  outline: none;
+}
+.solmate-marker:focus-visible > span {
+  box-shadow: 0 0 0 3px var(--ring);
+}
+
+/* Lenis smooth scrolling */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis:not(.lenis-autoToggle).lenis-stopped {
+  overflow: clip;
+}
+.lenis [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}

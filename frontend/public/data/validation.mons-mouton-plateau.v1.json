@@ -1,0 +1,526 @@
+{
+ "version": 1,
+ "generated_at": "2026-10-11T19:31:01+00:00",
+ "target": "mons-mouton-plateau",
+ "method": "robust-z gaussian similarity, weighted mean",
+ "pool": [
+  "lake-salda",
+  "death-valley",
+  "atacama-yungay",
+  "pilot-valley",
+  "verde-valley",
+  "vikursundar",
+  "askja",
+  "kilauea",
+  "lava-beds",
+  "sf-volcanic-field",
+  "haughton",
+  "meteor-crater",
+  "lonar",
+  "flevoland",
+  "iowa",
+  "ganges-plain",
+  "amazon-forest",
+  "black-forest",
+  "aletsch"
+ ],
+ "excluded": [],
+ "scaling": {
+  "centre": {
+   "slope_median": 3.2749550342559814,
+   "slope_p90": 10.669792175292969,
+   "local_relief": 59.7738037109375,
+   "ruggedness": 15.23959732055664,
+   "hypsometric_integral": 0.42677202382187357
+  },
+  "scale": {
+   "slope_median": 2.623572601675987,
+   "slope_p90": 8.610288407135009,
+   "local_relief": 54.29606242675781,
+   "ruggedness": 11.294429878234862,
+   "hypsometric_integral": 0.20228712101270568
+  }
+ },
+ "equal_weights": {
+  "scores": {
+   "lake-salda": 0.8594379399514193,
+   "death-valley": 0.5749672683394084,
+   "atacama-yungay": 0.8568264251970079,
+   "pilot-valley": 0.5261802551065402,
+   "verde-valley": 0.7129723407043096,
+   "vikursundar": 0.39171343147198573,
+   "askja": 0.8212640307132949,
+   "kilauea": 0.5348509908679124,
+   "lava-beds": 0.47603077913685105,
+   "sf-volcanic-field": 0.3896672526702205,
+   "haughton": 0.7962106337273523,
+   "meteor-crater": 0.3614280980191902,
+   "lonar": 0.38840776502034063,
+   "flevoland": 0.1517171709009959,
+   "iowa": 0.34228496620172694,
+   "ganges-plain": 0.3153531633529737,
+   "amazon-forest": 0.7274460590080422,
+   "black-forest": 0.421576525041995,
+   "aletsch": 0.19864020570378108
+  },
+  "per_indicator": {
+   "lake-salda": {
+    "slope_median": 0.9934769456301463,
+    "slope_p90": 0.9113160760146888,
+    "local_relief": 0.9684844365057546,
+    "ruggedness": 0.8202535743688528,
+    "hypsometric_integral": 0.6036586672376542
+   },
+   "death-valley": {
+    "slope_median": 0.5249157659967195,
+    "slope_p90": 0.9813130140918853,
+    "local_relief": 0.5987984366606116,
+    "ruggedness": 0.5309133492471716,
+    "hypsometric_integral": 0.2388957757006537
+   },
+   "atacama-yungay": {
+    "slope_median": 0.7476958966430051,
+    "slope_p90": 0.9987433255197464,
+    "local_relief": 0.8804693871071451,
+    "ruggedness": 0.7876084004043952,
+    "hypsometric_integral": 0.8696151163107484
+   },
+   "pilot-valley": {
+    "slope_median": 0.5947756183076354,
+    "slope_p90": 0.5540178188968359,
+    "local_relief": 0.7389646480570257,
+    "ruggedness": 0.5544052257274246,
+    "hypsometric_integral": 0.18873796454377953
+   },
+   "verde-valley": {
+    "slope_median": 0.6645932131669386,
+    "slope_p90": 0.994682317527993,
+    "local_relief": 0.6539936438020204,
+    "ruggedness": 0.8671441706725332,
+    "hypsometric_integral": 0.38444835835206276
+   },
+   "vikursundar": {
+    "slope_median": 0.19441232204946618,
+    "slope_p90": 0.9520416003652141,
+    "local_relief": 0.22047131432852266,
+    "ruggedness": 0.1979712142861626,
+    "hypsometric_integral": 0.3936707063305632
+   },
+   "askja": {
+    "slope_median": 0.6153099213591212,
+    "slope_p90": 0.9268332789195852,
+    "local_relief": 0.9614786727160562,
+    "ruggedness": 0.70298451658489,
+    "hypsometric_integral": 0.8997137639868217
+   },
+   "kilauea": {
+    "slope_median": 0.41095964525505296,
+    "slope_p90": 0.6924092213442342,
+    "local_relief": 0.4459386895440584,
+    "ruggedness": 0.4068487323473645,
+    "hypsometric_integral": 0.7180986658488521
+   },
+   "lava-beds": {
+    "slope_median": 0.32691475578940515,
+    "slope_p90": 0.8261003764003629,
+    "local_relief": 0.44168254230138804,
+    "ruggedness": 0.35806997190243717,
+    "hypsometric_integral": 0.42738624929066177
+   },
+   "sf-volcanic-field": {
+    "slope_median": 0.14859754442871914,
+    "slope_p90": 0.6095728986613571,
+    "local_relief": 0.19017406582712337,
+    "ruggedness": 0.14046661805282848,
+    "hypsometric_integral": 0.8595251363810745
+   },
+   "haughton": {
+    "slope_median": 0.6470395460497445,
+    "slope_p90": 0.970782960318661,
+    "local_relief": 0.5799549310365885,
+    "ruggedness": 0.7852263903198855,
+    "hypsometric_integral": 0.998049340911882
+   },
+   "meteor-crater": {
+    "slope_median": 0.12864307477763995,
+    "slope_p90": 0.4406028357464287,
+    "local_relief": 0.12944130218002112,
+    "ruggedness": 0.11859852139742483,
+    "hypsometric_integral": 0.9898547559944362
+   },
+   "lonar": {
+    "slope_median": 0.14428897604190133,
+    "slope_p90": 0.5115758705965535,
+    "local_relief": 0.15073339487288268,
+    "ruggedness": 0.13546114735463077,
+    "hypsometric_integral": 0.9999794362357349
+   },
+   "flevoland": {
+    "slope_median": 0.06124933421734162,
+    "slope_p90": 0.3913141553302142,
+    "local_relief": 0.06883591526529256,
+    "ruggedness": 0.05139747410072678,
+    "hypsometric_integral": 0.1857889755914043
+   },
+   "iowa": {
+    "slope_median": 0.1111629115078076,
+    "slope_p90": 0.5625941166392738,
+    "local_relief": 0.11187568247958048,
+    "ruggedness": 0.1189089100118053,
+    "hypsometric_integral": 0.8068832103701674
+   },
+   "ganges-plain": {
+    "slope_median": 0.09185789734397722,
+    "slope_p90": 0.41594459216998103,
+    "local_relief": 0.08902363777957628,
+    "ruggedness": 0.10865649856921353,
+    "hypsometric_integral": 0.8712831909021206
+   },
+   "amazon-forest": {
+    "slope_median": 0.58269958523291,
+    "slope_p90": 0.8495657313942674,
+    "local_relief": 0.361416554876108,
+    "ruggedness": 0.8460581467976406,
+    "hypsometric_integral": 0.9974902767392849
+   },
+   "black-forest": {
+    "slope_median": 0.15175839336056848,
+    "slope_p90": 0.4656368130067892,
+    "local_relief": 0.6599534611152091,
+    "ruggedness": 0.020562131166655544,
+    "hypsometric_integral": 0.8099718265607526
+   },
+   "aletsch": {
+    "slope_median": 1.0874209294679668e-12,
+    "slope_p90": 0.003787865976772998,
+    "local_relief": 1.4501609827377792e-14,
+    "ruggedness": 1.5326320872798997e-17,
+    "hypsometric_integral": 0.9894131625410304
+   }
+  },
+  "ranks": {
+   "lake-salda": 1,
+   "death-valley": 7,
+   "atacama-yungay": 2,
+   "pilot-valley": 9,
+   "verde-valley": 6,
+   "vikursundar": 12,
+   "askja": 3,
+   "kilauea": 8,
+   "lava-beds": 10,
+   "sf-volcanic-field": 13,
+   "haughton": 4,
+   "meteor-crater": 15,
+   "lonar": 14,
+   "flevoland": 19,
+   "iowa": 16,
+   "ganges-plain": 17,
+   "amazon-forest": 5,
+   "black-forest": 11,
+   "aletsch": 18
+  }
+ },
+ "retrieval": {
+  "pair": "Moon",
+  "positives": "Earth sites NASA's Planetary Analog Explorer pairs with the Moon",
+  "negatives": "negative controls",
+  "auc_documented": 0.8333333333333334,
+  "auc_all_documented": 0.85,
+  "n_positive": 4,
+  "n_negative": 6,
+  "top5": [
+   "lake-salda",
+   "atacama-yungay",
+   "askja",
+   "haughton",
+   "amazon-forest"
+  ],
+  "documented_in_top5": 3,
+  "controls_in_top5": 1,
+  "mean_rank": {
+   "documented_pair": 8.5,
+   "documented_all": 7.1,
+   "control": 14.333333333333334
+  }
+ },
+ "weight_perturbation": {
+  "n": 1000,
+  "seed": 42,
+  "distribution": "Dirichlet(1,1,1,1,1)",
+  "rank_range": {
+   "lake-salda": {
+    "p5": 1,
+    "p50": 2,
+    "p95": 5,
+    "min": 1,
+    "max": 13
+   },
+   "death-valley": {
+    "p5": 6,
+    "p50": 7,
+    "p95": 16,
+    "min": 5,
+    "max": 17
+   },
+   "atacama-yungay": {
+    "p5": 1,
+    "p50": 2,
+    "p95": 3,
+    "min": 1,
+    "max": 4
+   },
+   "pilot-valley": {
+    "p5": 6,
+    "p50": 8,
+    "p95": 18,
+    "min": 4,
+    "max": 18
+   },
+   "verde-valley": {
+    "p5": 3,
+    "p50": 5,
+    "p95": 10,
+    "min": 1,
+    "max": 14
+   },
+   "vikursundar": {
+    "p5": 9,
+    "p50": 12,
+    "p95": 18,
+    "min": 7,
+    "max": 18
+   },
+   "askja": {
+    "p5": 1,
+    "p50": 3,
+    "p95": 6,
+    "min": 1,
+    "max": 6
+   },
+   "kilauea": {
+    "p5": 7,
+    "p50": 9,
+    "p95": 10,
+    "min": 6,
+    "max": 13
+   },
+   "lava-beds": {
+    "p5": 9,
+    "p50": 10,
+    "p95": 15,
+    "min": 8,
+    "max": 17
+   },
+   "sf-volcanic-field": {
+    "p5": 10,
+    "p50": 12,
+    "p95": 13,
+    "min": 7,
+    "max": 14
+   },
+   "haughton": {
+    "p5": 1,
+    "p50": 4,
+    "p95": 5,
+    "min": 1,
+    "max": 6
+   },
+   "meteor-crater": {
+    "p5": 7,
+    "p50": 15,
+    "p95": 16,
+    "min": 6,
+    "max": 16
+   },
+   "lonar": {
+    "p5": 6,
+    "p50": 13,
+    "p95": 14,
+    "min": 5,
+    "max": 15
+   },
+   "flevoland": {
+    "p5": 18,
+    "p50": 19,
+    "p95": 19,
+    "min": 17,
+    "max": 19
+   },
+   "iowa": {
+    "p5": 13,
+    "p50": 15,
+    "p95": 16,
+    "min": 10,
+    "max": 17
+   },
+   "ganges-plain": {
+    "p5": 12,
+    "p50": 17,
+    "p95": 17,
+    "min": 9,
+    "max": 17
+   },
+   "amazon-forest": {
+    "p5": 2,
+    "p50": 5,
+    "p95": 8,
+    "min": 1,
+    "max": 11
+   },
+   "black-forest": {
+    "p5": 7,
+    "p50": 12,
+    "p95": 17,
+    "min": 5,
+    "max": 18
+   },
+   "aletsch": {
+    "p5": 13,
+    "p50": 18,
+    "p95": 19,
+    "min": 7,
+    "max": 19
+   }
+  },
+  "auc_documented": {
+   "p5": 0.6666666666666666,
+   "p50": 0.8333333333333334,
+   "p95": 0.875
+  }
+ },
+ "sensitivity": [
+  {
+   "id": "primary",
+   "label": "20 km window at 100 m",
+   "window_m": 20000,
+   "cell_m": 100,
+   "auc_documented": 0.8333333333333334,
+   "spearman_vs_primary": 1.0,
+   "ranks": {
+    "lake-salda": 1,
+    "death-valley": 7,
+    "atacama-yungay": 2,
+    "pilot-valley": 9,
+    "verde-valley": 6,
+    "vikursundar": 12,
+    "askja": 3,
+    "kilauea": 8,
+    "lava-beds": 10,
+    "sf-volcanic-field": 13,
+    "haughton": 4,
+    "meteor-crater": 15,
+    "lonar": 14,
+    "flevoland": 19,
+    "iowa": 16,
+    "ganges-plain": 17,
+    "amazon-forest": 5,
+    "black-forest": 11,
+    "aletsch": 18
+   }
+  },
+  {
+   "id": "coarser-cells",
+   "label": "20 km window at 200 m",
+   "window_m": 20000,
+   "cell_m": 200,
+   "auc_documented": 0.75,
+   "spearman_vs_primary": 0.9824561403508772,
+   "ranks": {
+    "lake-salda": 1,
+    "death-valley": 7,
+    "atacama-yungay": 3,
+    "pilot-valley": 9,
+    "verde-valley": 5,
+    "vikursundar": 12,
+    "askja": 2,
+    "kilauea": 10,
+    "lava-beds": 11,
+    "sf-volcanic-field": 14,
+    "haughton": 4,
+    "meteor-crater": 15,
+    "lonar": 13,
+    "flevoland": 19,
+    "iowa": 16,
+    "ganges-plain": 17,
+    "amazon-forest": 6,
+    "black-forest": 8,
+    "aletsch": 18
+   }
+  },
+  {
+   "id": "smaller-window",
+   "label": "12 km window at 100 m",
+   "window_m": 12000,
+   "cell_m": 100,
+   "auc_documented": 0.7916666666666666,
+   "spearman_vs_primary": 0.9491228070175438,
+   "ranks": {
+    "lake-salda": 2,
+    "death-valley": 12,
+    "atacama-yungay": 3,
+    "pilot-valley": 6,
+    "verde-valley": 7,
+    "vikursundar": 11,
+    "askja": 1,
+    "kilauea": 10,
+    "lava-beds": 8,
+    "sf-volcanic-field": 13,
+    "haughton": 5,
+    "meteor-crater": 15,
+    "lonar": 14,
+    "flevoland": 19,
+    "iowa": 17,
+    "ganges-plain": 16,
+    "amazon-forest": 4,
+    "black-forest": 9,
+    "aletsch": 18
+   }
+  }
+ ],
+ "correlation": {
+  "order": [
+   "slope_median",
+   "slope_p90",
+   "local_relief",
+   "ruggedness",
+   "hypsometric_integral"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.8881,
+    0.9881,
+    0.9986,
+    0.2393
+   ],
+   [
+    0.8881,
+    1.0,
+    0.8905,
+    0.881,
+    -0.0339
+   ],
+   [
+    0.9881,
+    0.8905,
+    1.0,
+    0.9815,
+    0.1789
+   ],
+   [
+    0.9986,
+    0.881,
+    0.9815,
+    1.0,
+    0.26
+   ],
+   [
+    0.2393,
+    -0.0339,
+    0.1789,
+    0.26,
+    1.0
+   ]
+  ]
+ }
+}

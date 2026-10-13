@@ -1,0 +1,96 @@
+{
+ "version": 1,
+ "generated_at": "2026-10-11T19:31:01+00:00",
+ "targets": [
+  {
+   "id": "jezero",
+   "name": "Jezero Crater landing region",
+   "short": "Jezero Crater",
+   "body": "mars",
+   "pair": "Mars",
+   "lat": 18.4447,
+   "lon": 77.4508,
+   "note": "Octavia E. Butler landing site of NASA's Perseverance rover, on the crater floor east of the western delta.",
+   "quicklooks": {
+    "hillshade": "data/quicklooks/jezero-hillshade.webp",
+    "slope": "data/quicklooks/jezero-slope.webp",
+    "imagery": "data/quicklooks/jezero-imagery.webp"
+   },
+   "indicators": {
+    "slope_median": 2.058054208755493,
+    "slope_p90": 9.95586109161377,
+    "local_relief": 44.2633056640625,
+    "ruggedness": 11.07943344116211,
+    "hypsometric_integral": 0.25773201404727575
+   },
+   "auc_documented": 0.8333333333333334,
+   "top": [
+    {
+     "id": "lava-beds",
+     "score": 0.9822780236569402
+    },
+    {
+     "id": "vikursundar",
+     "score": 0.9461209195990602
+    },
+    {
+     "id": "kilauea",
+     "score": 0.9283517330237944
+    },
+    {
+     "id": "death-valley",
+     "score": 0.9031719724899963
+    },
+    {
+     "id": "sf-volcanic-field",
+     "score": 0.8620851365967122
+    }
+   ]
+  },
+  {
+   "id": "mons-mouton-plateau",
+   "name": "Mons Mouton Plateau, lunar south pole",
+   "short": "Mons Mouton Plateau",
+   "body": "moon",
+   "pair": "Moon",
+   "lat": -84.5338,
+   "lon": 30.6556,
+   "note": "One of NASA's nine Artemis III candidate landing regions (2024 update) and the region with the largest landing-suitable area in Wueller et al. (2026); window centred on the centroid of its 11 candidate landing sites.",
+   "quicklooks": {
+    "hillshade": "data/quicklooks/mons-mouton-plateau-hillshade.webp",
+    "slope": "data/quicklooks/mons-mouton-plateau-slope.webp",
+    "imagery": "data/quicklooks/mons-mouton-plateau-imagery.webp"
+   },
+   "indicators": {
+    "slope_median": 6.253645896911621,
+    "slope_p90": 12.766617774963379,
+    "local_relief": 128.77783203125,
+    "ruggedness": 27.949283599853516,
+    "hypsometric_integral": 0.533699304610633
+   },
+   "auc_documented": 0.8333333333333334,
+   "top": [
+    {
+     "id": "lake-salda",
+     "score": 0.8594379399514193
+    },
+    {
+     "id": "atacama-yungay",
+     "score": 0.8568264251970079
+    },
+    {
+     "id": "askja",
+     "score": 0.8212640307132949
+    },
+    {
+     "id": "haughton",
+     "score": 0.7962106337273523
+    },
+    {
+     "id": "amazon-forest",
+     "score": 0.7274460590080422
+    }
+   ]
+  }
+ ]
+}
